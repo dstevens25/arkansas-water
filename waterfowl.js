@@ -18,6 +18,28 @@ async function get(url) {
   return r.text();
 }
 
+// AGFC prefixes many WMAs with a donor's name, and the two sheets disagree about
+// whether to include it: the GTR sheet says "Bayou Meto WMA", the moist-soil sheet
+// says "George H. Dunklin Bayou Meto WMA". Same place, two cards, unless we merge.
+// Match on the PLACE name, never the person. Add entries when you spot a new split.
+const CORE_WMA = [
+  "bayou meto","raft creek","hurricane lake","dagmar","bayou deview","big lake",
+  "bell slough","lake conway","wattensaw","cache river","black swamp","black river",
+  "sunken lands","shirey bay","harris brake","petit jean","holland bottoms",
+  "scatter creek","hope upland","seven devils","choctaw island","frog bayou",
+  "point remove","galla creek","cut-off creek","lower ouachita","trusten holder",
+];
+
+function canonWma(name){
+  const low = (name || "").toLowerCase().replace(/\s+/g, " ").trim();
+  let best = null;
+  for(const c of CORE_WMA){
+    if(low.includes(c) && (!best || c.length > best.length)) best = c;
+  }
+  if(best) return best;
+  return low.replace(/\s*(wma|wildlife management area)\s*$/, "").trim() || low;
+}
+
 function findSheets(html) {
   const out = [];
   const re = /<a[^>]+href="(https:\/\/docs\.google\.com\/spreadsheets\/d\/e\/[^"]+?)\/pubhtml[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
@@ -116,6 +138,7 @@ function normalize(rows, sheetKind) {
 
     units.push({
       wma: lastWma,
+      wmaKey: canonWma(lastWma),
       unit: unit || lastWma,
       type: sheetKind,
       section: section || undefined,
@@ -154,14 +177,27 @@ function normalize(rows, sheetKind) {
 
     if (!result.units.length) throw new Error("Read the sheets but found no units");
 
-    // Handy rollup: wettest WMAs first.
+    // One display name per canonical WMA — use the longest spelling seen, since
+    // that's the full official name ("George H. Dunklin Bayou Meto WMA").
+    const displayFor = {};
+    for (const u of result.units) {
+      const cur = displayFor[u.wmaKey];
+      if (!cur || (u.wma || "").length > cur.length) displayFor[u.wmaKey] = u.wma || u.wmaKey;
+    }
+    for (const u of result.units) u.wmaDisplay = displayFor[u.wmaKey];
+
+    const merged = Object.values(displayFor).length;
+    const rawNames = new Set(result.units.map(u => u.wma)).size;
+    if (rawNames > merged) console.log(`\nMerged ${rawNames} sheet names into ${merged} WMAs`);
+
     const byWma = {};
     for (const u of result.units) {
       if (u.percent === undefined) continue;
-      (byWma[u.wma] ||= []).push(u.percent);
+      (byWma[u.wmaKey] ||= []).push(u.percent);
     }
-    result.wmaSummary = Object.entries(byWma).map(([wma, pcts]) => ({
-      wma,
+    result.wmaSummary = Object.entries(byWma).map(([key, pcts]) => ({
+      wma: displayFor[key],
+      wmaKey: key,
       units: pcts.length,
       avgPercent: Math.round(pcts.reduce((a, b) => a + b, 0) / pcts.length),
       maxPercent: Math.max(...pcts),
@@ -169,7 +205,7 @@ function normalize(rows, sheetKind) {
 
     fs.mkdirSync("data", { recursive: true });
     fs.writeFileSync("data/waterfowl.json", JSON.stringify(result, null, 2));
-    console.log(`\nWrote data/waterfowl.json — ${result.units.length} units across ${result.wmaSummary.length} WMAs`);
+    console.log(`\nWrote data/waterfowl.json — ${result.units.length} units across ${result.wmaSummary.length} WMAs (merged)`);
   } catch (e) {
     console.error("FAILED:", e.message);
     process.exit(1);
