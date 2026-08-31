@@ -20,7 +20,9 @@ function stripTags(html) {
 // AGFC stamps most entries with (updated 3-19-2026). That date is per-entry,
 // not per-page — they republish stale entries when a reporter doesn't check in.
 function findUpdated(text) {
-  const m = text.match(/updated\s+(\d{1,2})-(\d{1,2})-(\d{4})/i);
+  // AGFC writes "(updated 8-27-2026)" but typos it as "(update 8-27-2026)" often enough
+  // to matter — Little Maumelle River did exactly that this week.
+  const m = text.match(/updat(?:ed|e)\s+(\d{1,2})-(\d{1,2})-(\d{4})/i);
   if (!m) return null;
   const [, mo, d, y] = m;
   return `${y}-${String(mo).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
@@ -70,7 +72,12 @@ function findSpecies(text) {
 }
 
 function parseReport(html, sourceUrl) {
-  const text = stripTags(html);
+  let text = stripTags(html);
+
+  // Chop the site footer. Without this, "Civil Rights" and "Wild Science Webinars"
+  // get filed as bodies of water in whatever region came last.
+  const footer = text.search(/Subscribe to Our Weekly Newsletter|2 Natural Resources Drive/i);
+  if (footer > 0) text = text.slice(0, footer);
 
   // Regions are h2s; water bodies are h3/h4 or bold-italic headings.
   const regionRe = /^\s*((?:North|South|East|West|Central|Northwest|Northeast|Southeast|Southwest|South-Central|West-Central)[a-z\- ]*Arkansas)\s*$/gim;
@@ -117,15 +124,23 @@ function parseReport(html, sourceUrl) {
       .filter(e => e.text.trim().length > 20 || /no reports?\./i.test(e.text))
       .map(e => {
         const updated = findUpdated(e.text);
+        const body = e.text.trim();
+        // Some entries are nothing but a pointer to a Corps gauge page — useful as a
+        // link, but not an actual condition report. Mark them so the app can tell.
+        const referenceOnly =
+          !updated &&
+          /visit the Corps|click here|real-time/i.test(body) &&
+          body.length < 300;
         return {
           region: e.region,
           water: e.water,
           updated,
           daysOld: daysOld(updated),
           stale: daysOld(updated) !== null && daysOld(updated) > 10,
-          species: findSpecies(e.text),
-          ...extractFacts(e.text),
-          summary: e.text.trim().slice(0, 400),
+          referenceOnly,
+          species: findSpecies(body),
+          ...extractFacts(body),
+          summary: body.slice(0, 400),
         };
       }),
   };
