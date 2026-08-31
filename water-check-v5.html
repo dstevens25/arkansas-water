@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Water Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#10130F; --surface:#191E18; --rule:#2A312A;
+    --text:#E8E6DE; --muted:#8C9187;
+    --go:#7FA650; --marginal:#C98A2E; --skip:#9C4A3F;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:'Barlow',system-ui,sans-serif;
+       font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:640px;margin:0 auto;padding:20px 18px 60px}
+
+  header{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:14px;border-bottom:1px solid var(--rule)}
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:30px;letter-spacing:.02em;margin:0}
+  .refreshed{font-size:13px;color:var(--muted)}
+
+  .sect{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600;letter-spacing:.14em;
+        text-transform:uppercase;color:var(--muted);margin:34px 0 4px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  .summary{font-family:'Barlow Condensed',sans-serif;font-size:21px;font-weight:500;padding:14px 0;color:var(--muted)}
+  .summary b{color:var(--text);font-weight:600}
+
+  .notice{background:var(--surface);border-left:3px solid var(--marginal);padding:12px 16px;
+          margin:8px 0 16px;font-size:14px;color:var(--muted)}
+  .notice b{color:var(--marginal);font-weight:500}
+
+  .spot{border-bottom:1px solid var(--rule);padding:18px 0}
+  .spot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+  .name{font-family:'Barlow Condensed',sans-serif;font-size:23px;font-weight:500;margin:0}
+  .note{font-size:14px;color:var(--muted);margin:2px 0 0}
+
+  .verdict{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600;letter-spacing:.09em;
+           text-transform:uppercase;padding:5px 12px;border:1px solid;white-space:nowrap;flex-shrink:0}
+  .v-go{color:var(--go);border-color:var(--go)}
+  .v-marginal{color:var(--marginal);border-color:var(--marginal)}
+  .v-skip{color:var(--skip);border-color:var(--skip)}
+  .v-none{color:var(--muted);border-color:var(--rule)}
+
+  .reading{display:flex;align-items:baseline;gap:14px;margin-top:14px;flex-wrap:wrap}
+  .stage{font-family:'Barlow Condensed',sans-serif;font-size:52px;font-weight:600;line-height:.9}
+  .stage span{font-size:20px;font-weight:400;color:var(--muted);margin-left:5px}
+  .trend{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:500}
+  .t-up{color:var(--go)} .t-down{color:var(--marginal)} .t-flat{color:var(--muted)}
+
+  .meta{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:12px;font-size:14px;color:var(--muted)}
+  .meta b{color:var(--text);font-weight:500}
+  .age{font-size:13px;color:var(--muted);margin-top:10px}
+  .stale{color:var(--marginal)}
+  .err{font-size:14px;color:var(--skip);margin-top:10px}
+  .report{font-size:14px;color:var(--muted);margin:10px 0 0;line-height:1.45}
+  .species{font-size:13px;color:var(--go);margin-top:8px}
+
+  /* waterfowl units */
+  .wma{border-bottom:1px solid var(--rule);padding:18px 0}
+  .unit{display:flex;align-items:center;gap:12px;margin-top:10px}
+  .unit-name{flex:1;font-size:15px;min-width:0}
+  .unit-name span{display:block;font-size:12px;color:var(--muted)}
+  .bar{width:82px;height:8px;background:var(--rule);flex-shrink:0}
+  .bar i{display:block;height:100%}
+  .pct{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:600;width:46px;text-align:right;flex-shrink:0}
+  .closed{font-size:12px;color:var(--skip);letter-spacing:.06em}
+
+  .stand{display:flex;align-items:center;gap:12px;margin-top:10px}
+  .stand-name{flex:1;font-size:15px;min-width:0}
+  .stand-name span{display:block;font-size:12px;color:var(--muted)}
+  .wind-ok{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:.08em;
+           text-transform:uppercase;padding:3px 10px;border:1px solid;white-space:nowrap}
+  .big-row{display:flex;gap:26px;flex-wrap:wrap;margin:14px 0 4px}
+  .big{font-family:'Barlow Condensed',sans-serif}
+  .big b{display:block;font-size:32px;font-weight:600;line-height:1}
+  .big span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+  .setup{background:var(--surface);padding:22px;margin-top:30px}
+  .setup h2{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:600;margin:0 0 10px}
+  .setup p{font-size:15px;color:var(--muted);margin:0 0 14px}
+  .setup a{color:var(--go)}
+  .row{display:flex;gap:8px;flex-wrap:wrap}
+  input{flex:1;min-width:150px;background:var(--bg);border:1px solid var(--rule);color:var(--text);
+        padding:11px 12px;font-family:'Barlow',sans-serif;font-size:16px}
+  input:focus{outline:2px solid var(--go);outline-offset:1px}
+  button{background:transparent;border:1px solid var(--text);color:var(--text);padding:11px 20px;
+         font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:500;letter-spacing:.05em;
+         text-transform:uppercase;cursor:pointer}
+  button:hover{background:var(--text);color:var(--bg)}
+  button:focus-visible{outline:2px solid var(--go);outline-offset:2px}
+  .hint{font-size:13px;color:var(--muted);margin-top:12px}
+  code{background:var(--bg);padding:1px 5px;font-size:13px;color:var(--go)}
+  .disclaimer{font-size:13px;color:var(--muted);margin-top:30px;padding-top:16px;border-top:1px solid var(--rule)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Water check</h1>
+    <span class="refreshed" id="refreshed"></span>
+  </header>
+
+  <p class="sect">Gauges</p>
+  <div class="summary" id="summary">Loading…</div>
+  <div id="spots"></div>
+
+  <p class="sect">Deer</p>
+  <div class="summary" id="dsummary">Loading…</div>
+  <div id="deer"></div>
+
+  <p class="sect">Waterfowl</p>
+  <div class="summary" id="wsummary">Loading…</div>
+  <div id="wnotice"></div>
+  <div id="wfowl"></div>
+
+  <p class="sect">Fishing report</p>
+  <div class="summary" id="fsummary">Loading…</div>
+  <div id="fish"></div>
+
+  <section class="setup">
+    <h2>Add a gauge</h2>
+    <p>Find the USGS site number on the
+       <a href="https://waterdata.usgs.gov/ar/nwis/rt" target="_blank" rel="noopener">Arkansas real-time map</a>.</p>
+    <div class="row">
+      <input id="site" placeholder="Site number, e.g. 07076750" inputmode="numeric">
+      <input id="label" placeholder="What you call it">
+      <button id="add">Add</button>
+    </div>
+    <p class="hint" id="addmsg"></p>
+    <p class="hint">Added gauges last until you reload. To keep them, put them in the
+       <code>SPOTS</code> list at the top of this file.</p>
+  </section>
+
+  <p class="disclaimer">
+    Gauge data from USGS, forecast from the National Weather Service, fishing and waterfowl
+    conditions from the Arkansas Game and Fish Commission, which does not warrant the accuracy
+    or timeliness of that information. Check conditions yourself before you go.
+  </p>
+
+</div>
+
+<script>
+// ─── YOUR SPOTS ─────────────────────────────────────────────────────────────
+const SPOTS = [
+  { name:"White River — Georgetown",   note:"White County",     usgs:"07076750", lat:35.13, lon:-91.45 },
+  { name:"Bayou DeView — Brinkley",    note:"Earl Buss country", usgs:"07077730", lat:34.89, lon:-91.19 },
+  { name:"Cache River — Patterson",    note:"Lower Cache",       usgs:"07077500", lat:35.26, lon:-91.24 },
+  { name:"White River — DeValls Bluff",note:"Lower White",       usgs:"07077000", lat:34.79, lon:-91.46 },
+];
+
+// ─── YOUR STANDS ────────────────────────────────────────────────────────────
+// winds : the wind directions this stand actually hunts. A stand is "good" when the
+// wind blows your scent AWAY from where deer come from, so list the directions you'd
+// actually sit it on. Guessing is fine — correct it after you blow a few out.
+const STANDS = [
+  { name:"Example — creek bottom", note:"white oak flat", winds:["N","NNW","NW"] },
+  { name:"Example — field edge",   note:"evening sit",    winds:["S","SSE","SE"] },
+  { name:"Example — ridge point",  note:"morning sit",    winds:["W","WNW","NW"] },
+];
+
+// Where your weather comes from. Set this to the middle of the property you hunt.
+const DEER_SPOT = { name:"Searcy", lat:35.2506, lon:-91.7362 };
+
+const BASE = "https://raw.githubusercontent.com/dstevens25/arkansas-water/main/data/";
+const AGFC_FISH = BASE + "fishing.json";
+const AGFC_FOWL = BASE + "waterfowl.json";
+
+// Which water to show. Empty list = show everything.
+const FISH_WATCH = ["Little Red River","Greers Ferry","Harris Brake","Peckerwood",
+                    "White River","Lake Charles","Lake Poinsett","Bull Shoals"];
+const WMA_WATCH  = ["Bayou Meto","Dagmar","Bayou DeView","Hurricane Lake","Big Lake",
+                    "Cache River","Raft Creek","Bell Slough","Wattensaw"];
+
+const P = { stage:"00065", flow:"00060", temp:"00010" };
+
+async function usgs(site){
+  const url = "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + site +
+              "&parameterCd=" + Object.values(P).join(",") + "&period=P2D";
+  const r = await fetch(url);
+  if(!r.ok) throw new Error("USGS returned " + r.status);
+  const series = (await r.json())?.value?.timeSeries || [];
+  if(!series.length) throw new Error("No data for site " + site);
+  const out = { site };
+  for(const s of series){
+    const code = s.variable.variableCode[0].value;
+    const pts = (s.values[0].value || []).filter(v => v.value !== "-999999");
+    if(!pts.length) continue;
+    const last = pts[pts.length - 1];
+    const key = Object.keys(P).find(k => P[k] === code);
+    if(!key) continue;
+    out[key] = parseFloat(last.value);
+    out.taken = new Date(last.dateTime);
+    if(key === "stage"){
+      const target = new Date(out.taken.getTime() - 864e5);
+      let prior = pts[0];
+      for(const p of pts){ if(new Date(p.dateTime) <= target) prior = p; }
+      out.change = out.stage - parseFloat(prior.value);
+    }
+    out.name = out.name || s.sourceInfo.siteName;
+  }
+  if(out.stage === undefined) throw new Error("Site has no gauge height reading");
+  return out;
+}
+
+async function weather(lat, lon){
+  const p = await fetch(`https://api.weather.gov/points/${lat.toFixed(4)},${lon.toFixed(4)}`);
+  if(!p.ok) throw new Error("weather lookup failed");
+  const f = await fetch((await p.json()).properties.forecastHourly);
+  if(!f.ok) throw new Error("forecast failed");
+  return (await f.json()).properties.periods[0];
+}
+
+function verdict(stage, spot){
+  if(stage === undefined || spot.go === undefined) return ["v-none","No call"];
+  if(stage >= spot.go) return ["v-go","Go"];
+  if(stage >= spot.marginal) return ["v-marginal","Marginal"];
+  return ["v-skip","Skip"];
+}
+
+function ago(d){
+  const mins = Math.round((Date.now() - d) / 60000);
+  if(mins < 90) return [mins + " min ago", false];
+  const hrs = Math.round(mins / 60);
+  if(hrs < 36) return [hrs + " hr ago", hrs > 6];
+  return [Math.round(hrs / 24) + " days ago", true];
+}
+
+function el(html){ const d = document.createElement("div"); d.innerHTML = html; return d.firstElementChild; }
+function setText(n, sel, val){ const x = n.querySelector(sel); if(x) x.textContent = val; }
+function addMeta(meta, label, val){
+  const s = document.createElement("span");
+  s.innerHTML = label + " <b></b>";
+  s.querySelector("b").textContent = val;
+  meta.appendChild(s);
+}
+
+function renderGauge(spot, data, wx, error){
+  if(error){
+    const e = el(`<div class="spot"><div class="spot-top"><div><p class="name"></p></div>
+      <span class="verdict v-none">No data</span></div><p class="err"></p></div>`);
+    setText(e, ".name", spot.name || spot.usgs);
+    setText(e, ".err", error);
+    return e;
+  }
+  const [cls, word] = verdict(data.stage, spot);
+  const ch = data.change;
+  const tcls = ch === undefined ? "t-flat" : ch > 0.1 ? "t-up" : ch < -0.1 ? "t-down" : "t-flat";
+  const tword = ch === undefined ? "" :
+    (ch > 0.1 ? "▲ " : ch < -0.1 ? "▼ " : "— ") +
+    (Math.abs(ch) < 0.05 ? "steady" : Math.abs(ch).toFixed(1) + " ft / 24 hr");
+  const [when, isStale] = ago(data.taken);
+
+  const e = el(`<div class="spot">
+    <div class="spot-top"><div><p class="name"></p><p class="note"></p></div>
+      <span class="verdict ${cls}">${word}</span></div>
+    <div class="reading"><span class="stage">${data.stage.toFixed(2)}<span>ft</span></span>
+      <span class="trend ${tcls}">${tword}</span></div>
+    <div class="meta"></div>
+    <p class="age ${isStale ? "stale" : ""}">Gauge read ${when}</p></div>`);
+  setText(e, ".name", spot.name || data.name || spot.usgs);
+  setText(e, ".note", spot.note || "");
+  const meta = e.querySelector(".meta");
+  if(data.flow !== undefined) addMeta(meta, "Flow", Math.round(data.flow).toLocaleString() + " cfs");
+  if(data.temp !== undefined) addMeta(meta, "Water", Math.round(data.temp * 9/5 + 32) + "°F");
+  if(wx){ addMeta(meta, "Air", wx.temperature + "°" + wx.temperatureUnit);
+          addMeta(meta, "Wind", wx.windSpeed + " " + wx.windDirection);
+          addMeta(meta, "", wx.shortForecast); }
+  return e;
+}
+
+function barColor(p){ return p >= 70 ? "var(--go)" : p >= 40 ? "var(--marginal)" : "var(--skip)"; }
+
+function renderWma(wma, units){
+  const withPct = units.filter(u => u.percent !== undefined);
+  const avg = withPct.length
+    ? Math.round(withPct.reduce((a,u) => a + u.percent, 0) / withPct.length) : null;
+  const freshest = units.reduce((best,u) =>
+    u.daysOld !== undefined && (best === null || u.daysOld < best) ? u.daysOld : best, null);
+
+  const e = el(`<div class="wma">
+    <div class="spot-top"><div><p class="name"></p><p class="note"></p></div>
+      <span class="verdict ${avg === null ? "v-none" : avg >= 70 ? "v-go" : avg >= 40 ? "v-marginal" : "v-skip"}">
+        ${avg === null ? "No level" : avg + "% avg"}</span></div>
+    <div class="units"></div></div>`);
+
+  setText(e, ".name", wma);
+  setText(e, ".note",
+    `${units.length} unit${units.length > 1 ? "s" : ""}` +
+    (freshest !== null ? ` · updated ${freshest}d ago` : ""));
+
+  const box = e.querySelector(".units");
+  units.slice(0, 8).forEach(u => {
+    const p = u.percent;
+    const row = el(`<div class="unit">
+      <div class="unit-name"></div>
+      <div class="bar"><i></i></div>
+      <div class="pct"></div></div>`);
+    const nm = row.querySelector(".unit-name");
+    nm.textContent = u.unit;
+    const sub = document.createElement("span");
+    sub.textContent = [u.type === "gtr" ? "GTR" : "moist-soil",
+                       u.huntingOpen === false ? "hunting closed" : null,
+                       u.waterSource].filter(Boolean).join(" · ");
+    nm.appendChild(sub);
+    const bar = row.querySelector(".bar i");
+    bar.style.width = (p === undefined ? 0 : p) + "%";
+    bar.style.background = barColor(p || 0);
+    row.querySelector(".pct").textContent = p === undefined ? "—" : p + "%";
+    box.appendChild(row);
+  });
+  if(units.length > 8){
+    const more = document.createElement("p");
+    more.className = "hint";
+    more.textContent = `+ ${units.length - 8} more units`;
+    box.appendChild(more);
+  }
+  return e;
+}
+
+// ─── DEER ───────────────────────────────────────────────────────────────────
+// All of this is computed or comes from the weather API. No scraper needed.
+
+function julian(d){ return d.valueOf()/86400000 + 2440587.5; }
+
+function sunTimes(date, lat, lon){
+  const rad = Math.PI/180;
+  const n = Math.floor(julian(date) - 2451545.0 + 0.0008);
+  const Jstar = n - lon/360;
+  const M = (357.5291 + 0.98560028*Jstar) % 360;
+  const C = 1.9148*Math.sin(M*rad) + 0.0200*Math.sin(2*M*rad) + 0.0003*Math.sin(3*M*rad);
+  const lambda = (M + C + 180 + 102.9372) % 360;
+  const Jtransit = 2451545.0 + Jstar + 0.0053*Math.sin(M*rad) - 0.0069*Math.sin(2*lambda*rad);
+  const delta = Math.asin(Math.sin(lambda*rad) * Math.sin(23.44*rad));
+  const cosH = (Math.sin(-0.833*rad) - Math.sin(lat*rad)*Math.sin(delta)) /
+               (Math.cos(lat*rad)*Math.cos(delta));
+  if(cosH > 1 || cosH < -1) return null;
+  const H = Math.acos(cosH)/rad;
+  const toDate = j => new Date((j - 2440587.5) * 86400000);
+  return { sunrise: toDate(Jtransit - H/360), sunset: toDate(Jtransit + H/360) };
+}
+
+function moonPhase(date){
+  const synodic = 29.530588853;
+  const known = new Date(Date.UTC(2000,0,6,18,14));
+  const age = (((date - known)/86400000) % synodic + synodic) % synodic;
+  const names = [[1.8,"New"],[5.5,"Waxing crescent"],[9.2,"First quarter"],[12.9,"Waxing gibbous"],
+                 [16.6,"Full"],[20.3,"Waning gibbous"],[24.0,"Last quarter"],[27.7,"Waning crescent"],[30,"New"]];
+  return { name: names.find(([d]) => age < d)[1],
+           illum: Math.round((1 - Math.cos(2*Math.PI*age/synodic))/2*100) };
+}
+
+// "NW" / "north northwest" -> compass degrees
+const DIRS = ["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"];
+function dirToDeg(d){
+  const i = DIRS.indexOf((d || "").toUpperCase().trim());
+  return i === -1 ? null : i * 22.5;
+}
+// A stand is huntable if the wind is within ~34 degrees of one it's set up for.
+function windOk(current, good){
+  const c = dirToDeg(current);
+  if(c === null) return null;
+  return good.some(g => {
+    const t = dirToDeg(g);
+    if(t === null) return false;
+    // smallest angle between the two compass directions
+    const diff = Math.abs(((c - t + 540) % 360) - 180);
+    return diff <= 34;   // within about one and a half compass points
+  });
+}
+
+async function deerWeather(lat, lon){
+  const pt = await fetch(`https://api.weather.gov/points/${lat.toFixed(4)},${lon.toFixed(4)}`);
+  if(!pt.ok) throw new Error("weather lookup failed");
+  const props = (await pt.json()).properties;
+
+  const fc = await fetch(props.forecastHourly);
+  if(!fc.ok) throw new Error("forecast failed");
+  const periods = (await fc.json()).properties.periods;
+
+  // barometric pressure trend from the nearest station's recent observations
+  let pressure = null, pressureTrend = null;
+  try{
+    const st = await fetch(props.observationStations);
+    const id = (await st.json()).features[0].properties.stationIdentifier;
+    const ob = await fetch(`https://api.weather.gov/stations/${id}/observations?limit=12`);
+    const obs = (await ob.json()).features
+      .map(f => f.properties.barometricPressure?.value)
+      .filter(v => v != null);
+    if(obs.length){
+      pressure = obs[0] / 3386.39;                 // pascals -> inHg
+      if(obs.length > 3){
+        const then = obs[obs.length - 1] / 3386.39;
+        pressureTrend = pressure - then;
+      }
+    }
+  }catch(e){ /* pressure is a nice-to-have */ }
+
+  return { periods, pressure, pressureTrend };
+}
+
+function renderDeer(wx){
+  const box = document.getElementById("deer");
+  const sum = document.getElementById("dsummary");
+  const now = wx.periods[0];
+  const wind = (now.windDirection || "").toUpperCase();
+
+  const today = sunTimes(new Date(), DEER_SPOT.lat, DEER_SPOT.lon);
+  const moon = moonPhase(new Date());
+  const t = d => d.toLocaleTimeString([], {hour:"numeric", minute:"2-digit"});
+  // Arkansas: legal light runs 30 min before sunrise to 30 min after sunset.
+  const lightOpen  = new Date(today.sunrise.getTime() - 30*60000);
+  const lightClose = new Date(today.sunset.getTime()  + 30*60000);
+
+  // temperature swing across the next 24 hours
+  const next24 = wx.periods.slice(0, 24).map(p => p.temperature);
+  const drop = Math.max(...next24) - Math.min(...next24);
+
+  box.innerHTML = "";
+
+  const cond = el(`<div class="spot">
+    <div class="spot-top"><div><p class="name">Conditions</p><p class="note"></p></div></div>
+    <div class="big-row"></div>
+    <div class="meta"></div></div>`);
+  setText(cond, ".note", DEER_SPOT.name + " · " + now.shortForecast);
+
+  const row = cond.querySelector(".big-row");
+  const big = (label, value, color) => {
+    const d = document.createElement("div");
+    d.className = "big";
+    d.innerHTML = `<b></b><span></span>`;
+    d.querySelector("b").textContent = value;
+    if(color) d.querySelector("b").style.color = color;
+    d.querySelector("span").textContent = label;
+    row.appendChild(d);
+  };
+  big("Wind", wind + " " + now.windSpeed.replace(" mph",""));
+  big("Temp", now.temperature + "°");
+  if(wx.pressure !== null){
+    const tr = wx.pressureTrend;
+    const arrow = tr === null ? "" : tr > 0.02 ? " ▲" : tr < -0.02 ? " ▼" : " —";
+    big("Pressure", wx.pressure.toFixed(2) + arrow,
+        tr === null ? null : tr < -0.02 ? "var(--go)" : null);
+  }
+  big("Moon", moon.illum + "%");
+
+  const meta = cond.querySelector(".meta");
+  addMeta(meta, "Legal light", t(lightOpen) + " – " + t(lightClose));
+  addMeta(meta, "Moon", moon.name);
+  addMeta(meta, "24 hr swing", drop + "°");
+  if(wx.pressureTrend !== null && wx.pressureTrend < -0.04)
+    addMeta(meta, "", "Pressure falling — front moving in");
+  box.appendChild(cond);
+
+  // stands
+  const card = el(`<div class="spot">
+    <div class="spot-top"><div><p class="name">Stands</p><p class="note"></p></div></div>
+    <div class="stands"></div></div>`);
+  setText(card, ".note", "on tonight's " + wind + " wind");
+  const list = card.querySelector(".stands");
+
+  let good = 0;
+  STANDS.forEach(st => {
+    const ok = windOk(wind, st.winds);
+    if(ok) good++;
+    const r = el(`<div class="stand"><div class="stand-name"></div>
+      <span class="wind-ok"></span></div>`);
+    const nm = r.querySelector(".stand-name");
+    nm.textContent = st.name;
+    const sub = document.createElement("span");
+    sub.textContent = [st.note, "good on " + st.winds.join("/")].filter(Boolean).join(" · ");
+    nm.appendChild(sub);
+    const tag = r.querySelector(".wind-ok");
+    tag.textContent = ok === null ? "?" : ok ? "Good" : "Wrong wind";
+    tag.style.color = tag.style.borderColor =
+      ok === null ? "var(--muted)" : ok ? "var(--go)" : "var(--skip)";
+    list.appendChild(r);
+  });
+  box.appendChild(card);
+
+  sum.innerHTML = `<b>${good}</b> of ${STANDS.length} stands on the wind · ` +
+                  `light closes ${t(lightClose)}`;
+}
+
+async function loadDeer(){
+  const sum = document.getElementById("dsummary");
+  try{
+    renderDeer(await deerWeather(DEER_SPOT.lat, DEER_SPOT.lon));
+  }catch(e){
+    sum.textContent = "";
+    const box = document.getElementById("deer");
+    box.innerHTML = "";
+    const err = el(`<div class="spot"><p class="err"></p></div>`);
+    setText(err, ".err", e.message);
+    box.appendChild(err);
+  }
+}
+
+async function loadWaterfowl(){
+  const box = document.getElementById("wfowl");
+  const sum = document.getElementById("wsummary");
+  const notice = document.getElementById("wnotice");
+  try{
+    const r = await fetch(AGFC_FOWL, { cache: "no-store" });
+    if(!r.ok) throw new Error("Waterfowl data returned " + r.status);
+    const data = await r.json();
+
+    let units = data.units.filter(u => u.percent !== undefined);
+    if(WMA_WATCH.length){
+      units = units.filter(u => WMA_WATCH.some(w =>
+        `${u.wma || ""} ${u.wmaKey || ""}`.toLowerCase().includes(w.toLowerCase())));
+    }
+    if(!units.length){ sum.textContent = "No matching WMAs."; box.innerHTML = ""; return; }
+
+    // If everything is months old, say so plainly instead of showing day counts.
+    const freshest = Math.min(...units.map(u => u.daysOld ?? 9999));
+    notice.innerHTML = "";
+    if(freshest > 45){
+      const n = el(`<div class="notice"><b>Last season's data.</b>
+        <span></span></div>`);
+      setText(n, "span",
+        ` AGFC stopped updating these sheets when the season closed — the newest reading is ${freshest} days old. New sheets usually go up in October.`);
+      notice.appendChild(n);
+    }
+
+    // group by the merged key so one WMA is one card, not two
+    const groups = {};
+    for(const u of units) (groups[u.wmaDisplay || u.wma || "Unknown"] ||= []).push(u);
+    const names = Object.keys(groups).sort();
+
+    box.innerHTML = "";
+    names.forEach(n => box.appendChild(renderWma(n, groups[n].sort((a,b) => b.percent - a.percent))));
+
+    const flooded = units.filter(u => u.percent >= 70).length;
+    sum.innerHTML = `<b>${flooded}</b> of ${units.length} units at 70%+ · ${names.length} WMAs`;
+  }catch(e){
+    sum.textContent = "";
+    box.innerHTML = "";
+    const err = el(`<div class="spot"><p class="err"></p></div>`);
+    setText(err, ".err", e.message);
+    box.appendChild(err);
+  }
+}
+
+function renderFish(w){
+  const e = el(`<div class="spot">
+    <div class="spot-top"><div><p class="name"></p><p class="note"></p></div>
+      <span class="verdict ${w.stale ? "v-marginal" : "v-go"}">${w.daysOld}d</span></div>
+    <div class="meta"></div><p class="species"></p><p class="report"></p></div>`);
+  setText(e, ".name", w.water);
+  setText(e, ".note", w.region);
+  setText(e, ".species", w.species.length ? w.species.join(" · ") : "");
+  setText(e, ".report", (w.summary || "").replace(/^\(updat\w* [\d-]+\)\s*/i, ""));
+  const meta = e.querySelector(".meta");
+  if(w.waterTempF !== undefined) addMeta(meta, "Water", w.waterTempF + "°F");
+  if(w.levelMsl !== undefined) addMeta(meta, "Level", w.levelMsl.toLocaleString() + " ft msl");
+  if(w.feetBelowNormal !== undefined) addMeta(meta, "Below normal", w.feetBelowNormal + " ft");
+  if(w.flowCfs !== undefined) addMeta(meta, "Flow", w.flowCfs.toLocaleString() + " cfs");
+  return e;
+}
+
+async function loadFish(){
+  const box = document.getElementById("fish");
+  const sum = document.getElementById("fsummary");
+  try{
+    const r = await fetch(AGFC_FISH, { cache: "no-store" });
+    if(!r.ok) throw new Error("Report data returned " + r.status);
+    const data = await r.json();
+    let waters = data.waters.filter(w => !w.referenceOnly && !w.noReport && w.updated);
+    if(FISH_WATCH.length){
+      waters = waters.filter(w => FISH_WATCH.some(f => w.water.toLowerCase().includes(f.toLowerCase())));
+    }
+    waters.sort((a,b) => a.daysOld - b.daysOld);
+    box.innerHTML = "";
+    if(!waters.length){ sum.textContent = "No matching reports."; return; }
+    waters.forEach(w => box.appendChild(renderFish(w)));
+    const fresh = waters.filter(w => !w.stale).length;
+    sum.innerHTML = `<b>${fresh}</b> fresh of ${waters.length}`;
+  }catch(e){
+    sum.textContent = "";
+    box.innerHTML = "";
+    const err = el(`<div class="spot"><p class="err"></p></div>`);
+    setText(err, ".err", e.message);
+    box.appendChild(err);
+  }
+}
+
+async function loadGauges(){
+  const box = document.getElementById("spots");
+  const sum = document.getElementById("summary");
+  box.innerHTML = "";
+  if(!SPOTS.length){ sum.textContent = "No gauges yet."; return; }
+  sum.textContent = "Checking " + SPOTS.length + " spots…";
+  const results = await Promise.all(SPOTS.map(async spot => {
+    try{
+      const data = await usgs(spot.usgs);
+      let wx = null;
+      if(spot.lat && spot.lon){ try{ wx = await weather(spot.lat, spot.lon); }catch(e){} }
+      return { spot, data, wx };
+    }catch(e){ return { spot, error: e.message }; }
+  }));
+  let go = 0, rising = 0;
+  for(const r of results){
+    box.appendChild(renderGauge(r.spot, r.data, r.wx, r.error));
+    if(r.data){
+      if(verdict(r.data.stage, r.spot)[1] === "Go") go++;
+      if(r.data.change > 0.1) rising++;
+    }
+  }
+  sum.innerHTML = `<b>${go}</b> worth the drive · <b>${rising}</b> rising`;
+  document.getElementById("refreshed").textContent =
+    "Updated " + new Date().toLocaleTimeString([], {hour:"numeric", minute:"2-digit"});
+}
+
+function load(){ loadGauges(); loadDeer(); loadWaterfowl(); loadFish(); }
+
+document.getElementById("add").addEventListener("click", async () => {
+  const site = document.getElementById("site").value.trim();
+  const label = document.getElementById("label").value.trim();
+  const msg = document.getElementById("addmsg");
+  if(!/^\d{8,15}$/.test(site)){ msg.textContent = "Site numbers are 8 or more digits."; return; }
+  msg.textContent = "Checking that gauge…";
+  try{
+    const d = await usgs(site);
+    SPOTS.push({ name: label || d.name, usgs: site });
+    msg.textContent = "Added " + (label || d.name) + ". Reading " + d.stage.toFixed(2) + " ft.";
+    document.getElementById("site").value = "";
+    document.getElementById("label").value = "";
+    loadGauges();
+  }catch(e){ msg.textContent = e.message; }
+});
+
+load();
+setInterval(load, 900000);
+</script>
+</body>
+</html>
