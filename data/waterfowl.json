@@ -1,9 +1,10 @@
 {
-  "fetched": "2026-08-31T20:51:38.514Z",
+  "fetched": "2026-08-31T21:19:43.282Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
       "wma": "Big Lake WMA",
+      "wmaKey": "big lake",
       "unit": "North of Bridge",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -16,10 +17,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "GTR",
       "plannedOperation": "11/14/25",
-      "comments": "Floods with GTR"
+      "comments": "Floods with GTR",
+      "wmaDisplay": "Big Lake WMA"
     },
     {
       "wma": "Big Lake WMA",
+      "wmaKey": "big lake",
       "unit": "Simmons Field North",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -32,10 +35,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "10/27/25",
-      "comments": "Note that the boat ramp may be blocked while the pump is in use."
+      "comments": "Note that the boat ramp may be blocked while the pump is in use.",
+      "wmaDisplay": "Big Lake WMA"
     },
     {
       "wma": "Big Lake WMA",
+      "wmaKey": "big lake",
       "unit": "Simmons",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -47,10 +52,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Big Lake WMA"
     },
     {
       "wma": "Big Lake WMA",
+      "wmaKey": "big lake",
       "unit": "Simmons South",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -62,10 +69,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Big Lake WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -78,10 +87,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "11/17/25",
-      "comments": "Relift can only be run with adequate runoff from rainfall"
+      "comments": "Relift can only be run with adequate runoff from rainfall",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -94,10 +105,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "11/17/25",
-      "comments": "Relift can only be run with adequate runoff from rainfall"
+      "comments": "Relift can only be run with adequate runoff from rainfall",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "3",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -110,10 +123,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "12/1/25",
-      "comments": "Relift can only be run with adequate runoff from rainfall"
+      "comments": "Relift can only be run with adequate runoff from rainfall",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "4",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -126,10 +141,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "10/27/25",
-      "comments": "Relift can only be run with adequate runoff from rainfall"
+      "comments": "Relift can only be run with adequate runoff from rainfall",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -142,10 +159,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "10/27/25",
-      "comments": "Relift can only be run with adequate runoff from rainfall"
+      "comments": "Relift can only be run with adequate runoff from rainfall",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "6",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -157,10 +176,12 @@
       "stale": true,
       "vegetation": "Reservoir",
       "waterSource": "Rainfall",
-      "comments": "Structure is always closed"
+      "comments": "Structure is always closed",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "7",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -172,10 +193,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/13/25"
+      "plannedOperation": "10/13/25",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "8",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -187,10 +210,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/13/25"
+      "plannedOperation": "10/13/25",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "9",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -202,10 +227,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/13/25"
+      "plannedOperation": "10/13/25",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "10",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -218,10 +245,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "11/14/2025",
-      "comments": "Floods with GTR"
+      "comments": "Floods with GTR",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "unit": "McKennon",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -230,10 +259,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Dardanelle WMA"
     },
     {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "unit": "Potters",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -242,10 +273,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Dardanelle WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Knobel 1",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -257,10 +290,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Knobel 2",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -272,10 +307,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Knobel 3",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -287,10 +324,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dr. Lester Sitzes III Bois D'Arc WMA",
+      "wmaKey": "dr. lester sitzes iii bois d'arc",
       "unit": "Little Grassy",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -299,10 +338,12 @@
       "percent": 10,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Dr. Lester Sitzes III Bois D'Arc WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "1 (Willow Hole)",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -311,10 +352,12 @@
       "percent": 90,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -323,10 +366,12 @@
       "percent": 90,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "1/5/25"
+      "plannedOperation": "1/5/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "7A",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -335,10 +380,12 @@
       "percent": 80,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "7B",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -346,10 +393,12 @@
       "statusText": "Water control structure closed on 24 October 2025. Rainfall dependant",
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "8A (Duck Trap)",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -358,10 +407,12 @@
       "percent": 90,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/8/25"
+      "plannedOperation": "12/8/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "8B (Duck Trap)",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -370,10 +421,12 @@
       "percent": 90,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "8C (Duck Trap)",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -382,10 +435,12 @@
       "percent": 95,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "9",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -394,10 +449,12 @@
       "percent": 95,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "13A (Turkey Pond)",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -406,10 +463,12 @@
       "percent": 80,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "13B (Turkey Pond)",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -418,10 +477,12 @@
       "percent": 75,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "1/5/25"
+      "plannedOperation": "1/5/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "13C (Turkey Pond)",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -430,10 +491,12 @@
       "percent": 85,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/8/25"
+      "plannedOperation": "12/8/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Bobby's Pond",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -442,10 +505,12 @@
       "percent": 95,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/15/25"
+      "plannedOperation": "12/15/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Cedar Ridge",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -454,10 +519,12 @@
       "percent": 90,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Controversy Corner",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -466,10 +533,12 @@
       "percent": 95,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "LIL Hole",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -478,10 +547,12 @@
       "percent": 80,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Mud pond",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -490,10 +561,12 @@
       "percent": 60,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Pig Trough",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -502,10 +575,12 @@
       "percent": 90,
       "vegetation": "Millet",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Race Track",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -514,10 +589,12 @@
       "percent": 95,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/8/25"
+      "plannedOperation": "12/8/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Red gate",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -526,10 +603,12 @@
       "percent": 90,
       "vegetation": "Millet",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/8/25"
+      "plannedOperation": "12/8/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Remmel Marsh",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -538,10 +617,12 @@
       "percent": 90,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "1/5/25"
+      "plannedOperation": "1/5/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Salt Lick",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -550,10 +631,12 @@
       "percent": 95,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "Teeny Pond",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -561,10 +644,12 @@
       "statusText": "Water control structure closed on 24 October 2025. Rainfall dependant.",
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
+      "wmaKey": "choctaw island",
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -576,10 +661,12 @@
       "stale": true,
       "vegetation": "Marsh",
       "waterSource": "Artificial",
-      "plannedOperation": "10/6/25"
+      "plannedOperation": "10/6/25",
+      "wmaDisplay": "Freddie Black Choctaw Island WMA"
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
+      "wmaKey": "choctaw island",
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -591,10 +678,12 @@
       "stale": true,
       "vegetation": "Marsh",
       "waterSource": "Artificial",
-      "plannedOperation": "10/6/25"
+      "plannedOperation": "10/6/25",
+      "wmaDisplay": "Freddie Black Choctaw Island WMA"
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
+      "wmaKey": "choctaw island",
       "unit": "3",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -606,10 +695,12 @@
       "stale": true,
       "vegetation": "Marsh",
       "waterSource": "Artificial",
-      "plannedOperation": "10/6/25"
+      "plannedOperation": "10/6/25",
+      "wmaDisplay": "Freddie Black Choctaw Island WMA"
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
+      "wmaKey": "choctaw island",
       "unit": "4",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -621,10 +712,12 @@
       "stale": true,
       "vegetation": "Marsh",
       "waterSource": "Artificial",
-      "plannedOperation": "10/6/25"
+      "plannedOperation": "10/6/25",
+      "wmaDisplay": "Freddie Black Choctaw Island WMA"
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
+      "wmaKey": "choctaw island",
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -636,10 +729,12 @@
       "stale": true,
       "vegetation": "Marsh",
       "waterSource": "Rainfall",
-      "plannedOperation": "TBD"
+      "plannedOperation": "TBD",
+      "wmaDisplay": "Freddie Black Choctaw Island WMA"
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
+      "wmaKey": "choctaw island",
       "unit": "6",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -651,10 +746,12 @@
       "stale": true,
       "vegetation": "Marsh",
       "waterSource": "Rainfall",
-      "plannedOperation": "TBD"
+      "plannedOperation": "TBD",
+      "wmaDisplay": "Freddie Black Choctaw Island WMA"
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
+      "wmaKey": "choctaw island",
       "unit": "7",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -666,10 +763,12 @@
       "stale": true,
       "vegetation": "Marsh",
       "waterSource": "Rainfall",
-      "plannedOperation": "TBD"
+      "plannedOperation": "TBD",
+      "wmaDisplay": "Freddie Black Choctaw Island WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -678,10 +777,12 @@
       "percent": 90,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -690,10 +791,12 @@
       "percent": 20,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "3",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -702,10 +805,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "4",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -714,10 +819,12 @@
       "percent": 100,
       "vegetation": "Millet",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -726,10 +833,12 @@
       "percent": 100,
       "vegetation": "Millet",
       "waterSource": "Artificial",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "6",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -738,10 +847,12 @@
       "percent": 100,
       "vegetation": "Millet",
       "waterSource": "Artificial",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "7",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -750,10 +861,12 @@
       "percent": 100,
       "vegetation": "Millet",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "9",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -762,10 +875,12 @@
       "percent": 80,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "10",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -774,10 +889,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/12/25"
+      "plannedOperation": "11/12/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "11",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -786,10 +903,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "12/15/25"
+      "plannedOperation": "12/15/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "12",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -798,10 +917,12 @@
       "percent": 70,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "1/5/25"
+      "plannedOperation": "1/5/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "13",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -810,10 +931,12 @@
       "percent": 60,
       "vegetation": "Millet",
       "waterSource": "Artificial",
-      "plannedOperation": "12/8/25"
+      "plannedOperation": "12/8/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "14",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -822,10 +945,12 @@
       "percent": 80,
       "vegetation": "Millet",
       "waterSource": "Artificial",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "18",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -834,10 +959,12 @@
       "percent": 20,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "19",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -846,10 +973,12 @@
       "percent": 20,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "Blackland Slough",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -858,10 +987,12 @@
       "percent": 25,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "Bullingtons Bog",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -870,10 +1001,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Galla Creek WMA",
+      "wmaKey": "galla creek",
       "unit": "Galla Creek WMA",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -883,10 +1016,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "11/17/25",
-      "comments": "Flooded in 3 stages."
+      "comments": "Flooded in 3 stages.",
+      "wmaDisplay": "Galla Creek WMA"
     },
     {
       "wma": "Mike Freeze Wattensaw WMA",
+      "wmaKey": "wattensaw",
       "unit": "Mike Freeze Wattensaw WMA",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -894,10 +1029,12 @@
       "statusText": "Boards are in",
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Mike Freeze Wattensaw WMA"
     },
     {
       "wma": "Ozan WMA",
+      "wmaKey": "ozan",
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -906,10 +1043,12 @@
       "percent": 0,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ozan WMA"
     },
     {
       "wma": "Ozan WMA",
+      "wmaKey": "ozan",
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -918,10 +1057,12 @@
       "percent": 0,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ozan WMA"
     },
     {
       "wma": "Ozan WMA",
+      "wmaKey": "ozan",
       "unit": "3",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -930,10 +1071,12 @@
       "percent": 0,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ozan WMA"
     },
     {
       "wma": "Ozan WMA",
+      "wmaKey": "ozan",
       "unit": "4",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -942,10 +1085,12 @@
       "percent": 0,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ozan WMA"
     },
     {
       "wma": "Ozan WMA",
+      "wmaKey": "ozan",
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -954,10 +1099,12 @@
       "percent": 0,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ozan WMA"
     },
     {
       "wma": "Ozark Lake WMA",
+      "wmaKey": "ozark lake",
       "unit": "Dyer Main",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -966,10 +1113,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Ozark Lake WMA"
     },
     {
       "wma": "Ozark Lake WMA",
+      "wmaKey": "ozark lake",
       "unit": "Dyer North",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -978,10 +1127,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Ozark Lake WMA"
     },
     {
       "wma": "Ozark Lake WMA",
+      "wmaKey": "ozark lake",
       "unit": "Dyer South",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -990,10 +1141,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Ozark Lake WMA"
     },
     {
       "wma": "Ozark Lake WMA",
+      "wmaKey": "ozark lake",
       "unit": "Dyer South 2",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1002,10 +1155,12 @@
       "percent": 40,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ozark Lake WMA"
     },
     {
       "wma": "Ozark Lake WMA",
+      "wmaKey": "ozark lake",
       "unit": "Dyer West",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1014,10 +1169,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ozark Lake WMA"
     },
     {
       "wma": "Petit Jean WMA",
+      "wmaKey": "petit jean",
       "unit": "Blacklands East",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1026,10 +1183,12 @@
       "percent": 80,
       "vegetation": "Millet/Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Petit Jean River WMA"
     },
     {
       "wma": "Petit Jean WMA",
+      "wmaKey": "petit jean",
       "unit": "Blacklands West",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1038,10 +1197,12 @@
       "percent": 80,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Petit Jean River WMA"
     },
     {
       "wma": "Petit Jean WMA",
+      "wmaKey": "petit jean",
       "unit": "Pullen Pond",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1050,10 +1211,12 @@
       "percent": 5,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/15/25"
+      "plannedOperation": "12/15/25",
+      "wmaDisplay": "Petit Jean River WMA"
     },
     {
       "wma": "Petit Jean WMA",
+      "wmaKey": "petit jean",
       "unit": "Slaty",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1062,10 +1225,12 @@
       "percent": 90,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Petit Jean River WMA"
     },
     {
       "wma": "Petit Jean WMA",
+      "wmaKey": "petit jean",
       "unit": "Sorehead",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1074,10 +1239,12 @@
       "percent": 80,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Petit Jean River WMA"
     },
     {
       "wma": "Prairie Bayou WMA",
+      "wmaKey": "prairie bayou",
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1087,10 +1254,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "10/13/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "Prairie Bayou WMA"
     },
     {
       "wma": "Prairie Bayou WMA",
+      "wmaKey": "prairie bayou",
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1100,10 +1269,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
       "plannedOperation": "10/13/25",
-      "comments": "Current status as of January 13th"
+      "comments": "Current status as of January 13th",
+      "wmaDisplay": "Prairie Bayou WMA"
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
       "unit": "Wiville East",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1112,10 +1283,12 @@
       "percent": 0,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Rex Hancock Black Swamp WMA"
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
       "unit": "Wiville West",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1124,10 +1297,12 @@
       "percent": 80,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Rex Hancock Black Swamp WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Conway George Unit A",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1137,10 +1312,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/17/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Conway George Unit B",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1150,10 +1327,12 @@
       "vegetation": "Marsh",
       "waterSource": "Rainfall",
       "plannedOperation": "10/27/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Conway George Unit C",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1163,10 +1342,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/3/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Dark Corner 1",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1176,10 +1357,12 @@
       "vegetation": "Millet",
       "waterSource": "Artificial",
       "plannedOperation": "12/1/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Dark Corner 2",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1189,10 +1372,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/3/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Dark Corner 3",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1202,10 +1387,12 @@
       "vegetation": "Millet",
       "waterSource": "Artificial",
       "plannedOperation": "12/8/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "North 160",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1213,10 +1400,12 @@
       "statusText": "",
       "vegetation": "Millet",
       "waterSource": "River Flooding",
-      "plannedOperation": "TBD"
+      "plannedOperation": "TBD",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "A",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1228,10 +1417,12 @@
       "stale": true,
       "vegetation": "Millet/Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "B",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1243,10 +1434,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artifical",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "C",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1258,10 +1451,12 @@
       "stale": true,
       "vegetation": "Millet/Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "D",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1273,10 +1468,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "E",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1288,10 +1485,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "F",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1303,10 +1502,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "G",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1318,10 +1519,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "H",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1333,10 +1536,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "Mobility-Impaired Unit",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1348,10 +1553,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "Magellan",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1363,10 +1570,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "unit": "Youth",
       "type": "moist-soil",
       "section": "Moist-Soil Units (Hunting Open)",
@@ -1378,10 +1587,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Steve N. Wilson Raft Creek WMA"
     },
     {
       "wma": "Bell Slough WMA",
+      "wmaKey": "bell slough",
       "unit": "East",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1393,10 +1604,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/4/25"
+      "plannedOperation": "11/4/25",
+      "wmaDisplay": "Bell Slough WMA"
     },
     {
       "wma": "Bell Slough WMA",
+      "wmaKey": "bell slough",
       "unit": "West",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1408,10 +1621,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/4/25"
+      "plannedOperation": "11/4/25",
+      "wmaDisplay": "Bell Slough WMA"
     },
     {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "unit": "Carbon City",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1420,10 +1635,12 @@
       "percent": 30,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Dardanelle WMA"
     },
     {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "unit": "Horsehead East",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1432,10 +1649,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Dardanelle WMA"
     },
     {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "unit": "Horsehead Middle",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1444,10 +1663,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Dardanelle WMA"
     },
     {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "unit": "Horsehead West",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1456,10 +1677,12 @@
       "percent": 0,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Dardanelle WMA"
     },
     {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "unit": "Johnson County 1",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1468,10 +1691,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Dardanelle WMA"
     },
     {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "unit": "Johnson County 3",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1480,10 +1705,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Dardanelle WMA"
     },
     {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "unit": "Johnson County 4",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1492,10 +1719,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artifical",
-      "plannedOperation": "12/8/25"
+      "plannedOperation": "12/8/25",
+      "wmaDisplay": "Dardanelle WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Brookings 1",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1507,10 +1736,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Brookings 2",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1522,10 +1753,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/3/25"
+      "plannedOperation": "11/3/25",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Brookings 3",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1537,10 +1770,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "12/8/25"
+      "plannedOperation": "12/8/25",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Brookings 4",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1552,10 +1787,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "12/15/25"
+      "plannedOperation": "12/15/25",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Brookings 5",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1567,10 +1804,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "1/5/26"
+      "plannedOperation": "1/5/26",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Brookings 6",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1582,10 +1821,12 @@
       "stale": true,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "unit": "EG rest area",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1594,10 +1835,12 @@
       "percent": 25,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "8 (WRA)",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1607,10 +1850,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "10/27/25",
-      "comments": "Stagger flood throughout the season"
+      "comments": "Stagger flood throughout the season",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "15 (WRA)",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1619,10 +1864,12 @@
       "percent": 40,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "16 (WRA)",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1631,10 +1878,12 @@
       "percent": 30,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "unit": "17 (WRA)",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1643,10 +1892,12 @@
       "percent": 40,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Frog Bayou WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Halowell 1",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1656,10 +1907,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "10/27/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Halowell 2",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1669,10 +1922,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/3/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Halowell 3",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1682,10 +1937,12 @@
       "vegetation": "Millet",
       "waterSource": "Artificial",
       "plannedOperation": "12/8/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Halowell 4",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1695,10 +1952,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/17/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Halowell 5",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1708,10 +1967,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "10/27/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 1",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1721,10 +1982,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "10/27/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 2a",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1734,10 +1997,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "10/27/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 2b",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1747,10 +2012,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "10/27/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 3",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1760,10 +2027,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/3/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 4",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1773,10 +2042,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "1/5/26",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 5",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1786,10 +2057,12 @@
       "vegetation": "None",
       "waterSource": "Artificial",
       "plannedOperation": "11/3/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 6",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1799,10 +2072,12 @@
       "vegetation": "Scrub/Shrub",
       "waterSource": "Artificial",
       "plannedOperation": "10/27/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 7",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1812,10 +2087,12 @@
       "vegetation": "Marsh",
       "waterSource": "Artificial",
       "plannedOperation": "10/27/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 8",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1825,10 +2102,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "1/5/26",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 9",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1838,10 +2117,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/17/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 10",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1851,10 +2132,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "12/15/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 11",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1864,10 +2147,12 @@
       "vegetation": "None",
       "waterSource": "Artificial",
       "plannedOperation": "11/3/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 12",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1877,10 +2162,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/17/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 13",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1890,10 +2177,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "12/15/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Wrape 16",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1903,10 +2192,12 @@
       "vegetation": "Marsh",
       "waterSource": "Rainfall",
       "plannedOperation": "10/13/25",
-      "comments": "current status as of January 13th"
+      "comments": "current status as of January 13th",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "Holland Bottoms WMA",
+      "wmaKey": "holland bottoms",
       "unit": "East",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1919,10 +2210,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/3/25",
-      "comments": "Current status as of January 12th"
+      "comments": "Current status as of January 12th",
+      "wmaDisplay": "Holland Bottoms WMA"
     },
     {
       "wma": "Holland Bottoms WMA",
+      "wmaKey": "holland bottoms",
       "unit": "West",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1935,10 +2228,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "12/1/25",
-      "comments": "Current status as of January 12th"
+      "comments": "Current status as of January 12th",
+      "wmaDisplay": "Holland Bottoms WMA"
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
       "unit": "LeeLeBlanc 1",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1948,10 +2243,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "12/1/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Rex Hancock Black Swamp WMA"
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
       "unit": "LeeLeBlanc 2",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1961,10 +2258,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "10/27/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Rex Hancock Black Swamp WMA"
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
       "unit": "LeeLeBlanc 3",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1974,10 +2273,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/3/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Rex Hancock Black Swamp WMA"
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
       "unit": "Lee LeBlanc 4",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1986,10 +2287,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
       "plannedOperation": "11/17/25",
-      "comments": "Current status as of January 5th"
+      "comments": "Current status as of January 5th",
+      "wmaDisplay": "Rex Hancock Black Swamp WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Conway Geoge Unit D",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -1998,10 +2301,12 @@
       "percent": 0,
       "vegetation": "Millet",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/2005"
+      "plannedOperation": "10/27/2005",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "EW1",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2009,10 +2314,12 @@
       "statusText": "",
       "vegetation": "Moist-soil",
       "waterSource": "River Fooding",
-      "plannedOperation": "TBD"
+      "plannedOperation": "TBD",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Big Eddy",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2022,10 +2329,12 @@
       "vegetation": "Millet",
       "waterSource": "GTR",
       "plannedOperation": "12/2/25",
-      "comments": "Floods with GTR"
+      "comments": "Floods with GTR",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Charles Crisp",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2034,10 +2343,12 @@
       "percent": 100,
       "vegetation": "Millet",
       "waterSource": "Artificial",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Phase 3 (A)",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2046,10 +2357,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "12/1/25"
+      "plannedOperation": "12/1/25",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Phase 3 (B)",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2058,10 +2371,12 @@
       "percent": 90,
       "vegetation": "Millet/Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Phase 3 (C)",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2070,10 +2385,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "12/8/25"
+      "plannedOperation": "12/8/25",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Rest Area",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2083,10 +2400,12 @@
       "vegetation": "Moist-soil",
       "waterSource": "GTR",
       "plannedOperation": "12/2/25",
-      "comments": "Floods with GTR"
+      "comments": "Floods with GTR",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "River Field",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2095,10 +2414,12 @@
       "percent": 95,
       "vegetation": "Millet",
       "waterSource": "Artificial",
-      "plannedOperation": "11/17/25"
+      "plannedOperation": "11/17/25",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Ward Field",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2107,10 +2428,12 @@
       "percent": 100,
       "vegetation": "Moist-soil",
       "waterSource": "Artificial",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Sulfur River WMA",
+      "wmaKey": "sulfur river",
       "unit": "SWRA-1",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2119,10 +2442,12 @@
       "percent": 75,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Sulfur River WMA"
     },
     {
       "wma": "Sulfur River WMA",
+      "wmaKey": "sulfur river",
       "unit": "SWRA-2",
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
@@ -2131,10 +2456,12 @@
       "percent": 65,
       "vegetation": "Moist-soil",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/27/25"
+      "plannedOperation": "10/27/25",
+      "wmaDisplay": "Sulfur River WMA"
     },
     {
       "wma": "Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Bear Bayou GTR",
       "type": "gtr",
       "statusText": "75% flooded (Updated 1/13/26)",
@@ -2142,10 +2469,12 @@
       "updated": "2026-01-13",
       "daysOld": 230,
       "stale": true,
-      "plannedOperation": "Floods with Upper Vallier"
+      "plannedOperation": "Floods with Upper Vallier",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Beaver Dam Slough GTR",
       "type": "gtr",
       "statusText": "70% flooded (Updated 1/13/26)",
@@ -2153,10 +2482,12 @@
       "updated": "2026-01-13",
       "daysOld": 230,
       "stale": true,
-      "plannedOperation": "Managed with Cannon Brake"
+      "plannedOperation": "Managed with Cannon Brake",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Buckingham Flats GTR",
       "type": "gtr",
       "statusText": "100% (Updated 1/13/26)",
@@ -2165,10 +2496,12 @@
       "daysOld": 230,
       "stale": true,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Government Cypress GTR",
       "type": "gtr",
       "statusText": "75% flooded (Updated 1/13/26)",
@@ -2177,10 +2510,12 @@
       "daysOld": 230,
       "stale": true,
       "plannedOperation": "> Nov. 15, based on Lower Vallier water level",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Harold Ives ‐ Temple Island GTR",
       "type": "gtr",
       "statusText": "100% flooded (Updated 1/13/26)",
@@ -2189,10 +2524,12 @@
       "daysOld": 230,
       "stale": true,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Lower Vallier GTR",
       "type": "gtr",
       "statusText": "90% flooded (Updated 1/13/26)",
@@ -2201,10 +2538,12 @@
       "daysOld": 230,
       "stale": true,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Upper Vallier GTR",
       "type": "gtr",
       "statusText": "80% flooded (Updated 1/13/26)",
@@ -2213,10 +2552,12 @@
       "daysOld": 230,
       "stale": true,
       "plannedOperation": "> Nov. 14, based on Lower Vallier water level",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "Bayou Meto WMA",
+      "wmaKey": "bayou meto",
       "unit": "Walter Will Bryant ‐ Cannon Brake GTR",
       "type": "gtr",
       "statusText": "70% flooded (Updated 1/13/26)",
@@ -2225,18 +2566,22 @@
       "daysOld": 230,
       "stale": true,
       "plannedOperation": ">Nov. 14, variable based on flowage easements",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "George H. Dunklin Bayou Meto WMA"
     },
     {
       "wma": "Bell Slough WMA",
+      "wmaKey": "bell slough",
       "unit": "Palarm Creek GTR",
       "type": "gtr",
       "statusText": "0% flooded",
       "percent": 0,
-      "plannedOperation": "Nov. 14"
+      "plannedOperation": "Nov. 14",
+      "wmaDisplay": "Bell Slough WMA"
     },
     {
       "wma": "Big Lake WMA",
+      "wmaKey": "big lake",
       "unit": "Above Highline GTR",
       "type": "gtr",
       "statusText": "95% Flooded (Updated 1/13/26)",
@@ -2245,10 +2590,12 @@
       "daysOld": 230,
       "stale": true,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Big Lake WMA"
     },
     {
       "wma": "Big Lake WMA",
+      "wmaKey": "big lake",
       "unit": "Below Highline GTR",
       "type": "gtr",
       "statusText": "100% Flooded (Updated 1/13/26)",
@@ -2257,462 +2604,544 @@
       "daysOld": 230,
       "stale": true,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Big Lake WMA"
     },
     {
       "wma": "Cut‐Off Creek WMA",
+      "wmaKey": "cut‐off creek",
       "unit": "Cut‐Off Creek GTR",
       "type": "gtr",
       "statusText": "100% flooded, Dec 1st-structures closed",
       "percent": 100,
-      "plannedOperation": "Dec. 1"
+      "plannedOperation": "Dec. 1",
+      "wmaDisplay": "Cut‐Off Creek WMA"
     },
     {
       "wma": "Cut‐Off Creek WMA",
+      "wmaKey": "cut‐off creek",
       "unit": "Pigeon Creek GTR",
       "type": "gtr",
       "statusText": "100% flooded,Dec 1st-structures closed, Pumping",
       "percent": 100,
-      "plannedOperation": "Dec. 1"
+      "plannedOperation": "Dec. 1",
+      "wmaDisplay": "Cut‐Off Creek WMA"
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "unit": "Cypress Bayou GTR",
       "type": "gtr",
       "statusText": "0% flooded",
       "percent": 0,
-      "plannedOperation": "Nov. 14"
+      "plannedOperation": "Nov. 14",
+      "wmaDisplay": "Cypress Bayou WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Lower Island GTR",
       "type": "gtr",
       "statusText": "100% Flooded",
       "percent": 100,
       "plannedOperation": "Nov. 13",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Lower Reyno GTR",
       "type": "gtr",
       "statusText": "90% Flooded",
       "percent": 90,
       "plannedOperation": "Nov. 13",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Section 24 GTR",
       "type": "gtr",
       "statusText": "100% Flooded",
       "percent": 100,
       "plannedOperation": "Nov. 13",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Upper Island GTR",
       "type": "gtr",
       "statusText": "100% Flooded",
       "percent": 100,
       "plannedOperation": "Nov. 10",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Upper Reyno GTR",
       "type": "gtr",
       "statusText": "95% Flooded",
       "percent": 95,
       "plannedOperation": "Nov. 13",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "unit": "Winchester GTR",
       "type": "gtr",
       "statusText": "85% Flooded",
       "percent": 85,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Dave Donaldson Black River WMA"
     },
     {
       "wma": "Dr. Lester Sitzes, III Bois D' Arc WMA",
+      "wmaKey": "dr. lester sitzes, iii bois d' arc",
       "unit": "Bois d'Arc Lower GTR",
       "type": "gtr",
       "statusText": "Jan 8th - 75% flooded,ditch and sloughs boatable",
       "percent": 75,
-      "plannedOperation": "Dec. 1"
+      "plannedOperation": "Dec. 1",
+      "wmaDisplay": "Dr. Lester Sitzes, III Bois D' Arc WMA"
     },
     {
       "wma": "Dr. Lester Sitzes, III Bois D' Arc WMA",
+      "wmaKey": "dr. lester sitzes, iii bois d' arc",
       "unit": "Bois d'Arc Upper GTR",
       "type": "gtr",
       "statusText": "Jan 8th - 20% flooded",
       "percent": 20,
-      "plannedOperation": "Dec. 1"
+      "plannedOperation": "Dec. 1",
+      "wmaDisplay": "Dr. Lester Sitzes, III Bois D' Arc WMA"
     },
     {
       "wma": "Dr. Lester Sitzes, III Bois D' Arc WMA",
+      "wmaKey": "dr. lester sitzes, iii bois d' arc",
       "unit": "Red Slough Rest Area GTR",
       "type": "gtr",
       "statusText": "Jan 8th - 30% flooded, ditches full",
       "percent": 30,
-      "plannedOperation": "Dec. 1"
+      "plannedOperation": "Dec. 1",
+      "wmaDisplay": "Dr. Lester Sitzes, III Bois D' Arc WMA"
     },
     {
       "wma": "Earl Buss Bayou DeView WMA",
+      "wmaKey": "bayou deview",
       "unit": "South Oliver GTR",
       "type": "gtr",
       "statusText": "0% flooded, Dec 1st-boards added",
       "percent": 0,
       "plannedOperation": "Dec. 1",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Earl Buss Bayou DeView WMA"
     },
     {
       "wma": "Earl Buss Bayou DeView WMA",
+      "wmaKey": "bayou deview",
       "unit": "Thompson Tract GTR",
       "type": "gtr",
       "statusText": "0% flooded, Jan 2nd-additional boards added",
       "percent": 0,
       "plannedOperation": "Dec. 1",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Earl Buss Bayou DeView WMA"
     },
     {
       "wma": "Harris Brake WMA",
+      "wmaKey": "harris brake",
       "unit": "Harris Brake Lower GTR",
       "type": "gtr",
       "statusText": "95% flooded",
       "percent": 95,
-      "plannedOperation": "Nov. 14"
+      "plannedOperation": "Nov. 14",
+      "wmaDisplay": "Harris Brake WMA"
     },
     {
       "wma": "Harris Brake WMA",
+      "wmaKey": "harris brake",
       "unit": "Harris Brake Upper GTR",
       "type": "gtr",
       "statusText": "95% flooded",
       "percent": 95,
-      "plannedOperation": "Nov. 14"
+      "plannedOperation": "Nov. 14",
+      "wmaDisplay": "Harris Brake WMA"
     },
     {
       "wma": "Henry Gray Hurricane Lake WMA",
+      "wmaKey": "hurricane lake",
       "unit": "North GTR",
       "type": "gtr",
       "statusText": "0% flooded, Gates raised and structures closed Dec 12, 1/30/26",
       "percent": 0,
       "plannedOperation": "Dec. 12",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Henry Gray Hurricane Lake WMA"
     },
     {
       "wma": "Nimrod Lloyd Millwood WMA",
+      "wmaKey": "nimrod lloyd millwood",
       "unit": "Nimrod GTR",
       "type": "gtr",
       "statusText": "2% flooded - 12/04/25",
       "percent": 2,
-      "plannedOperation": "Nov. 14"
+      "plannedOperation": "Nov. 14",
+      "wmaDisplay": "Nimrod Lloyd Millwood WMA"
     },
     {
       "wma": "Petit Jean River WMA",
+      "wmaKey": "petit jean",
       "unit": "Pond Creek GTR",
       "type": "gtr",
       "statusText": "1% flooded - 12/04/25",
       "percent": 1,
-      "plannedOperation": "Nov. 14"
+      "plannedOperation": "Nov. 14",
+      "wmaDisplay": "Petit Jean River WMA"
     },
     {
       "wma": "Petit Jean River WMA",
+      "wmaKey": "petit jean",
       "unit": "Santa Fe GTR",
       "type": "gtr",
       "statusText": "0% flooded - 12/04/25",
       "percent": 0,
-      "plannedOperation": "Nov. 14"
+      "plannedOperation": "Nov. 14",
+      "wmaDisplay": "Petit Jean River WMA"
     },
     {
       "wma": "Petit Jean River WMA",
+      "wmaKey": "petit jean",
       "unit": "Slaty GTR",
       "type": "gtr",
       "statusText": "3% flooded - 11/14/25",
       "percent": 3,
-      "plannedOperation": "Nov. 14"
+      "plannedOperation": "Nov. 14",
+      "wmaDisplay": "Petit Jean River WMA"
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
       "unit": "Gregory GTR",
       "type": "gtr",
       "statusText": "0% flooded, 12/30/2025",
       "percent": 0,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Rex Hancock Black Swamp WMA"
     },
     {
       "wma": "Seven Devils WMA",
+      "wmaKey": "seven devils",
       "unit": "Seven Devils GTR",
       "type": "gtr",
       "statusText": "65% flooded, Dec 1st-structures closed",
       "percent": 65,
-      "plannedOperation": "> Dec. 1, variable water‐management plan"
+      "plannedOperation": "> Dec. 1, variable water‐management plan",
+      "wmaDisplay": "Seven Devils WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Apple Lake GTR",
       "type": "gtr",
       "statusText": "20% flooded, 1/30/2026",
       "percent": 20,
       "plannedOperation": "NA",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Hickson GTR",
       "type": "gtr",
       "statusText": "0% flooded, 1/30/2026",
       "percent": 0,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Kyles GTR",
       "type": "gtr",
       "statusText": "",
       "plannedOperation": "No action",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "unit": "Mud Slough GTR",
       "type": "gtr",
       "statusText": "",
       "plannedOperation": "To be determined; no earlier than Dec. 12",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Sheffield Nelson Dagmar WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Adams Brake GTR",
       "type": "gtr",
       "statusText": "95% Flooded",
       "percent": 95,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Eagle Pond GTR",
       "type": "gtr",
       "statusText": "90% Flooded",
       "percent": 90,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "unit": "Rainey Brake GTR",
       "type": "gtr",
       "statusText": "90% Flooded",
       "percent": 90,
       "plannedOperation": "Nov. 14",
-      "gaugeLink": "Gauge Link"
+      "gaugeLink": "Gauge Link",
+      "wmaDisplay": "Shirey Bay Rainey Brake WMA"
     },
     {
       "wma": "Sulphur River WMA",
+      "wmaKey": "sulphur river",
       "unit": "Henry Moore Waterfowl Rest Area",
       "type": "gtr",
       "statusText": "75% flooded",
       "percent": 75,
-      "plannedOperation": "Oct. 23"
+      "plannedOperation": "Oct. 23",
+      "wmaDisplay": "Sulphur River WMA"
     },
     {
       "wma": "Dale Bumpers White River Refuge",
+      "wmaKey": "dale bumpers white river refuge",
       "unit": "Honeylocust GTR",
       "type": "gtr",
       "statusText": "",
-      "plannedOperation": "Dec. 10"
+      "plannedOperation": "Dec. 10",
+      "wmaDisplay": "Dale Bumpers White River Refuge"
     }
   ],
   "wmaSummary": [
     {
       "wma": "Cut‐Off Creek WMA",
+      "wmaKey": "cut‐off creek",
       "units": 2,
       "avgPercent": 100,
       "maxPercent": 100
     },
     {
       "wma": "Big Lake WMA",
+      "wmaKey": "big lake",
       "units": 6,
       "avgPercent": 99,
       "maxPercent": 100
     },
     {
       "wma": "Holland Bottoms WMA",
+      "wmaKey": "holland bottoms",
       "units": 2,
       "avgPercent": 95,
       "maxPercent": 100
     },
     {
       "wma": "Harris Brake WMA",
+      "wmaKey": "harris brake",
       "units": 2,
       "avgPercent": 95,
       "maxPercent": 95
     },
     {
       "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
       "units": 11,
       "avgPercent": 94,
       "maxPercent": 100
     },
     {
       "wma": "Ozark Lake WMA",
+      "wmaKey": "ozark lake",
       "units": 5,
       "avgPercent": 88,
       "maxPercent": 100
     },
     {
       "wma": "George H. Dunklin Bayou Meto WMA",
-      "units": 20,
-      "avgPercent": 88,
+      "wmaKey": "bayou meto",
+      "units": 28,
+      "avgPercent": 86,
       "maxPercent": 100
     },
     {
       "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
       "units": 15,
       "avgPercent": 85,
       "maxPercent": 100
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
       "units": 21,
       "avgPercent": 85,
       "maxPercent": 95
     },
     {
       "wma": "Galla Creek WMA",
+      "wmaKey": "galla creek",
       "units": 1,
       "avgPercent": 85,
       "maxPercent": 85
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
+      "wmaKey": "choctaw island",
       "units": 7,
       "avgPercent": 83,
       "maxPercent": 100
     },
     {
-      "wma": "Bayou Meto WMA",
-      "units": 8,
-      "avgPercent": 83,
-      "maxPercent": 100
-    },
-    {
       "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
       "units": 9,
       "avgPercent": 81,
       "maxPercent": 100
     },
     {
       "wma": "Prairie Bayou WMA",
+      "wmaKey": "prairie bayou",
       "units": 2,
       "avgPercent": 75,
       "maxPercent": 100
     },
     {
       "wma": "Sulphur River WMA",
+      "wmaKey": "sulphur river",
       "units": 1,
       "avgPercent": 75,
       "maxPercent": 75
     },
     {
       "wma": "Sulfur River WMA",
+      "wmaKey": "sulfur river",
       "units": 2,
       "avgPercent": 70,
       "maxPercent": 75
     },
     {
       "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
       "units": 21,
       "avgPercent": 69,
       "maxPercent": 100
     },
     {
-      "wma": "Petit Jean WMA",
-      "units": 5,
-      "avgPercent": 67,
-      "maxPercent": 90
-    },
-    {
       "wma": "Seven Devils WMA",
+      "wmaKey": "seven devils",
       "units": 1,
       "avgPercent": 65,
       "maxPercent": 65
     },
     {
       "wma": "Steve N. Wilson Raft Creek WMA",
+      "wmaKey": "raft creek",
       "units": 11,
       "avgPercent": 54,
       "maxPercent": 90
     },
     {
       "wma": "Bell Slough WMA",
+      "wmaKey": "bell slough",
       "units": 3,
       "avgPercent": 52,
       "maxPercent": 80
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
       "units": 9,
       "avgPercent": 43,
       "maxPercent": 90
     },
     {
+      "wma": "Petit Jean River WMA",
+      "wmaKey": "petit jean",
+      "units": 8,
+      "avgPercent": 42,
+      "maxPercent": 90
+    },
+    {
       "wma": "Dr. Lester Sitzes, III Bois D' Arc WMA",
+      "wmaKey": "dr. lester sitzes, iii bois d' arc",
       "units": 3,
       "avgPercent": 42,
       "maxPercent": 75
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
       "units": 6,
       "avgPercent": 23,
       "maxPercent": 80
     },
     {
       "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
       "units": 11,
       "avgPercent": 11,
       "maxPercent": 40
     },
     {
       "wma": "Dr. Lester Sitzes III Bois D'Arc WMA",
+      "wmaKey": "dr. lester sitzes iii bois d'arc",
       "units": 1,
       "avgPercent": 10,
       "maxPercent": 10
     },
     {
       "wma": "Nimrod Lloyd Millwood WMA",
+      "wmaKey": "nimrod lloyd millwood",
       "units": 1,
       "avgPercent": 2,
       "maxPercent": 2
     },
     {
-      "wma": "Petit Jean River WMA",
-      "units": 3,
-      "avgPercent": 1,
-      "maxPercent": 3
-    },
-    {
       "wma": "Ozan WMA",
+      "wmaKey": "ozan",
       "units": 5,
       "avgPercent": 0,
       "maxPercent": 0
     },
     {
       "wma": "Earl Buss Bayou DeView WMA",
+      "wmaKey": "bayou deview",
       "units": 2,
       "avgPercent": 0,
       "maxPercent": 0
     },
     {
       "wma": "Henry Gray Hurricane Lake WMA",
+      "wmaKey": "hurricane lake",
       "units": 1,
       "avgPercent": 0,
       "maxPercent": 0
