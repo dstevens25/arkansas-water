@@ -1,13 +1,11 @@
-// Pulls AGFC's greentree reservoir and moist-soil unit conditions.
+// Turns AGFC's two published waterfowl sheets into one normalized list of units.
 //
-// These are NOT in the weekly waterfowl report — that's a narrative news article.
-// AGFC publishes the actual water data as Google Sheets linked off
-// https://www.agfc.com/hunting/waterfowl/
+// The sheets have different column names for the same ideas:
+//   GTR sheet:        WMA | GTR  | Gauge Link | Current Status | ...
+//   Moist-soil sheet: WMA | Unit | Vegetation | Status | Water Source | Comments
 //
-// The sheet URLs change every season (they're stamped 2025-26, 2026-27...), so this
-// scrapes the waterfowl page for whatever links are current instead of hardcoding them.
-//
-// Run: node waterfowl.js
+// Both bury the percentage and the update date inside a status string like
+// "75% flooded (Updated 1/13/26)".
 
 const fs = require("fs");
 
@@ -20,20 +18,16 @@ async function get(url) {
   return r.text();
 }
 
-// Find every published-sheet link on the page, with the text of the link so we know
-// which is the GTR sheet and which is moist-soil.
 function findSheets(html) {
   const out = [];
   const re = /<a[^>]+href="(https:\/\/docs\.google\.com\/spreadsheets\/d\/e\/[^"]+?)\/pubhtml[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
   let m;
   while ((m = re.exec(html)) !== null) {
-    const label = m[2].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
-    out.push({ base: m[1], label });
+    out.push({ base: m[1], label: m[2].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim() });
   }
   return out;
 }
 
-// Minimal CSV parser that respects quoted fields containing commas and newlines.
 function parseCsv(text) {
   const rows = [];
   let row = [], field = "", inQuotes = false;
@@ -49,88 +43,133 @@ function parseCsv(text) {
     else if (c !== "\r") field += c;
   }
   if (field || row.length) { row.push(field); rows.push(row); }
-  return rows.filter(r => r.some(cell => cell.trim() !== ""));
+  return rows;
 }
 
-// The header isn't always row 1 — these sheets often open with a title row.
-// Pick the first row that has several non-empty cells and looks like labels.
-function findHeaderRow(rows) {
+// "75% flooded (Updated 1/13/26)" -> { percent: 75, updated: "2026-01-13" }
+function readStatus(s) {
+  const out = { statusText: (s || "").trim() };
+  if (!out.statusText) return out;
+
+  const pct = out.statusText.match(/(\d{1,3})\s*%/);
+  if (pct) out.percent = +pct[1];
+  else if (/^dry\b/i.test(out.statusText)) out.percent = 0;
+  else if (/^full\b|fully flooded/i.test(out.statusText)) out.percent = 100;
+
+  const d = out.statusText.match(/updated\s+(\d{1,2})\/(\d{1,2})\/(\d{2,4})/i);
+  if (d) {
+    const yr = d[3].length === 2 ? 2000 + +d[3] : +d[3];
+    out.updated = `${yr}-${String(d[1]).padStart(2, "0")}-${String(d[2]).padStart(2, "0")}`;
+    out.daysOld = Math.round((Date.now() - new Date(out.updated + "T12:00:00Z")) / 864e5);
+    out.stale = out.daysOld > 10;
+  }
+  return out;
+}
+
+// Header row is the first row with 3+ filled cells.
+function findHeader(rows) {
   for (let i = 0; i < Math.min(rows.length, 8); i++) {
-    const filled = rows[i].filter(c => c.trim()).length;
-    if (filled >= 3) return i;
+    if (rows[i].filter(c => c.trim()).length >= 3) return i;
   }
   return 0;
 }
 
-function toObjects(rows) {
-  const h = findHeaderRow(rows);
+function normalize(rows, sheetKind) {
+  const h = findHeader(rows);
   const headers = rows[h].map((c, i) => c.trim() || `col${i}`);
-  return rows.slice(h + 1).map(r => {
-    const o = {};
-    headers.forEach((key, i) => { if ((r[i] || "").trim()) o[key] = r[i].trim(); });
-    return o;
-  }).filter(o => Object.keys(o).length > 1);
-}
+  const idx = name => headers.findIndex(x => x.toLowerCase() === name.toLowerCase());
 
-// Pull a percentage out of whatever column happens to hold it.
-function percentFrom(obj) {
-  for (const [k, v] of Object.entries(obj)) {
-    const m = String(v).match(/(\d{1,3})\s*%/);
-    if (m) return { percent: +m[1], percentField: k };
-    if (/level|flood|percent/i.test(k)) {
-      const n = String(v).match(/^(\d{1,3})$/);
-      if (n && +n[1] <= 100) return { percent: +n[1], percentField: k };
+  const iWma    = idx("WMA");
+  const iUnit   = idx("GTR") !== -1 ? idx("GTR") : idx("Unit");
+  const iStatus = idx("Current Status") !== -1 ? idx("Current Status") : idx("Status");
+  const iGauge  = idx("Gauge Link");
+  const iVeg    = idx("Vegetation");
+  const iSource = idx("Water Source");
+  const iPlan   = idx("Planned Operation Dates") !== -1
+                    ? idx("Planned Operation Dates")
+                    : idx("Infrastructure Operation Planned Date");
+  const iCmt    = idx("Comments");
+
+  const units = [];
+  let lastWma = "";        // WMA is blank on continuation rows — carry it down
+  let section = "";        // "Moist-Soil Units (Hunting Open)" etc.
+  let huntingOpen = null;
+
+  for (const r of rows.slice(h + 1)) {
+    const cell = i => (i >= 0 && r[i] ? r[i].trim() : "");
+    const filled = r.filter(c => c.trim()).length;
+    const first = cell(0);
+
+    // A row with only the first cell filled is a section heading, not a unit.
+    if (filled === 1 && first) {
+      section = first;
+      if (/hunting open/i.test(first)) huntingOpen = true;
+      else if (/closed|no hunting/i.test(first)) huntingOpen = false;
+      continue;
     }
+
+    if (cell(iWma)) lastWma = cell(iWma);
+    const unit = cell(iUnit);
+    if (!unit && !cell(iStatus)) continue;
+
+    const status = readStatus(cell(iStatus));
+
+    units.push({
+      wma: lastWma,
+      unit: unit || lastWma,
+      type: sheetKind,
+      section: section || undefined,
+      huntingOpen: huntingOpen === null ? undefined : huntingOpen,
+      ...status,
+      vegetation: cell(iVeg) || undefined,
+      waterSource: cell(iSource) || undefined,
+      plannedOperation: cell(iPlan) || undefined,
+      gaugeLink: cell(iGauge) || undefined,
+      comments: cell(iCmt) || undefined,
+    });
   }
-  return {};
+  return units.filter(u => u.wma || u.unit);
 }
 
 (async () => {
   try {
-    console.log("Reading", WATERFOWL_PAGE);
     const page = await get(WATERFOWL_PAGE);
     const sheets = findSheets(page);
+    if (!sheets.length) throw new Error("No published sheets linked on the waterfowl page");
 
-    if (!sheets.length) throw new Error("No published Google Sheets linked on the waterfowl page");
-    console.log(`Found ${sheets.length} sheet link(s):`);
-    sheets.forEach(s => console.log("  -", s.label));
-
-    const result = { fetched: new Date().toISOString(), source: WATERFOWL_PAGE, sheets: [] };
+    const result = { fetched: new Date().toISOString(), source: WATERFOWL_PAGE, units: [] };
 
     for (const s of sheets) {
-      const csvUrl = s.base + "/pub?output=csv";
-      console.log("\nFetching:", s.label);
-      let rows;
-      try {
-        rows = parseCsv(await get(csvUrl));
-      } catch (e) {
-        console.log("  could not read as CSV:", e.message);
-        continue;
-      }
-
-      // Print the real shape so we can write a proper parser next round.
-      console.log("  rows:", rows.length);
-      console.log("  first 3 rows:");
-      rows.slice(0, 3).forEach(r => console.log("   ", JSON.stringify(r.slice(0, 8))));
-
-      const records = toObjects(rows).map(o => ({ ...o, ...percentFrom(o) }));
-      console.log("  parsed records:", records.length);
-      if (records[0]) console.log("  sample record:", JSON.stringify(records[0]));
-
-      result.sheets.push({
-        label: s.label,
-        url: s.base + "/pubhtml",
-        kind: /gtr|greentree/i.test(s.label) ? "gtr"
-            : /moist/i.test(s.label) ? "moist-soil" : "other",
-        records,
-      });
+      const kind = /gtr|greentree/i.test(s.label) ? "gtr"
+                 : /moist/i.test(s.label) ? "moist-soil" : "other";
+      console.log(`\n${s.label}  [${kind}]`);
+      const rows = parseCsv(await get(s.base + "/pub?output=csv"));
+      const units = normalize(rows, kind);
+      console.log(`  ${units.length} units, ${units.filter(u => u.percent !== undefined).length} with a water level`);
+      const fresh = units.filter(u => u.updated && !u.stale).length;
+      console.log(`  ${fresh} updated in the last 10 days`);
+      if (units[0]) console.log("  sample:", JSON.stringify(units[0]));
+      result.units.push(...units);
     }
 
-    if (!result.sheets.length) throw new Error("Found links but could not read any sheet");
+    if (!result.units.length) throw new Error("Read the sheets but found no units");
+
+    // Handy rollup: wettest WMAs first.
+    const byWma = {};
+    for (const u of result.units) {
+      if (u.percent === undefined) continue;
+      (byWma[u.wma] ||= []).push(u.percent);
+    }
+    result.wmaSummary = Object.entries(byWma).map(([wma, pcts]) => ({
+      wma,
+      units: pcts.length,
+      avgPercent: Math.round(pcts.reduce((a, b) => a + b, 0) / pcts.length),
+      maxPercent: Math.max(...pcts),
+    })).sort((a, b) => b.avgPercent - a.avgPercent);
 
     fs.mkdirSync("data", { recursive: true });
     fs.writeFileSync("data/waterfowl.json", JSON.stringify(result, null, 2));
-    console.log("\nWrote data/waterfowl.json");
+    console.log(`\nWrote data/waterfowl.json — ${result.units.length} units across ${result.wmaSummary.length} WMAs`);
   } catch (e) {
     console.error("FAILED:", e.message);
     process.exit(1);
