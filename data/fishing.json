@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-310/",
-  "fetched": "2026-08-31T20:12:37.778Z",
+  "fetched": "2026-08-31T20:18:45.408Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -8,6 +8,7 @@
       "updated": "2026-08-20",
       "daysOld": 11,
       "stale": true,
+      "referenceOnly": false,
       "species": [
         "trout"
       ],
@@ -19,6 +20,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "noReport": true,
       "summary": "For the Army Corps of Engineers’ real-time lake level and outflow report from Greers Ferry Dam, visit the Corps’ Little Rock office website. No reports."
@@ -29,6 +31,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "bream",
         "catfish"
@@ -41,6 +44,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": false,
       "species": [],
       "noReport": true,
       "summary": "NOTICE: AGFC employees and contractors will be conducting herbicide applications at Lake Overcup in Conway County this summer, preventing the use of the lake’s water for irrigation by lakeside landowners until Oct. 1. Application of the EPA-approved aquatic herbicides should take roughly two weeks, and multiple applications will take place throughout the summer. The treatment causes no harm to wil"
@@ -51,6 +55,7 @@
       "updated": "2026-08-31",
       "daysOld": 0,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "spotted bass",
         "white bass",
@@ -69,15 +74,17 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the real-time water flow at the Ormond Lock and Dam and Morrilton stage level, visit the Corps’ Little Rock office website."
     },
     {
       "region": "Central Arkansas",
       "water": "Little Maumelle River",
-      "updated": null,
-      "daysOld": null,
+      "updated": "2026-08-27",
+      "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "crappie",
         "bream",
@@ -92,6 +99,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the real-time water flow at the Toad Suck Lock and Dam, visit the Corps’ Little Rock office website."
     },
@@ -101,6 +109,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the real-time water flow at the Murray Lock and Dam and David D. Terry Lock and Dam, as well as the Little Rock pool stage level, visit the Corps’ Little Rock office website."
     },
@@ -110,6 +119,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "crappie",
         "bream",
@@ -124,6 +134,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "trout"
       ],
@@ -135,6 +146,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "trout"
       ],
@@ -148,6 +160,7 @@
       "updated": "2026-08-20",
       "daysOld": 11,
       "stale": true,
+      "referenceOnly": false,
       "species": [
         "smallmouth bass",
         "trout"
@@ -160,6 +173,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "crappie",
         "walleye",
@@ -175,6 +189,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "noReport": true,
       "summary": "For the Army Corps of Engineers’ real-time outflow report from Norfork Dam, visit the Corps’ Little Rock office website. No reports."
@@ -185,6 +200,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "trout"
       ],
@@ -196,6 +212,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "crappie",
         "catfish",
@@ -212,6 +229,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "walleye",
         "trout",
@@ -225,6 +243,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "catfish"
       ],
@@ -236,6 +255,7 @@
       "updated": "2026-08-13",
       "daysOld": 18,
       "stale": true,
+      "referenceOnly": false,
       "species": [
         "crappie",
         "bream",
@@ -250,6 +270,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "trout",
         "bass"
@@ -263,6 +284,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the Army Corps of Engineers’ real-time gauge level and flow from the White River stages at Batesville, Newport and Augusta and all other sites within the White River basin in Arkansas, visit the Corps’ Little Rock office website."
     },
@@ -272,6 +294,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the real-time water flow at the Emmett Sanders Lock and Dam and Maynard Lock and Dam, as well as the Pine Bluff pool stage level, visit the Corps’ Little Rock office website."
     },
@@ -281,6 +304,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "crappie",
         "bream",
@@ -295,6 +319,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "crappie",
         "bass"
@@ -307,6 +332,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "largemouth bass",
         "striped bass",
@@ -322,6 +348,7 @@
       "updated": "2026-08-13",
       "daysOld": 18,
       "stale": true,
+      "referenceOnly": false,
       "species": [
         "crappie",
         "bass"
@@ -337,6 +364,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [],
       "summary": "For the most updated lake level at DeGray Lake, click here. (updated 8-27-2026) Philip Kastner of Trader Bill’s Outdoors in Little Rock and Hot Springs noted on the weekly “Wild Side Show” on KABZ-FM, 103.7 The Buzz on Tuesday that the moss on both DeGray and Lake Ouachita “is incredible … some of the best ever.” He added, “Topwater bite is very good in the morning and on cloudy days. The big worm"
     },
@@ -346,6 +374,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the Army Corps of Engineers’ real-time lake level and outflow report from De Queen Lake, visit the Corps’ Little Rock office website."
     },
@@ -355,6 +384,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the Army Corps of Engineers’ real-time lake level and outflow report from Dierks Lake, visit the Corps’ Little Rock office website."
     },
@@ -364,6 +394,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the most updated Narrows Dam generation schedule from SWEPCO, click here."
     },
@@ -373,6 +404,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the most updated lake level at Lake Greeson, click here."
     },
@@ -382,6 +414,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": false,
       "species": [],
       "noReport": true,
       "summary": "No reports."
@@ -392,6 +425,7 @@
       "updated": "2026-08-13",
       "daysOld": 18,
       "stale": true,
+      "referenceOnly": false,
       "species": [
         "crappie",
         "bass"
@@ -404,6 +438,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "white bass"
       ],
@@ -416,6 +451,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "noReport": true,
       "summary": "For the Army Corps of Engineers’ outflow and gauge level reports from Dardanelle, visit the Corps’ Little Rock office website. No reports."
@@ -426,6 +462,7 @@
       "updated": "2026-08-20",
       "daysOld": 11,
       "stale": true,
+      "referenceOnly": false,
       "species": [
         "white bass",
         "black bass",
@@ -439,6 +476,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "noReport": true,
       "summary": "For the Army Corps of Engineers’ real-time lake level and outflow reports from Nimrod Lake, visit the Corps’ Little Rock office website. No reports."
@@ -449,6 +487,7 @@
       "updated": "2026-08-27",
       "daysOld": 4,
       "stale": false,
+      "referenceOnly": false,
       "species": [
         "black bass",
         "crappie",
@@ -467,6 +506,7 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": false,
       "species": [],
       "summary": "For the Army Corps of Engineers’ real-time lake level and outflow reports from Blue Mountain Lake, visit the Corps’ Little Rock office website. NOTE: Blue Mountain Lake is undergoing a two-phase drawdown proposed by the Army Corps of Engineers to improve aquatic and waterfowl habitat by exposing mudflats for seeding and for critical maintenance on the lake’s intake structure. Phase one began Sept."
     },
@@ -476,44 +516,19 @@
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": true,
       "species": [],
       "summary": "For the Army Corps of Engineers’ real-time gauge level and flow from Clarendon, visit the Corps’ Little Rock office website. Note: msl is mean sea level; cfs is cubic feet per second."
     },
     {
       "region": "East Arkansas",
-      "water": "Subscribe to Our Weekly Newsletter E-mails",
+      "water": "Recent News",
       "updated": null,
       "daysOld": null,
       "stale": false,
+      "referenceOnly": false,
       "species": [],
-      "summary": "Don't miss another issue. Sign up now to receive the AGFC Wildlife Weekly Newsletter in your mailbox every Wednesday afternoon (Waterfowl Reports are published weekly during waterfowl season and periodically outside the season). Fishing Reports arrive on Thursdays. Fill in the following fields and hit submit. Thanks, and welcome!"
-    },
-    {
-      "region": "East Arkansas",
-      "water": "Arkansas Game and Fish Commission",
-      "updated": null,
-      "daysOld": null,
-      "stale": false,
-      "species": [],
-      "summary": "2 Natural Resources Drive"
-    },
-    {
-      "region": "East Arkansas",
-      "water": "Wild Science Webinars",
-      "updated": null,
-      "daysOld": null,
-      "stale": false,
-      "species": [],
-      "summary": "Resources Licensing Maps"
-    },
-    {
-      "region": "East Arkansas",
-      "water": "Civil Rights",
-      "updated": null,
-      "daysOld": null,
-      "stale": false,
-      "species": [],
-      "summary": "| Transparency.arkansas.gov |"
+      "summary": "Check your dove fields for bait before heading afield Aug. 31, 2026"
     }
   ],
   "kind": "fishing"
