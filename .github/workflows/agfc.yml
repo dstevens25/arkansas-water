@@ -2,8 +2,12 @@ name: Pull AGFC reports
 
 on:
   schedule:
+    # Thursdays 6pm UTC — AGFC fishing reports land Thursday
     - cron: "0 18 * * 4"
+    # Wednesdays 9pm UTC — waterfowl reports land Wednesday afternoon in season
     - cron: "0 21 * * 3"
+    # Gauge alerts: twice daily
+    - cron: "0 5,16 * * *"
   workflow_dispatch:
 
 jobs:
@@ -11,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write          # needed so the alert can open an issue
     steps:
       - uses: actions/checkout@v4
 
@@ -20,9 +25,16 @@ jobs:
 
       - name: Fetch fishing report
         run: node fetch.js fishing
+        continue-on-error: true
 
       - name: Fetch waterfowl conditions
         run: node waterfowl.js
+        continue-on-error: true
+
+      - name: Check gauge alerts
+        run: node alerts.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
 
       - name: Commit any changes
