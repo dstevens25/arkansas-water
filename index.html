@@ -148,6 +148,29 @@
   .maprow button[aria-pressed="true"]{background:var(--tan);border-color:var(--tan);color:var(--bg)}
   .pin{border-radius:50%;border:2px solid var(--bg);box-shadow:0 0 0 1px rgba(0,0,0,.5)}
 
+  .rut{background:var(--card);padding:16px 18px;margin-top:12px}
+  .rutbar{display:flex;height:9px;margin:14px 0 8px;gap:2px}
+  .rutbar i{flex:1;background:var(--shadow)}
+  .rutbar i.done{background:var(--rule)}
+  .rutbar i.now{background:var(--tan-lt)}
+  .rutlabels{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);
+             letter-spacing:.05em;text-transform:uppercase}
+  .prime{color:var(--go);font-weight:500}
+
+  .guide{background:var(--card);margin-top:10px}
+  .guide summary{padding:15px 18px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;
+                 font-size:19px;font-weight:500;color:var(--tan-lt);list-style:none}
+  .guide summary::-webkit-details-marker{display:none}
+  .guide summary::after{content:"+";float:right;color:var(--muted)}
+  .guide[open] summary::after{content:"–"}
+  .guide ol,.guide ul{margin:0;padding:0 20px 16px 38px;font-size:15px;color:var(--text)}
+  .guide li{margin-bottom:9px;line-height:1.5}
+  .guide p{margin:0 18px 14px;font-size:14px;color:var(--muted)}
+
+  .offline{background:var(--skip);color:var(--text);text-align:center;padding:7px;
+           font-size:13px;letter-spacing:.04em;display:none}
+  .offline.on{display:block}
+
   .setup{background:var(--card);padding:22px;margin-top:18px}
   .setup h2{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:600;margin:0 0 10px;color:var(--tan-lt)}
   .setup p{font-size:15px;color:var(--muted);margin:0 0 14px}
@@ -169,6 +192,8 @@
 <body>
 <div class="wrap">
 
+  <div class="offline" id="offbar">Offline — showing last saved data</div>
+
   <div class="topbar">
     <div style="display:flex;align-items:center;gap:12px">
       <img src="logo.png" alt="" width="54" height="54" style="display:block;flex-shrink:0">
@@ -187,6 +212,10 @@
     <p class="sect">Deer</p>
     <div class="summary" id="dsummary">Loading…</div>
     <div id="deer"></div>
+    <div id="rut"></div>
+
+    <p class="sect">Guides</p>
+    <div id="guides"></div>
   </section>
 
   <section class="screen" id="s-duck" role="tabpanel" aria-label="Waterfowl">
@@ -876,7 +905,7 @@ async function loadGauges(){
     "Updated " + new Date().toLocaleTimeString([], {hour:"numeric", minute:"2-digit"});
 }
 
-function load(){ loadGauges(); loadDeer(); loadWaterfowl(); loadFish(); }
+function load(){ loadGauges(); loadDeer(); renderRut(); renderGuides(); loadWaterfowl(); loadFish(); }
 
 document.getElementById("add").addEventListener("click", async () => {
   const site = document.getElementById("site").value.trim();
@@ -893,6 +922,155 @@ document.getElementById("add").addEventListener("click", async () => {
     loadGauges();
   }catch(e){ msg.textContent = e.message; }
 });
+
+// ─── RUT ────────────────────────────────────────────────────────────────────
+// Peak CONCEPTION dates by region. AGFC derives these from fetal measurements of
+// harvested does — the rut runs earlier in the west, later in the south, with the
+// statewide mean around Nov 14-18. Set RUT_REGION to where you hunt.
+const RUT_REGION = "delta";
+const RUT_REGIONS = {
+  ozarks:       { label:"Ozarks / Northwest",    peak:"11-05" },
+  north:        { label:"North Central",         peak:"11-12" },
+  delta:        { label:"Delta / Central",       peak:"11-16" },
+  southwest:    { label:"Southwest",             peak:"11-22" },
+  coastalplain: { label:"South / Coastal Plain", peak:"11-28" },
+};
+
+// The thing most rut calendars get wrong: peak BREEDING is not peak HUNTING.
+// Once does lock down, bucks stop covering ground. The window is before that.
+const RUT_PHASES = [
+  { from:-200, to:-31, name:"Pre-rut",     note:"Bachelor groups breaking up. Hunt food and travel routes." },
+  { from: -30, to:-15, name:"Scraping",    note:"Rubs and scrapes going in. Good time to hang a set on fresh sign." },
+  { from: -14, to: -5, name:"Chasing",     note:"Bucks on their feet all day hunting the first does. This is the window.", prime:true },
+  { from:  -4, to:  6, name:"Lockdown",    note:"Bucks paired off and holding still. Slow sits, but big deer make mistakes." },
+  { from:   7, to: 20, name:"Post-rut",    note:"Bucks recovering and feeding hard. Hunt food." },
+  { from:  21, to: 34, name:"Second rut",  note:"Unbred does and doe fawns cycling. Short second window." },
+  { from:  35, to:200, name:"Late season", note:"Food and cover. Cold fronts matter more than anything now." },
+];
+
+function rutStatus(today){
+  const cfg = RUT_REGIONS[RUT_REGION];
+  const [m, d] = cfg.peak.split("-").map(Number);
+  const yr = today.getMonth() >= 6 ? today.getFullYear() : today.getFullYear() - 1;
+  const peak = new Date(yr, m-1, d);
+  const days = Math.round((today - peak) / 864e5);
+  const ph = RUT_PHASES.find(p => days >= p.from && days <= p.to) || RUT_PHASES[0];
+  return { region: cfg.label, peak, daysToPeak: -days, phase: ph, index: RUT_PHASES.indexOf(ph) };
+}
+
+function renderRut(){
+  const r = rutStatus(new Date());
+  const box = document.getElementById("rut");
+  const when = r.daysToPeak > 0 ? `${r.daysToPeak} days to peak breeding`
+             : r.daysToPeak === 0 ? "peak breeding today"
+             : `${Math.abs(r.daysToPeak)} days past peak`;
+
+  const e = el(`<div class="rut">
+    <div class="spot-top"><div><p class="name"></p><p class="note"></p></div>
+      <span class="verdict ${r.phase.prime ? "v-go" : "v-none"}"></span></div>
+    <div class="rutbar"></div>
+    <div class="rutlabels"><span>Pre-rut</span><span>Chase</span><span>Lockdown</span><span>Late</span></div>
+    <p class="report" style="margin-top:12px"></p>
+    <p class="hint"></p></div>`);
+
+  setText(e, ".name", "Rut");
+  setText(e, ".note", r.region + " · " + when);
+  setText(e, ".verdict", r.phase.name);
+  setText(e, ".report", r.phase.note);
+  setText(e, ".hint",
+    "Peak conception " + r.peak.toLocaleDateString("en-US",{month:"long",day:"numeric"}) +
+    ". Regional averages from AGFC fetal data — your ground can run a week either side.");
+
+  const bar = e.querySelector(".rutbar");
+  RUT_PHASES.forEach((p, i) => {
+    const seg = document.createElement("i");
+    if(i < r.index) seg.className = "done";
+    if(i === r.index) seg.className = "now";
+    bar.appendChild(seg);
+  });
+
+  box.innerHTML = "";
+  box.appendChild(e);
+}
+
+// ─── GUIDES ─────────────────────────────────────────────────────────────────
+const GUIDES = [
+  { title:"Field dressing a deer",
+    intro:"Do it soon after recovery — cooling the carcass fast is what protects the meat.",
+    steps:[
+      "Roll the deer onto its back, head slightly uphill if you can.",
+      "Pinch the belly skin up and away from the guts, then cut a small starter hole just through the hide below the breastbone.",
+      "Slide two fingers into the hole and run the knife between them, blade up, opening the belly down to the pelvis. Fingers keep the blade off the stomach and intestines.",
+      "Cut around the anus and tie it off with a zip tie or string so nothing spills into the cavity.",
+      "Reach up into the chest and cut the windpipe and esophagus as high as you can.",
+      "Pull everything down and back. The whole gut pile should come out together once the windpipe is cut.",
+      "Cut the diaphragm free along the ribs, then roll the deer to drain blood out.",
+      "Wipe the cavity clean. Only rinse if you have clean water and can dry it — wet meat spoils faster than dirty meat.",
+      "Prop the cavity open with a stick and get air moving through it."],
+    tail:"Save the heart and liver in a bag if you want them. Check them for spots or discoloration first." },
+
+  { title:"Cooling and aging",
+    intro:"More deer are ruined by heat than by bad shots.",
+    steps:[
+      "Below 40°F, hanging a few days improves tenderness.",
+      "Between 40 and 50, get it skinned and on ice within a few hours.",
+      "Above 50, quarter it and ice it as fast as you can. Warm Arkansas openers are the danger.",
+      "Icing down: drain the meltwater daily. Meat sitting in bloody water sours.",
+      "Skin while the carcass is still warm — the hide pulls far easier than after it stiffens."],
+    tail:"If it smells sour or the fat has gone green, don't eat it. Meat is not worth getting sick over." },
+
+  { title:"Quartering and cuts",
+    intro:"You can break a deer down with a knife and no saw.",
+    steps:[
+      "Front legs come off with no joint to cut — just lift the leg and cut the muscle connecting the shoulder blade to the ribs.",
+      "Backstraps run along either side of the spine on the outside. Cut along the spine, then along the ribs, and peel each one off whole.",
+      "Tenderloins are inside the cavity along the spine, behind the last rib. Get them out the same day — they dry out fast.",
+      "Hind quarters: cut down to the ball joint at the hip, pop the joint, and cut the rest free.",
+      "Neck and rib meat is worth taking for grind, even though it looks like scraps.",
+      "Trim silverskin and all fat. Deer fat holds the gamey taste people complain about."],
+    tail:"Shoulders and neck are grind or slow-cook. Hind quarters are roasts and steaks. Backstrap and tenderloin get cooked hot and fast." },
+
+  { title:"Cleaning a fish",
+    intro:"Scale first if you're keeping the skin, fillet if you aren't.",
+    steps:[
+      "Scaling: hold the fish by the tail and scrape a knife back or a scaler from tail to head. Do it in a bucket of water or outside — scales go everywhere.",
+      "Gutting: cut from the vent forward to the gills, pull the guts out, and scrape the dark bloodline along the spine.",
+      "Filleting: cut down behind the gill plate to the spine, turn the blade toward the tail, and run it along the backbone in one motion.",
+      "Flip and repeat on the other side.",
+      "Skin each fillet by laying it skin-down, angling the knife at the tail end, and pushing forward while holding the skin.",
+      "Rinse in cold water and pat dry before it goes on ice."],
+    tail:"Catfish get skinned rather than scaled — cut around the head, grip the skin with pliers, and pull it back toward the tail." },
+];
+
+function renderGuides(){
+  const box = document.getElementById("guides");
+  box.innerHTML = "";
+  GUIDES.forEach(g => {
+    const d = document.createElement("details");
+    d.className = "guide";
+    const sum = document.createElement("summary");
+    sum.textContent = g.title;
+    d.appendChild(sum);
+    if(g.intro){ const p = document.createElement("p"); p.textContent = g.intro; d.appendChild(p); }
+    const ol = document.createElement("ol");
+    g.steps.forEach(t => { const li = document.createElement("li"); li.textContent = t; ol.appendChild(li); });
+    d.appendChild(ol);
+    if(g.tail){ const p = document.createElement("p"); p.textContent = g.tail; d.appendChild(p); }
+    box.appendChild(d);
+  });
+}
+
+// ─── OFFLINE ────────────────────────────────────────────────────────────────
+function setOffline(on){
+  document.getElementById("offbar").classList.toggle("on", on);
+}
+window.addEventListener("online",  () => { setOffline(false); load(); });
+window.addEventListener("offline", () => setOffline(true));
+setOffline(!navigator.onLine);
+
+if("serviceWorker" in navigator){
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
 
 // ─── MAP ────────────────────────────────────────────────────────────────────
 // Radar: Iowa State Mesonet NEXRAD tile cache. Public university service, no
