@@ -136,6 +136,7 @@
   .del:hover{background:var(--skip);border-color:var(--skip);color:var(--text)}
 
   #map{height:min(62vh,460px);width:100%;background:var(--shadow)}
+  #windyholder iframe{width:100%;height:min(62vh,460px);border:0;display:block;background:var(--shadow)}
   .leaflet-container{background:var(--shadow);font-family:'Barlow',sans-serif}
   .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--card);color:var(--text);border-radius:6px}
   .leaflet-popup-content{margin:12px 14px;font-size:14px}
@@ -204,13 +205,30 @@
   <section class="screen" id="s-map" role="tabpanel" aria-label="Map">
     <p class="sect">Map</p>
     <div class="maprow">
-      <button id="mr-radar" aria-pressed="true">Radar</button>
-      <button id="mr-gauges" aria-pressed="true">Gauges</button>
-      <button id="mr-stands" aria-pressed="true">Stands</button>
+      <button id="v-radar" aria-pressed="true">Radar</button>
+      <button id="v-wind" aria-pressed="false">Wind</button>
+      <button id="v-press" aria-pressed="false">Pressure</button>
     </div>
-    <div id="map"></div>
-    <p class="hint" id="maptime"></p>
-    <p class="hint">Radar from Iowa State Mesonet (NEXRAD). Base map &copy; OpenStreetMap contributors.</p>
+
+    <div id="view-radar">
+      <div class="maprow">
+        <button id="mr-radar" aria-pressed="true">Radar layer</button>
+        <button id="mr-gauges" aria-pressed="true">Gauges</button>
+        <button id="mr-stands" aria-pressed="true">Stands</button>
+      </div>
+      <div id="map"></div>
+      <p class="hint" id="maptime"></p>
+      <p class="hint">Radar from Iowa State Mesonet (NEXRAD). Base map &copy; OpenStreetMap contributors.</p>
+    </div>
+
+    <div id="view-windy" style="display:none">
+      <div id="windyholder"></div>
+      <p class="hint">Wind and pressure from
+        <a href="https://www.windy.com" target="_blank" rel="noopener">Windy.com</a>.
+        Pinch to zoom, drag the timeline at the bottom to scrub the forecast.</p>
+      <p class="hint" style="color:var(--marginal)">Windy's terms allow this embed for
+        personal and media use. A commercial version of this app would need their paid API.</p>
+    </div>
   </section>
 
   <section class="screen" id="s-setup" role="tabpanel" aria-label="Setup">
@@ -949,13 +967,65 @@ function buildMap(){
   toggle("mr-stands", () => mapGroups.stands.addTo(theMap),  () => theMap.removeLayer(mapGroups.stands));
 }
 
+// ─── WIND / PRESSURE (Windy embed) ──────────────────────────────────────────
+// Loaded only when the tab is opened — no third-party iframe until you ask for it.
+function windyUrl(overlay){
+  const p = new URLSearchParams({
+    lat: "35.0", lon: "-91.6", zoom: "6",
+    level: "surface", overlay,
+    product: "ecmwf", type: "map", location: "coordinates",
+    detailLat: String(DEER_SPOT.lat), detailLon: String(DEER_SPOT.lon),
+    detail: "true", message: "true",
+    metricWind: "mph", metricTemp: "°F",
+    menu: "", marker: "true", calendar: "now", pressure: "", radarRange: "-1",
+  });
+  return "https://embed.windy.com/embed2.html?" + p.toString();
+}
+
+let windyOverlay = null;
+function showWindy(overlay){
+  const holder = document.getElementById("windyholder");
+  if(windyOverlay !== overlay){
+    holder.innerHTML = "";
+    const f = document.createElement("iframe");
+    f.src = windyUrl(overlay);
+    f.loading = "lazy";
+    f.title = overlay === "pressure" ? "Pressure map" : "Wind map";
+    holder.appendChild(f);
+    windyOverlay = overlay;
+  }
+  document.getElementById("view-radar").style.display = "none";
+  document.getElementById("view-windy").style.display = "block";
+}
+
+function showRadarView(){
+  document.getElementById("view-windy").style.display = "none";
+  document.getElementById("view-radar").style.display = "block";
+  buildMap();
+  if(theMap) setTimeout(() => theMap.invalidateSize(), 60);
+}
+
+function wireMapViews(){
+  const btns = { "v-radar": null, "v-wind": "wind", "v-press": "pressure" };
+  Object.entries(btns).forEach(([id, overlay]) => {
+    document.getElementById(id).addEventListener("click", () => {
+      Object.keys(btns).forEach(k =>
+        document.getElementById(k).setAttribute("aria-pressed", k === id ? "true" : "false"));
+      overlay ? showWindy(overlay) : showRadarView();
+    });
+  });
+}
+
 // ─── TABS ───────────────────────────────────────────────────────────────────
 function showScreen(id){
   document.querySelectorAll(".screen").forEach(sc => sc.classList.toggle("on", sc.id === id));
   document.querySelectorAll(".tabs button").forEach(b =>
     b.setAttribute("aria-selected", b.dataset.screen === id ? "true" : "false"));
   window.scrollTo(0, 0);
-  if(id === "s-map"){ buildMap(); if(theMap) setTimeout(() => theMap.invalidateSize(), 60); }
+  if(id === "s-map" && document.getElementById("view-radar").style.display !== "none"){
+    buildMap();
+    if(theMap) setTimeout(() => theMap.invalidateSize(), 60);
+  }
   try{ localStorage.setItem("watercheck.tab", id); }catch(e){}
 }
 document.querySelectorAll(".tabs button").forEach(b =>
@@ -966,6 +1036,7 @@ try{
 }catch(e){}
 
 wireStandEditor();
+wireMapViews();
 load();
 setInterval(load, 900000);
 </script>
