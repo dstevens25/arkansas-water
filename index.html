@@ -52,14 +52,20 @@
 
   .tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;
         background:var(--card);border-top:1px solid var(--rule);
-        display:grid;grid-template-columns:repeat(5,1fr);
+        display:grid;grid-template-columns:repeat(6,1fr);
         padding-bottom:env(safe-area-inset-bottom)}
   .tabs button{background:none;border:0;color:var(--muted);cursor:pointer;
-               padding:9px 1px 8px;display:flex;flex-direction:column;align-items:center;gap:3px;
-               font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;
-               letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
-  .tabs button svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.6;
+               padding:8px 1px 7px;display:flex;flex-direction:column;align-items:center;gap:3px;
+               font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:500;
+               letter-spacing:.05em;text-transform:uppercase;text-decoration:none}
+  .tabs button svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6;
                    stroke-linecap:round;stroke-linejoin:round}
+  /* Tab art is near-white with a transparent ground, so opacity alone carries
+     the selected state — no filters, nothing to go wrong on older phones. */
+  .tabs button img{width:26px;height:26px;display:block;opacity:.42;object-fit:contain}
+  .tabs button[aria-selected="true"] img{opacity:1}
+  .tabs button:hover img{opacity:.75}
+  .tabs button[aria-selected="true"]:hover img{opacity:1}
   .tabs button[aria-selected="true"]{color:var(--tan-lt)}
   .tabs button:hover{color:var(--text)}
   .tabs button[aria-selected="true"]:hover{color:var(--tan-lt)}
@@ -225,7 +231,13 @@
     <span class="refreshed" id="refreshed"></span>
   </div>
 
-  <section class="screen on" id="s-deer" role="tabpanel" aria-label="Deer">
+  <section class="screen on" id="s-water" role="tabpanel" aria-label="Water">
+    <p class="sect">River gauges</p>
+    <div class="summary" id="summary">Loading…</div>
+    <div id="spots"></div>
+  </section>
+
+  <section class="screen" id="s-deer" role="tabpanel" aria-label="Deer">
     <p class="sect">Deer</p>
     <div class="summary" id="dsummary">Loading…</div>
     <div id="deer"></div>
@@ -236,10 +248,6 @@
   </section>
 
   <section class="screen" id="s-duck" role="tabpanel" aria-label="Waterfowl">
-    <p class="sect">River gauges</p>
-    <div class="summary" id="summary">Loading…</div>
-    <div id="spots"></div>
-
     <p class="sect">WMA flooding</p>
     <div class="summary" id="wsummary">Loading…</div>
     <div id="wnotice"></div>
@@ -350,10 +358,11 @@
 </div>
 
 <nav class="tabs" role="tablist">
-  <button role="tab" data-screen="s-deer" aria-selected="true" aria-controls="s-deer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v3l2.5 2.5"/><path d="M18 3v3l-2.5 2.5"/><path d="M4 6h2M20 6h-2"/><path d="M12 9a3 3 0 0 0-3 3v3a3 3 0 0 0 6 0v-3a3 3 0 0 0-3-3z"/><path d="M10 21h4"/></svg>Deer</button>
-  <button role="tab" data-screen="s-duck" aria-selected="false" aria-controls="s-duck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7.5a2 2 0 1 0-4 0v1"/><path d="M12 8.5c-4 0-7 2.5-7 5.5a5 5 0 0 0 5 5h3c4 0 6-2.5 6-6"/><path d="M16 6.6h2.5"/></svg>Ducks</button>
-  <button role="tab" data-screen="s-fish" aria-selected="false" aria-controls="s-fish"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.5-5 8-5 8 5 8 5-3.5 5-8 5-8-5-8-5z"/><path d="M19 12c1.5-1 2-2.5 2-2.5M19 12c1.5 1 2 2.5 2 2.5"/><circle cx="9" cy="11.5" r=".6" fill="currentColor" stroke="none"/></svg>Fish</button>
-  <button role="tab" data-screen="s-map" aria-selected="false" aria-controls="s-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg>Map</button>
+  <button role="tab" data-screen="s-water" aria-selected="true" aria-controls="s-water"><img src="tab-water.png" alt="" width="26" height="26">Water</button>
+  <button role="tab" data-screen="s-deer" aria-selected="false" aria-controls="s-deer"><img src="tab-deer.png" alt="" width="26" height="26">Deer</button>
+  <button role="tab" data-screen="s-duck" aria-selected="false" aria-controls="s-duck"><img src="tab-duck.png" alt="" width="26" height="26">Ducks</button>
+  <button role="tab" data-screen="s-fish" aria-selected="false" aria-controls="s-fish"><img src="tab-fish.png" alt="" width="26" height="26">Fish</button>
+  <button role="tab" data-screen="s-map" aria-selected="false" aria-controls="s-map"><img src="tab-map.png" alt="" width="26" height="26">Map</button>
   <button role="tab" data-screen="s-more" aria-selected="false" aria-controls="s-more"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>More</button>
 </nav>
 
