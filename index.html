@@ -5,30 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
 <title>Water Check</title>
+<meta name="theme-color" content="#181712">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Water Check">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#10130F; --surface:#191E18; --rule:#2A312A;
-    --text:#E8E6DE; --muted:#8C9187;
-    --go:#7FA650; --marginal:#C98A2E; --skip:#9C4A3F;
+    /* Palette from the logo. The greens are surfaces — at 1.2:1 against the
+       background they're unreadable as text, so text uses lightened tints
+       from the same family. Burnt orange appears only on problems. */
+    --bg:#181712;         /* Deep Charcoal   */
+    --card:#2B2D1D;       /* Forest Green    */
+    --shadow:#25281A;     /* Dark Forest     */
+    --rule:#4C432A;       /* Olive           */
+    --tan:#947C4F;        /* Arkansas Tan    */
+    --tan-lt:#C4AA76;     /* lightened, 8.0:1 */
+    --text:#E6DCC4;       /* 13.2:1          */
+    --muted:#8E8768;      /* 5.0:1           */
+    --go:#A3AC64;         /* 7.4:1           */
+    --marginal:#C9994A;   /* 7.0:1           */
+    --skip:#B35315;       /* Burnt Orange, used sparingly */
+    --surface:#25281A;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--text);font-family:'Barlow',system-ui,sans-serif;
        font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:640px;margin:0 auto;padding:20px 18px 60px}
+  .wrap{max-width:640px;margin:0 auto;padding:14px 18px calc(78px + env(safe-area-inset-bottom))}
+
+  .topbar{position:sticky;top:0;z-index:20;background:var(--bg);
+          padding:calc(10px + env(safe-area-inset-top)) 0 12px;
+          border-bottom:1px solid var(--rule);
+          display:flex;justify-content:space-between;align-items:baseline}
+
+  .screen{display:none}
+  .screen.on{display:block;animation:fade .18s ease-out both}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @media (prefers-reduced-motion:reduce){.screen.on{animation:none}}
+
+  .tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;
+        background:var(--card);border-top:1px solid var(--rule);
+        display:grid;grid-template-columns:repeat(5,1fr);
+        padding-bottom:env(safe-area-inset-bottom)}
+  .tabs button{background:none;border:0;color:var(--muted);cursor:pointer;
+               padding:9px 2px 8px;display:flex;flex-direction:column;align-items:center;gap:3px;
+               font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;
+               letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+  .tabs button svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.6;
+                   stroke-linecap:round;stroke-linejoin:round}
+  .tabs button[aria-selected="true"]{color:var(--tan-lt)}
+  .tabs button:hover{color:var(--text)}
+  .tabs button[aria-selected="true"]:hover{color:var(--tan-lt)}
+  .tabs button:focus-visible{outline:2px solid var(--go);outline-offset:-3px}
+
 
   header{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:14px;border-bottom:1px solid var(--rule)}
-  h1{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:30px;letter-spacing:.02em;margin:0}
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:26px;letter-spacing:.04em;margin:0;color:var(--tan-lt);text-transform:uppercase}
   .refreshed{font-size:13px;color:var(--muted)}
 
   .sect{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600;letter-spacing:.14em;
-        text-transform:uppercase;color:var(--muted);margin:34px 0 4px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+        text-transform:uppercase;color:var(--tan);margin:18px 0 4px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
   .summary{font-family:'Barlow Condensed',sans-serif;font-size:21px;font-weight:500;padding:14px 0;color:var(--muted)}
   .summary b{color:var(--text);font-weight:600}
 
-  .notice{background:var(--surface);border-left:3px solid var(--marginal);padding:12px 16px;
+  .notice{background:var(--card);border-left:3px solid var(--marginal);padding:12px 16px;
           margin:8px 0 16px;font-size:14px;color:var(--muted)}
   .notice b{color:var(--marginal);font-weight:500}
 
@@ -45,7 +90,7 @@
   .v-none{color:var(--muted);border-color:var(--rule)}
 
   .reading{display:flex;align-items:baseline;gap:14px;margin-top:14px;flex-wrap:wrap}
-  .stage{font-family:'Barlow Condensed',sans-serif;font-size:52px;font-weight:600;line-height:.9}
+  .stage{font-family:'Barlow Condensed',sans-serif;font-size:52px;font-weight:600;line-height:.9;color:var(--tan-lt)}
   .stage span{font-size:20px;font-weight:400;color:var(--muted);margin-left:5px}
   .trend{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:500}
   .t-up{color:var(--go)} .t-down{color:var(--marginal)} .t-flat{color:var(--muted)}
@@ -63,7 +108,7 @@
   .unit{display:flex;align-items:center;gap:12px;margin-top:10px}
   .unit-name{flex:1;font-size:15px;min-width:0}
   .unit-name span{display:block;font-size:12px;color:var(--muted)}
-  .bar{width:82px;height:8px;background:var(--rule);flex-shrink:0}
+  .bar{width:82px;height:8px;background:var(--shadow);flex-shrink:0}
   .bar i{display:block;height:100%}
   .pct{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:600;width:46px;text-align:right;flex-shrink:0}
   .closed{font-size:12px;color:var(--skip);letter-spacing:.06em}
@@ -75,7 +120,7 @@
            text-transform:uppercase;padding:3px 10px;border:1px solid;white-space:nowrap}
   .big-row{display:flex;gap:26px;flex-wrap:wrap;margin:14px 0 4px}
   .big{font-family:'Barlow Condensed',sans-serif}
-  .big b{display:block;font-size:32px;font-weight:600;line-height:1}
+  .big b{display:block;font-size:32px;font-weight:600;line-height:1;color:var(--tan-lt)}
   .big span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 
   .dirgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px 0 14px}
@@ -88,8 +133,8 @@
   .del{border-color:var(--rule);color:var(--muted);padding:7px 12px;font-size:14px}
   .del:hover{background:var(--skip);border-color:var(--skip);color:var(--text)}
 
-  .setup{background:var(--surface);padding:22px;margin-top:30px}
-  .setup h2{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:600;margin:0 0 10px}
+  .setup{background:var(--card);padding:22px;margin-top:18px}
+  .setup h2{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:600;margin:0 0 10px;color:var(--tan-lt)}
   .setup p{font-size:15px;color:var(--muted);margin:0 0 14px}
   .setup a{color:var(--go)}
   .row{display:flex;gap:8px;flex-wrap:wrap}
@@ -109,66 +154,89 @@
 <body>
 <div class="wrap">
 
-  <header>
-    <h1>Water check</h1>
+  <div class="topbar">
+    <div style="display:flex;align-items:center;gap:10px">
+      <img src="logo.png" alt="" width="34" height="34" style="display:block">
+      <h1>Water check</h1>
+    </div>
     <span class="refreshed" id="refreshed"></span>
-  </header>
+  </div>
 
-  <p class="sect">Gauges</p>
-  <div class="summary" id="summary">Loading…</div>
-  <div id="spots"></div>
-
-  <p class="sect">Deer</p>
-  <div class="summary" id="dsummary">Loading…</div>
-  <div id="deer"></div>
-
-  <p class="sect">Waterfowl</p>
-  <div class="summary" id="wsummary">Loading…</div>
-  <div id="wnotice"></div>
-  <div id="wfowl"></div>
-
-  <p class="sect">Fishing report</p>
-  <div class="summary" id="fsummary">Loading…</div>
-  <div id="fish"></div>
-
-  <section class="setup">
-    <h2>Your stands</h2>
-    <div id="standlist"></div>
-    <div class="row" style="margin-top:14px">
-      <input id="stname" placeholder="Stand name">
-      <input id="stnote" placeholder="Note (optional)">
-    </div>
-    <p class="hint" style="margin-bottom:0">Winds you'd sit it on — tap all that apply</p>
-    <div class="dirgrid" id="dirgrid"></div>
-    <div class="row">
-      <button id="stloc">Use my location</button>
-      <button id="stadd">Add stand</button>
-    </div>
-    <p class="hint" id="stmsg"></p>
-    <p class="hint">Saved on this device only. Clearing your browser data erases them.</p>
+  <section class="screen on" id="s-water" role="tabpanel" aria-label="Gauges">
+    <p class="sect">Gauges</p>
+    <div class="summary" id="summary">Loading…</div>
+    <div id="spots"></div>
   </section>
 
-  <section class="setup">
-    <h2>Add a gauge</h2>
-    <p>Find the USGS site number on the
-       <a href="https://waterdata.usgs.gov/ar/nwis/rt" target="_blank" rel="noopener">Arkansas real-time map</a>.</p>
-    <div class="row">
-      <input id="site" placeholder="Site number, e.g. 07076750" inputmode="numeric">
-      <input id="label" placeholder="What you call it">
-      <button id="add">Add</button>
-    </div>
-    <p class="hint" id="addmsg"></p>
-    <p class="hint">Added gauges last until you reload. To keep them, put them in the
-       <code>SPOTS</code> list at the top of this file.</p>
+  <section class="screen" id="s-deer" role="tabpanel" aria-label="Deer">
+    <p class="sect">Deer</p>
+    <div class="summary" id="dsummary">Loading…</div>
+    <div id="deer"></div>
   </section>
 
-  <p class="disclaimer">
-    Gauge data from USGS, forecast from the National Weather Service, fishing and waterfowl
-    conditions from the Arkansas Game and Fish Commission, which does not warrant the accuracy
-    or timeliness of that information. Check conditions yourself before you go.
-  </p>
+  <section class="screen" id="s-duck" role="tabpanel" aria-label="Waterfowl">
+    <p class="sect">Waterfowl</p>
+    <div class="summary" id="wsummary">Loading…</div>
+    <div id="wnotice"></div>
+    <div id="wfowl"></div>
+  </section>
+
+  <section class="screen" id="s-fish" role="tabpanel" aria-label="Fishing">
+    <p class="sect">Fishing report</p>
+    <div class="summary" id="fsummary">Loading…</div>
+    <div id="fish"></div>
+  </section>
+
+  <section class="screen" id="s-setup" role="tabpanel" aria-label="Setup">
+    <p class="sect">Setup</p>
+
+    <div class="setup">
+      <h2>Your stands</h2>
+      <div id="standlist"></div>
+      <div class="row" style="margin-top:14px">
+        <input id="stname" placeholder="Stand name">
+        <input id="stnote" placeholder="Note (optional)">
+      </div>
+      <p class="hint" style="margin-bottom:0">Winds you'd sit it on — tap all that apply</p>
+      <div class="dirgrid" id="dirgrid"></div>
+      <div class="row">
+        <button id="stloc">Use my location</button>
+        <button id="stadd">Add stand</button>
+      </div>
+      <p class="hint" id="stmsg"></p>
+      <p class="hint">Saved on this device only. Clearing your browser data erases them.</p>
+    </div>
+
+    <div class="setup">
+      <h2>Add a gauge</h2>
+      <p>Find the USGS site number on the
+         <a href="https://waterdata.usgs.gov/ar/nwis/rt" target="_blank" rel="noopener">Arkansas real-time map</a>.</p>
+      <div class="row">
+        <input id="site" placeholder="Site number, e.g. 07076750" inputmode="numeric">
+        <input id="label" placeholder="What you call it">
+        <button id="add">Add</button>
+      </div>
+      <p class="hint" id="addmsg"></p>
+      <p class="hint">Added gauges last until you reload. To keep them, put them in the
+         <code>SPOTS</code> list at the top of this file.</p>
+    </div>
+
+    <p class="disclaimer">
+      Gauge data from USGS, forecast from the National Weather Service, fishing and waterfowl
+      conditions from the Arkansas Game and Fish Commission, which does not warrant the accuracy
+      or timeliness of that information. Check conditions yourself before you go.
+    </p>
+  </section>
 
 </div>
+
+<nav class="tabs" role="tablist">
+  <button role="tab" data-screen="s-water" aria-selected="true" aria-controls="s-water"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.5 6 10.5a6 6 0 0 1-12 0C6 9.5 12 3 12 3z"/></svg>Water</button>
+  <button role="tab" data-screen="s-deer" aria-selected="false" aria-controls="s-deer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v3l2.5 2.5"/><path d="M18 3v3l-2.5 2.5"/><path d="M4 6h2M20 6h-2"/><path d="M12 9a3 3 0 0 0-3 3v3a3 3 0 0 0 6 0v-3a3 3 0 0 0-3-3z"/><path d="M10 21h4"/></svg>Deer</button>
+  <button role="tab" data-screen="s-duck" aria-selected="false" aria-controls="s-duck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7.5a2 2 0 1 0-4 0v1"/><path d="M12 8.5c-4 0-7 2.5-7 5.5a5 5 0 0 0 5 5h3c4 0 6-2.5 6-6"/><path d="M16 6.6h2.5"/></svg>Ducks</button>
+  <button role="tab" data-screen="s-fish" aria-selected="false" aria-controls="s-fish"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.5-5 8-5 8 5 8 5-3.5 5-8 5-8-5-8-5z"/><path d="M19 12c1.5-1 2-2.5 2-2.5M19 12c1.5 1 2 2.5 2 2.5"/><circle cx="9" cy="11.5" r=".6" fill="currentColor" stroke="none"/></svg>Fish</button>
+  <button role="tab" data-screen="s-setup" aria-selected="false" aria-controls="s-setup"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6L17 7M7 17l-1.4 1.4"/></svg>Setup</button>
+</nav>
 
 <script>
 // ─── YOUR SPOTS ─────────────────────────────────────────────────────────────
@@ -776,6 +844,21 @@ document.getElementById("add").addEventListener("click", async () => {
     loadGauges();
   }catch(e){ msg.textContent = e.message; }
 });
+
+// ─── TABS ───────────────────────────────────────────────────────────────────
+function showScreen(id){
+  document.querySelectorAll(".screen").forEach(sc => sc.classList.toggle("on", sc.id === id));
+  document.querySelectorAll(".tabs button").forEach(b =>
+    b.setAttribute("aria-selected", b.dataset.screen === id ? "true" : "false"));
+  window.scrollTo(0, 0);
+  try{ localStorage.setItem("watercheck.tab", id); }catch(e){}
+}
+document.querySelectorAll(".tabs button").forEach(b =>
+  b.addEventListener("click", () => showScreen(b.dataset.screen)));
+try{
+  const last = localStorage.getItem("watercheck.tab");
+  if(last && document.getElementById(last)) showScreen(last);
+}catch(e){}
 
 wireStandEditor();
 load();
