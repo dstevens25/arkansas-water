@@ -81,9 +81,13 @@
   /* stop the phone adding its own grey flash on top */
   .tabs button{-webkit-tap-highlight-color:transparent}
   .tabs button[aria-selected="true"]{color:var(--tan-lt)}
-  .tabs button:hover{color:var(--text)}
-  .tabs button[aria-selected="true"]:hover{color:var(--tan-lt)}
   .tabs button:focus-visible{outline:2px solid var(--go);outline-offset:-3px}
+  /* These two must come last, after the resting-state colours above, or the
+     cascade puts the light label back on the bone background. */
+  .tabs button:hover,
+  .tabs button:active,
+  .tabs button[aria-selected="true"]:hover,
+  .tabs button[aria-selected="true"]:active{color:var(--bg)}
 
 
   header{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:14px;border-bottom:1px solid var(--rule)}
