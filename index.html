@@ -52,13 +52,13 @@
 
   .tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;
         background:var(--card);border-top:1px solid var(--rule);
-        display:grid;grid-template-columns:repeat(6,1fr);
+        display:grid;grid-template-columns:repeat(7,1fr);
         padding-bottom:env(safe-area-inset-bottom)}
   .tabs button{background:none;border:0;color:var(--muted);cursor:pointer;
                padding:9px 1px 8px;display:flex;flex-direction:column;align-items:center;gap:3px;
-               font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:500;
-               letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
-  .tabs button svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.6;
+               font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:500;
+               letter-spacing:.02em;text-transform:uppercase;text-decoration:none}
+  .tabs button svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.6;
                    stroke-linecap:round;stroke-linejoin:round}
   .tabs button[aria-selected="true"]{color:var(--tan-lt)}
   .tabs button:hover{color:var(--text)}
@@ -148,6 +148,23 @@
   .maprow button[aria-pressed="true"]{background:var(--tan);border-color:var(--tan);color:var(--bg)}
   .pin{border-radius:50%;border:2px solid var(--bg);box-shadow:0 0 0 1px rgba(0,0,0,.5)}
 
+  .spark{display:block;width:100%;height:38px;margin-top:12px}
+  .spark path{fill:none;stroke:var(--tan-lt);stroke-width:1.6;stroke-linejoin:round}
+  .spark line{stroke:var(--rule);stroke-width:1;stroke-dasharray:3 3}
+  .range{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:2px}
+
+  .season{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule)}
+  .season div{flex:1;min-width:0}
+  .season p{margin:0;font-size:15px}
+  .season small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+  .badge{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:.08em;
+         text-transform:uppercase;padding:4px 10px;border:1px solid;white-space:nowrap;flex-shrink:0}
+  .b-open{color:var(--go);border-color:var(--go)}
+  .b-soon{color:var(--marginal);border-color:var(--marginal)}
+  .b-closed{color:var(--muted);border-color:var(--rule)}
+  select{background:var(--bg);border:1px solid var(--rule);color:var(--text);padding:11px 12px;
+         font-family:'Barlow',sans-serif;font-size:16px;width:100%}
+
   .rut{background:var(--card);padding:16px 18px;margin-top:12px}
   .rutbar{display:flex;height:9px;margin:14px 0 8px;gap:2px}
   .rutbar i{flex:1;background:var(--shadow)}
@@ -231,6 +248,17 @@
     <div id="fish"></div>
   </section>
 
+  <section class="screen" id="s-seasons" role="tabpanel" aria-label="Seasons">
+    <p class="sect">Seasons</p>
+    <div class="summary" id="ssummary"></div>
+    <div id="seasons"></div>
+    <p class="hint" style="margin-top:16px">Dates from the Arkansas Game and Fish Commission for
+      2026&ndash;27. <b>AGFC is the authority, not this app.</b> Closing dates and bag limits vary by
+      deer zone, and zone boundaries were redrawn for this season. Always confirm at
+      <a href="https://www.agfc.com/hunting/deer/deer-seasons-and-limits-by-zone/" target="_blank" rel="noopener">agfc.com</a>
+      before you hunt.</p>
+  </section>
+
   <section class="screen" id="s-map" role="tabpanel" aria-label="Map">
     <p class="sect">Map</p>
     <div class="maprow">
@@ -285,6 +313,15 @@
     </div>
 
     <div class="setup">
+      <h2>Where you hunt</h2>
+      <p>Sets your rut timing. Deer zone affects season closing dates and limits —
+         check the <a href="https://www.agfc.com/hunting/deer/deer-seasons-and-limits-by-zone/"
+         target="_blank" rel="noopener">AGFC zone map</a> if you're not sure.</p>
+      <select id="regionsel" aria-label="Region"></select>
+      <p class="hint" id="regionmsg"></p>
+    </div>
+
+    <div class="setup">
       <h2>Add a gauge</h2>
       <p>Find the USGS site number on the
          <a href="https://waterdata.usgs.gov/ar/nwis/rt" target="_blank" rel="noopener">Arkansas real-time map</a>.</p>
@@ -312,6 +349,7 @@
   <button role="tab" data-screen="s-deer" aria-selected="false" aria-controls="s-deer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v3l2.5 2.5"/><path d="M18 3v3l-2.5 2.5"/><path d="M4 6h2M20 6h-2"/><path d="M12 9a3 3 0 0 0-3 3v3a3 3 0 0 0 6 0v-3a3 3 0 0 0-3-3z"/><path d="M10 21h4"/></svg>Deer</button>
   <button role="tab" data-screen="s-duck" aria-selected="false" aria-controls="s-duck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7.5a2 2 0 1 0-4 0v1"/><path d="M12 8.5c-4 0-7 2.5-7 5.5a5 5 0 0 0 5 5h3c4 0 6-2.5 6-6"/><path d="M16 6.6h2.5"/></svg>Ducks</button>
   <button role="tab" data-screen="s-fish" aria-selected="false" aria-controls="s-fish"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.5-5 8-5 8 5 8 5-3.5 5-8 5-8-5-8-5z"/><path d="M19 12c1.5-1 2-2.5 2-2.5M19 12c1.5 1 2 2.5 2 2.5"/><circle cx="9" cy="11.5" r=".6" fill="currentColor" stroke="none"/></svg>Fish</button>
+  <button role="tab" data-screen="s-seasons" aria-selected="false" aria-controls="s-seasons"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>Season</button>
   <button role="tab" data-screen="s-map" aria-selected="false" aria-controls="s-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg>Map</button>
   <button role="tab" data-screen="s-setup" aria-selected="false" aria-controls="s-setup"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6L17 7M7 17l-1.4 1.4"/></svg>Setup</button>
 </nav>
@@ -352,7 +390,7 @@ const P = { stage:"00065", flow:"00060", temp:"00010" };
 
 async function usgs(site){
   const url = "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + site +
-              "&parameterCd=" + Object.values(P).join(",") + "&period=P2D";
+              "&parameterCd=" + Object.values(P).join(",") + "&period=P7D";
   const r = await fetch(url);
   if(!r.ok) throw new Error("USGS returned " + r.status);
   const series = (await r.json())?.value?.timeSeries || [];
@@ -372,6 +410,10 @@ async function usgs(site){
       let prior = pts[0];
       for(const p of pts){ if(new Date(p.dateTime) <= target) prior = p; }
       out.change = out.stage - parseFloat(prior.value);
+      // thin the series down for the sparkline — 7 days of 15-minute readings is ~670 points
+      const step = Math.max(1, Math.floor(pts.length / 120));
+      out.series = pts.filter((_, i) => i % step === 0)
+                      .map(p => ({ v: parseFloat(p.value) }));
     }
     out.name = out.name || s.sourceInfo.siteName;
   }
@@ -436,6 +478,8 @@ function renderGauge(spot, data, wx, error){
     <p class="age ${isStale ? "stale" : ""}">Gauge read ${when}</p></div>`);
   setText(e, ".name", spot.name || data.name || spot.usgs);
   setText(e, ".note", spot.note || "");
+  const sp = sparkline(data.series);
+  if(sp) e.querySelector(".reading").insertAdjacentElement("afterend", sp);
   const meta = e.querySelector(".meta");
   if(data.flow !== undefined) addMeta(meta, "Flow", Math.round(data.flow).toLocaleString() + " cfs");
   if(data.temp !== undefined) addMeta(meta, "Water", Math.round(data.temp * 9/5 + 32) + "°F");
@@ -905,7 +949,7 @@ async function loadGauges(){
     "Updated " + new Date().toLocaleTimeString([], {hour:"numeric", minute:"2-digit"});
 }
 
-function load(){ loadGauges(); loadDeer(); renderRut(); renderGuides(); loadWaterfowl(); loadFish(); }
+function load(){ loadGauges(); loadDeer(); renderRut(); renderGuides(); renderSeasons(); loadWaterfowl(); loadFish(); }
 
 document.getElementById("add").addEventListener("click", async () => {
   const site = document.getElementById("site").value.trim();
@@ -922,6 +966,121 @@ document.getElementById("add").addEventListener("click", async () => {
     loadGauges();
   }catch(e){ msg.textContent = e.message; }
 });
+
+// ─── SEASONS ────────────────────────────────────────────────────────────────
+// From AGFC's own seasons-and-limits page for 2026-27. Third-party hunting sites
+// disagree with each other on these dates — several still list last year's.
+// AGFC is the authority; this is a convenience display, never a guarantee.
+const SEASONS = [
+  { name:"Early buck-only archery", kind:"deer",  from:"2026-08-29", to:"2026-08-31" },
+  { name:"Archery",                 kind:"deer",  from:"2026-09-26", to:"2027-02-28" },
+  { name:"Alternative firearms",    kind:"deer",  from:"2026-10-17", to:"2026-10-25",
+    note:"Closed in some zones" },
+  { name:"Alternative firearms",    kind:"deer",  from:"2026-12-12", to:"2026-12-14",
+    note:"Second segment; varies by zone" },
+  { name:"Youth modern gun",        kind:"deer",  from:"2026-11-07", to:"2026-11-08" },
+  { name:"Modern gun",              kind:"deer",  from:"2026-11-14", to:"2026-12-06",
+    note:"Closing date varies by zone" },
+  { name:"Christmas holiday hunt",  kind:"deer",  from:"2026-12-26", to:"2026-12-28" },
+  { name:"Youth modern gun",        kind:"deer",  from:"2027-01-02", to:"2027-01-03" },
+
+  { name:"Duck, coot, merganser",   kind:"duck",  from:"2026-11-21", to:"2026-11-29" },
+  { name:"Duck, coot, merganser",   kind:"duck",  from:"2026-12-10", to:"2026-12-23" },
+  { name:"Duck, coot, merganser",   kind:"duck",  from:"2026-12-26", to:"2027-01-31" },
+];
+
+const KIND_LABEL = { deer:"Deer", duck:"Waterfowl" };
+
+function seasonState(sn, today){
+  const from = new Date(sn.from + "T00:00:00");
+  const to   = new Date(sn.to   + "T23:59:59");
+  if(today >= from && today <= to) return { state:"open",  days: Math.ceil((to - today)/864e5) };
+  if(today < from) return { state:"soon", days: Math.ceil((from - today)/864e5) };
+  return { state:"closed", days: 0 };
+}
+
+function renderSeasons(){
+  const today = new Date();
+  const box = document.getElementById("seasons");
+  const sum = document.getElementById("ssummary");
+  box.innerHTML = "";
+
+  const rows = SEASONS.map(sn => ({ sn, st: seasonState(sn, today) }))
+    .filter(r => r.st.state !== "closed")
+    .sort((a, b) => (a.st.state === b.st.state) ? a.st.days - b.st.days
+                  : a.st.state === "open" ? -1 : 1);
+
+  const openNow = rows.filter(r => r.st.state === "open");
+  sum.innerHTML = openNow.length
+    ? `<b>${openNow.length}</b> season${openNow.length>1?"s":""} open today`
+    : `Nothing open · next opens in <b>${rows[0] ? rows[0].st.days : "?"}</b> days`;
+
+  const fmt = d => new Date(d + "T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"});
+
+  rows.slice(0, 8).forEach(({ sn, st }) => {
+    const cls = st.state === "open" ? "b-open" : "b-soon";
+    const tag = st.state === "open"
+      ? (st.days <= 3 ? `${st.days}d left` : "Open")
+      : `${st.days}d`;
+    const r = el(`<div class="season"><div><p></p><small></small></div>
+      <span class="badge ${cls}"></span></div>`);
+    r.querySelector("p").textContent = sn.name;
+    r.querySelector("small").textContent =
+      `${KIND_LABEL[sn.kind]} · ${fmt(sn.from)} – ${fmt(sn.to)}` + (sn.note ? ` · ${sn.note}` : "");
+    r.querySelector(".badge").textContent = tag;
+    box.appendChild(r);
+  });
+}
+
+// ─── REGION PICKER ──────────────────────────────────────────────────────────
+const REGION_KEY = "watercheck.region";
+function currentRegion(){
+  try{ return localStorage.getItem(REGION_KEY) || RUT_REGION; }catch(e){ return RUT_REGION; }
+}
+function wireRegion(){
+  const sel = document.getElementById("regionsel");
+  Object.entries(RUT_REGIONS).forEach(([k, v]) => {
+    const o = document.createElement("option");
+    o.value = k; o.textContent = v.label;
+    sel.appendChild(o);
+  });
+  sel.value = currentRegion();
+  sel.addEventListener("change", () => {
+    try{ localStorage.setItem(REGION_KEY, sel.value); }catch(e){}
+    document.getElementById("regionmsg").textContent =
+      "Rut timing set to " + RUT_REGIONS[sel.value].label + ".";
+    renderRut();
+  });
+}
+
+// ─── GAUGE SPARKLINE ────────────────────────────────────────────────────────
+function sparkline(points){
+  if(!points || points.length < 4) return null;
+  const vals = points.map(p => p.v);
+  const lo = Math.min(...vals), hi = Math.max(...vals);
+  const span = (hi - lo) || 1;
+  const W = 300, H = 38, pad = 3;
+  const d = points.map((p, i) => {
+    const x = (i / (points.length - 1)) * W;
+    const y = H - pad - ((p.v - lo) / span) * (H - pad*2);
+    return `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(" ");
+
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", "spark");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("preserveAspectRatio", "none");
+  svg.setAttribute("aria-hidden", "true");
+  svg.innerHTML = `<path d="${d}"/>`;
+
+  const wrap = document.createElement("div");
+  wrap.appendChild(svg);
+  const r = document.createElement("div");
+  r.className = "range";
+  r.innerHTML = `<span>7-day low ${lo.toFixed(2)} ft</span><span>high ${hi.toFixed(2)} ft</span>`;
+  wrap.appendChild(r);
+  return wrap;
+}
 
 // ─── RUT ────────────────────────────────────────────────────────────────────
 // Peak CONCEPTION dates by region. AGFC derives these from fetal measurements of
@@ -949,7 +1108,7 @@ const RUT_PHASES = [
 ];
 
 function rutStatus(today){
-  const cfg = RUT_REGIONS[RUT_REGION];
+  const cfg = RUT_REGIONS[currentRegion()] || RUT_REGIONS[RUT_REGION];
   const [m, d] = cfg.peak.split("-").map(Number);
   const yr = today.getMonth() >= 6 ? today.getFullYear() : today.getFullYear() - 1;
   const peak = new Date(yr, m-1, d);
@@ -1215,6 +1374,7 @@ try{
 
 wireStandEditor();
 wireMapViews();
+wireRegion();
 load();
 setInterval(load, 900000);
 </script>
