@@ -78,6 +78,16 @@
   .big b{display:block;font-size:32px;font-weight:600;line-height:1}
   .big span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 
+  .dirgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px 0 14px}
+  .dirgrid button{padding:12px 0;font-size:15px;letter-spacing:.04em;border-color:var(--rule);color:var(--muted)}
+  .dirgrid button[aria-pressed="true"]{background:var(--go);border-color:var(--go);color:var(--bg)}
+  .stand-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .stand-row div{flex:1;min-width:0}
+  .stand-row p{margin:0;font-size:15px}
+  .stand-row small{color:var(--muted);font-size:12px}
+  .del{border-color:var(--rule);color:var(--muted);padding:7px 12px;font-size:14px}
+  .del:hover{background:var(--skip);border-color:var(--skip);color:var(--text)}
+
   .setup{background:var(--surface);padding:22px;margin-top:30px}
   .setup h2{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:600;margin:0 0 10px}
   .setup p{font-size:15px;color:var(--muted);margin:0 0 14px}
@@ -120,6 +130,23 @@
   <p class="sect">Fishing report</p>
   <div class="summary" id="fsummary">Loading…</div>
   <div id="fish"></div>
+
+  <section class="setup">
+    <h2>Your stands</h2>
+    <div id="standlist"></div>
+    <div class="row" style="margin-top:14px">
+      <input id="stname" placeholder="Stand name">
+      <input id="stnote" placeholder="Note (optional)">
+    </div>
+    <p class="hint" style="margin-bottom:0">Winds you'd sit it on — tap all that apply</p>
+    <div class="dirgrid" id="dirgrid"></div>
+    <div class="row">
+      <button id="stloc">Use my location</button>
+      <button id="stadd">Add stand</button>
+    </div>
+    <p class="hint" id="stmsg"></p>
+    <p class="hint">Saved on this device only. Clearing your browser data erases them.</p>
+  </section>
 
   <section class="setup">
     <h2>Add a gauge</h2>
@@ -462,8 +489,9 @@ function renderDeer(wx){
   setText(card, ".note", "on tonight's " + wind + " wind");
   const list = card.querySelector(".stands");
 
+  const stands = loadStands();
   let good = 0;
-  STANDS.forEach(st => {
+  stands.forEach(st => {
     const ok = windOk(wind, st.winds);
     if(ok) good++;
     const r = el(`<div class="stand"><div class="stand-name"></div>
@@ -481,7 +509,7 @@ function renderDeer(wx){
   });
   box.appendChild(card);
 
-  sum.innerHTML = `<b>${good}</b> of ${STANDS.length} stands on the wind · ` +
+  sum.innerHTML = `<b>${good}</b> of ${stands.length} stands on the wind · ` +
                   `light closes ${t(lightClose)}`;
 }
 
@@ -497,6 +525,122 @@ async function loadDeer(){
     setText(err, ".err", e.message);
     box.appendChild(err);
   }
+}
+
+// ─── STAND STORAGE ──────────────────────────────────────────────────────────
+// Saved in this browser. Not an account — clearing site data wipes them, and they
+// don't follow you to another phone.
+const STAND_KEY = "watercheck.stands.v1";
+
+function loadStands(){
+  try{
+    const raw = localStorage.getItem(STAND_KEY);
+    if(raw){
+      const arr = JSON.parse(raw);
+      if(Array.isArray(arr)) return arr;
+    }
+  }catch(e){ /* private mode or storage blocked */ }
+  return STANDS;              // fall back to whatever is in the file
+}
+
+function saveStands(arr){
+  try{
+    localStorage.setItem(STAND_KEY, JSON.stringify(arr));
+    return true;
+  }catch(e){ return false; }
+}
+
+let pendingWinds = new Set();
+let pendingLoc = null;
+
+function drawDirGrid(){
+  const g = document.getElementById("dirgrid");
+  g.innerHTML = "";
+  DIRS.forEach(d => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = d;
+    b.setAttribute("aria-pressed", pendingWinds.has(d) ? "true" : "false");
+    b.addEventListener("click", () => {
+      if(pendingWinds.has(d)) pendingWinds.delete(d); else pendingWinds.add(d);
+      b.setAttribute("aria-pressed", pendingWinds.has(d) ? "true" : "false");
+    });
+    g.appendChild(b);
+  });
+}
+
+function drawStandList(){
+  const box = document.getElementById("standlist");
+  const stands = loadStands();
+  box.innerHTML = "";
+  if(!stands.length){
+    const p = document.createElement("p");
+    p.className = "hint";
+    p.textContent = "No stands yet. Add one below and the Deer section starts working.";
+    box.appendChild(p);
+    return;
+  }
+  stands.forEach((st, i) => {
+    const r = el(`<div class="stand-row"><div><p></p><small></small></div>
+      <button class="del">Remove</button></div>`);
+    r.querySelector("p").textContent = st.name;
+    r.querySelector("small").textContent =
+      [st.note, (st.winds || []).join("/"), st.lat ? "pinned" : null].filter(Boolean).join(" · ");
+    r.querySelector(".del").addEventListener("click", () => {
+      const next = loadStands().slice();
+      next.splice(i, 1);
+      saveStands(next);
+      drawStandList();
+      loadDeer();
+    });
+    box.appendChild(r);
+  });
+}
+
+function wireStandEditor(){
+  drawDirGrid();
+  drawStandList();
+
+  document.getElementById("stloc").addEventListener("click", () => {
+    const msg = document.getElementById("stmsg");
+    if(!navigator.geolocation){ msg.textContent = "This browser can't do location."; return; }
+    msg.textContent = "Getting your location…";
+    navigator.geolocation.getCurrentPosition(
+      p => {
+        pendingLoc = { lat: +p.coords.latitude.toFixed(5), lon: +p.coords.longitude.toFixed(5) };
+        msg.textContent = `Pinned ${pendingLoc.lat}, ${pendingLoc.lon}`;
+      },
+      e => { msg.textContent = "Couldn't get location: " + e.message; },
+      { enableHighAccuracy: true, timeout: 15000 }
+    );
+  });
+
+  document.getElementById("stadd").addEventListener("click", () => {
+    const msg = document.getElementById("stmsg");
+    const name = document.getElementById("stname").value.trim();
+    const note = document.getElementById("stnote").value.trim();
+    if(!name){ msg.textContent = "Give it a name."; return; }
+    if(!pendingWinds.size){ msg.textContent = "Pick at least one wind direction."; return; }
+
+    const st = { name, winds: [...pendingWinds] };
+    if(note) st.note = note;
+    if(pendingLoc){ st.lat = pendingLoc.lat; st.lon = pendingLoc.lon; }
+
+    const next = loadStands().slice();
+    // first save replaces the built-in examples rather than appending to them
+    const base = (next === STANDS || JSON.stringify(next) === JSON.stringify(STANDS)) ? [] : next;
+    base.push(st);
+
+    if(saveStands(base)){
+      msg.textContent = `Added ${name}.`;
+      document.getElementById("stname").value = "";
+      document.getElementById("stnote").value = "";
+      pendingWinds.clear(); pendingLoc = null;
+      drawDirGrid(); drawStandList(); loadDeer();
+    } else {
+      msg.textContent = "Couldn't save — storage is blocked in this browser.";
+    }
+  });
 }
 
 async function loadWaterfowl(){
@@ -633,6 +777,7 @@ document.getElementById("add").addEventListener("click", async () => {
   }catch(e){ msg.textContent = e.message; }
 });
 
+wireStandEditor();
 load();
 setInterval(load, 900000);
 </script>
