@@ -39,7 +39,7 @@
   .wrap{max-width:640px;margin:0 auto;padding:14px 18px calc(78px + env(safe-area-inset-bottom))}
 
   .topbar{position:sticky;top:0;z-index:20;background:var(--bg);
-          padding:calc(10px + env(safe-area-inset-top)) 0 12px;
+          padding:calc(12px + env(safe-area-inset-top)) 0 14px;
           border-bottom:1px solid var(--rule);
           display:flex;justify-content:space-between;align-items:baseline}
 
@@ -65,7 +65,7 @@
 
 
   header{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:14px;border-bottom:1px solid var(--rule)}
-  h1{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:26px;letter-spacing:.04em;margin:0;color:var(--tan-lt);text-transform:uppercase}
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:29px;letter-spacing:.05em;margin:0;color:var(--tan-lt);text-transform:uppercase;line-height:1}
   .refreshed{font-size:13px;color:var(--muted)}
 
   .sect{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600;letter-spacing:.14em;
@@ -155,8 +155,8 @@
 <div class="wrap">
 
   <div class="topbar">
-    <div style="display:flex;align-items:center;gap:10px">
-      <img src="logo.png" alt="" width="34" height="34" style="display:block">
+    <div style="display:flex;align-items:center;gap:12px">
+      <img src="logo.png" alt="" width="54" height="54" style="display:block;flex-shrink:0">
       <h1>Water check</h1>
     </div>
     <span class="refreshed" id="refreshed"></span>
@@ -188,6 +188,10 @@
   </section>
 
   <section class="screen" id="s-setup" role="tabpanel" aria-label="Setup">
+    <div style="text-align:center;padding:18px 0 6px">
+      <img src="logo.png" alt="Water Check" width="220" height="220"
+           style="max-width:62%;height:auto;display:inline-block">
+    </div>
     <p class="sect">Setup</p>
 
     <div class="setup">
