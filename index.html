@@ -60,12 +60,26 @@
                letter-spacing:.05em;text-transform:uppercase;text-decoration:none}
   .tabs button svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6;
                    stroke-linecap:round;stroke-linejoin:round}
-  /* Tab art is near-white with a transparent ground, so opacity alone carries
-     the selected state — no filters, nothing to go wrong on older phones. */
+  /* Tab art is near-white on a transparent ground, so opacity carries the
+     selected state in the resting case. */
   .tabs button img{width:26px;height:26px;display:block;opacity:.42;object-fit:contain}
   .tabs button[aria-selected="true"] img{opacity:1}
-  .tabs button:hover img{opacity:.75}
-  .tabs button[aria-selected="true"]:hover img{opacity:1}
+
+  /* Pressed state fills the tab with bone. Near-white art would disappear into
+     that, so brightness(0) knocks the icon to solid black — it keeps the alpha
+     channel, so only the artwork darkens, not the transparent background. */
+  .tabs button:hover,
+  .tabs button:active,
+  .tabs button[aria-selected="true"]:hover,
+  .tabs button[aria-selected="true"]:active{background:var(--text);color:var(--bg)}
+  .tabs button:hover img,
+  .tabs button:active img,
+  .tabs button[aria-selected="true"]:hover img,
+  .tabs button[aria-selected="true"]:active img{filter:brightness(0);opacity:1}
+  .tabs button:hover svg,
+  .tabs button:active svg{color:var(--bg)}
+  /* stop the phone adding its own grey flash on top */
+  .tabs button{-webkit-tap-highlight-color:transparent}
   .tabs button[aria-selected="true"]{color:var(--tan-lt)}
   .tabs button:hover{color:var(--text)}
   .tabs button[aria-selected="true"]:hover{color:var(--tan-lt)}
