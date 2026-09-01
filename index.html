@@ -52,13 +52,13 @@
 
   .tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;
         background:var(--card);border-top:1px solid var(--rule);
-        display:grid;grid-template-columns:repeat(7,1fr);
+        display:grid;grid-template-columns:repeat(5,1fr);
         padding-bottom:env(safe-area-inset-bottom)}
   .tabs button{background:none;border:0;color:var(--muted);cursor:pointer;
                padding:9px 1px 8px;display:flex;flex-direction:column;align-items:center;gap:3px;
-               font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:500;
-               letter-spacing:.02em;text-transform:uppercase;text-decoration:none}
-  .tabs button svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.6;
+               font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;
+               letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+  .tabs button svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.6;
                    stroke-linecap:round;stroke-linejoin:round}
   .tabs button[aria-selected="true"]{color:var(--tan-lt)}
   .tabs button:hover{color:var(--text)}
@@ -153,6 +153,12 @@
   .spark line{stroke:var(--rule);stroke-width:1;stroke-dasharray:3 3}
   .range{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:2px}
 
+  .temp{display:flex;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid var(--rule)}
+  .temp div{flex:1;min-width:0}
+  .temp p{margin:0;font-size:15px}
+  .temp small{color:var(--muted);font-size:12px}
+  .tempval{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:600;color:var(--tan-lt)}
+
   .season{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule)}
   .season div{flex:1;min-width:0}
   .season p{margin:0;font-size:15px}
@@ -219,44 +225,34 @@
     <span class="refreshed" id="refreshed"></span>
   </div>
 
-  <section class="screen on" id="s-water" role="tabpanel" aria-label="Gauges">
-    <p class="sect">Gauges</p>
-    <div class="summary" id="summary">Loading…</div>
-    <div id="spots"></div>
-  </section>
-
-  <section class="screen" id="s-deer" role="tabpanel" aria-label="Deer">
+  <section class="screen on" id="s-deer" role="tabpanel" aria-label="Deer">
     <p class="sect">Deer</p>
     <div class="summary" id="dsummary">Loading…</div>
     <div id="deer"></div>
     <div id="rut"></div>
 
-    <p class="sect">Guides</p>
-    <div id="guides"></div>
+    <p class="hint" style="margin-top:14px">Harvest numbers are posted daily during season on
+      <a href="https://ar-licensing.s3licensing.com/reports/report" target="_blank" rel="noopener">AGFC's harvest report tool</a>.</p>
   </section>
 
   <section class="screen" id="s-duck" role="tabpanel" aria-label="Waterfowl">
-    <p class="sect">Waterfowl</p>
+    <p class="sect">River gauges</p>
+    <div class="summary" id="summary">Loading…</div>
+    <div id="spots"></div>
+
+    <p class="sect">WMA flooding</p>
     <div class="summary" id="wsummary">Loading…</div>
     <div id="wnotice"></div>
     <div id="wfowl"></div>
   </section>
 
   <section class="screen" id="s-fish" role="tabpanel" aria-label="Fishing">
+    <p class="sect">Water temperature</p>
+    <div id="temps"></div>
+
     <p class="sect">Fishing report</p>
     <div class="summary" id="fsummary">Loading…</div>
     <div id="fish"></div>
-  </section>
-
-  <section class="screen" id="s-seasons" role="tabpanel" aria-label="Seasons">
-    <p class="sect">Seasons</p>
-    <div class="summary" id="ssummary"></div>
-    <div id="seasons"></div>
-    <p class="hint" style="margin-top:16px">Dates from the Arkansas Game and Fish Commission for
-      2026&ndash;27. <b>AGFC is the authority, not this app.</b> Closing dates and bag limits vary by
-      deer zone, and zone boundaries were redrawn for this season. Always confirm at
-      <a href="https://www.agfc.com/hunting/deer/deer-seasons-and-limits-by-zone/" target="_blank" rel="noopener">agfc.com</a>
-      before you hunt.</p>
   </section>
 
   <section class="screen" id="s-map" role="tabpanel" aria-label="Map">
@@ -288,12 +284,21 @@
     </div>
   </section>
 
-  <section class="screen" id="s-setup" role="tabpanel" aria-label="Setup">
-    <div style="text-align:center;padding:18px 0 6px">
-      <img src="logo.png" alt="Water Check" width="220" height="220"
-           style="max-width:62%;height:auto;display:inline-block">
-    </div>
+  <section class="screen" id="s-more" role="tabpanel" aria-label="More">
+    <p class="sect">Seasons</p>
+    <div class="summary" id="ssummary"></div>
+    <div id="seasons"></div>
+    <p class="hint" style="margin-top:16px">Dates from the Arkansas Game and Fish Commission for
+      2026&ndash;27. <b>AGFC is the authority, not this app.</b> Closing dates and bag limits vary by
+      deer zone, and zone boundaries were redrawn for this season. Always confirm at
+      <a href="https://www.agfc.com/hunting/deer/deer-seasons-and-limits-by-zone/" target="_blank" rel="noopener">agfc.com</a>
+      before you hunt.</p>
+
+    <p class="sect">Guides</p>
+    <div id="guides"></div>
+
     <p class="sect">Setup</p>
+
 
     <div class="setup">
       <h2>Your stands</h2>
@@ -345,13 +350,11 @@
 </div>
 
 <nav class="tabs" role="tablist">
-  <button role="tab" data-screen="s-water" aria-selected="true" aria-controls="s-water"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.5 6 10.5a6 6 0 0 1-12 0C6 9.5 12 3 12 3z"/></svg>Water</button>
-  <button role="tab" data-screen="s-deer" aria-selected="false" aria-controls="s-deer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v3l2.5 2.5"/><path d="M18 3v3l-2.5 2.5"/><path d="M4 6h2M20 6h-2"/><path d="M12 9a3 3 0 0 0-3 3v3a3 3 0 0 0 6 0v-3a3 3 0 0 0-3-3z"/><path d="M10 21h4"/></svg>Deer</button>
+  <button role="tab" data-screen="s-deer" aria-selected="true" aria-controls="s-deer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v3l2.5 2.5"/><path d="M18 3v3l-2.5 2.5"/><path d="M4 6h2M20 6h-2"/><path d="M12 9a3 3 0 0 0-3 3v3a3 3 0 0 0 6 0v-3a3 3 0 0 0-3-3z"/><path d="M10 21h4"/></svg>Deer</button>
   <button role="tab" data-screen="s-duck" aria-selected="false" aria-controls="s-duck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7.5a2 2 0 1 0-4 0v1"/><path d="M12 8.5c-4 0-7 2.5-7 5.5a5 5 0 0 0 5 5h3c4 0 6-2.5 6-6"/><path d="M16 6.6h2.5"/></svg>Ducks</button>
   <button role="tab" data-screen="s-fish" aria-selected="false" aria-controls="s-fish"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.5-5 8-5 8 5 8 5-3.5 5-8 5-8-5-8-5z"/><path d="M19 12c1.5-1 2-2.5 2-2.5M19 12c1.5 1 2 2.5 2 2.5"/><circle cx="9" cy="11.5" r=".6" fill="currentColor" stroke="none"/></svg>Fish</button>
-  <button role="tab" data-screen="s-seasons" aria-selected="false" aria-controls="s-seasons"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>Season</button>
   <button role="tab" data-screen="s-map" aria-selected="false" aria-controls="s-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg>Map</button>
-  <button role="tab" data-screen="s-setup" aria-selected="false" aria-controls="s-setup"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6L17 7M7 17l-1.4 1.4"/></svg>Setup</button>
+  <button role="tab" data-screen="s-more" aria-selected="false" aria-controls="s-more"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>More</button>
 </nav>
 
 <script>
@@ -913,6 +916,7 @@ async function loadFish(){
     waters.forEach(w => box.appendChild(renderFish(w)));
     const fresh = waters.filter(w => !w.stale).length;
     sum.innerHTML = `<b>${fresh}</b> fresh of ${waters.length}`;
+    renderTemps(data);
   }catch(e){
     sum.textContent = "";
     box.innerHTML = "";
@@ -936,6 +940,9 @@ async function loadGauges(){
       return { spot, data, wx };
     }catch(e){ return { spot, error: e.message }; }
   }));
+  window.__gaugeTemps = results.filter(r => r.data && r.data.temp !== undefined)
+    .map(r => ({ name: r.spot.name, f: r.data.temp * 9/5 + 32 }));
+
   let go = 0, rising = 0;
   for(const r of results){
     box.appendChild(renderGauge(r.spot, r.data, r.wx, r.error));
@@ -966,6 +973,40 @@ document.getElementById("add").addEventListener("click", async () => {
     loadGauges();
   }catch(e){ msg.textContent = e.message; }
 });
+
+// ─── WATER TEMPERATURE ──────────────────────────────────────────────────────
+// Two sources. USGS reports water temp (parameter 00010) at some gauges but not
+// most — none of the four default sites carry it. AGFC's weekly fishing report
+// carries surface temps from guides and marinas, which we already parse out.
+function renderTemps(data){
+  const box = document.getElementById("temps");
+  box.innerHTML = "";
+
+  const rows = [];
+  // anything USGS gave us
+  (window.__gaugeTemps || []).forEach(t => rows.push({ ...t, src:"USGS gauge, live" }));
+  // anything from the weekly report
+  (data?.waters || []).filter(w => w.waterTempF !== undefined).forEach(w =>
+    rows.push({ name:w.water, f:w.waterTempF, src:`AGFC report, ${w.daysOld}d old`, stale:w.stale }));
+
+  if(!rows.length){
+    const p = document.createElement("p");
+    p.className = "hint";
+    p.textContent = "No water temperatures reported this week.";
+    box.appendChild(p);
+    return;
+  }
+
+  rows.sort((a,b) => b.f - a.f).slice(0, 12).forEach(r => {
+    const row = el(`<div class="temp"><div><p></p><small></small></div><span class="tempval"></span></div>`);
+    row.querySelector("p").textContent = r.name;
+    row.querySelector("small").textContent = r.src;
+    const v = row.querySelector(".tempval");
+    v.textContent = Math.round(r.f) + "°";
+    if(r.stale) v.style.color = "var(--muted)";
+    box.appendChild(row);
+  });
+}
 
 // ─── SEASONS ────────────────────────────────────────────────────────────────
 // From AGFC's own seasons-and-limits page for 2026-27. Third-party hunting sites
