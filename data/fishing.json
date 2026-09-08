@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-311/",
-  "fetched": "2026-09-08T05:08:52.811Z",
+  "fetched": "2026-09-08T16:10:11.324Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -529,13 +529,13 @@
     },
     {
       "region": "East Arkansas",
-      "water": "Register With HIP Before Dove, Waterfowl Hunting",
+      "water": "Recent News",
       "updated": null,
       "daysOld": null,
       "stale": false,
       "referenceOnly": false,
       "species": [],
-      "summary": "Sep. 1, 2026 Check your dove fields for bait before heading afield Aug. 31, 2026"
+      "summary": "AGFC, Partners Honor Six, Educate Hundreds at 2026 Natural State Private Lands Expo Sep. 8, 2026"
     }
   ],
   "kind": "fishing"
