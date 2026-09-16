@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-312/",
-  "fetched": "2026-09-16T16:10:08.549Z",
+  "fetched": "2026-09-16T21:16:19.080Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -515,13 +515,13 @@
     },
     {
       "region": "East Arkansas",
-      "water": "Recent News",
+      "water": "New Game Wardens Earn Badges, Assigned Throughout Natural State",
       "updated": null,
       "daysOld": null,
       "stale": false,
       "referenceOnly": false,
       "species": [],
-      "summary": "AGFC, AEDC Open Applications for More Than $690,000 to Schools Through Conservation Education Grants Sep. 15, 2026 Inspect Treestands Now to Avoid Catastrophe During Deer Hunting Season Sep. 14, 2026"
+      "summary": "Sep. 16, 2026 AGFC, AEDC Open Applications for More Than $690,000 to Schools Through Conservation Education Grants Sep. 15, 2026"
     }
   ],
   "kind": "fishing"
