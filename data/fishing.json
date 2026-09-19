@@ -1,12 +1,12 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-313/",
-  "fetched": "2026-09-18T16:08:38.891Z",
+  "fetched": "2026-09-19T05:08:07.988Z",
   "waters": [
     {
       "region": "Central Arkansas",
       "water": "Little Red River",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -29,7 +29,7 @@
       "region": "Central Arkansas",
       "water": "Harris Brake Lake",
       "updated": "2026-09-10",
-      "daysOld": 8,
+      "daysOld": 9,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -55,7 +55,7 @@
       "region": "Central Arkansas",
       "water": "Brewer Lake",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -67,14 +67,16 @@
     {
       "region": "Central Arkansas",
       "water": "Lake Maumelle",
-      "updated": "2026-09-17",
+      "updated": "2026-09-18",
       "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
-      "species": [],
-      "feetBelowNormal": 10.5,
+      "species": [
+        "black bass"
+      ],
+      "feetBelowNormal": 10,
       "waterTempF": 89,
-      "summary": "(updated 9-17-2026) WestRock Landing in Roland (501-658-5598) said last week the lake is 10.5 feet below normal pool. The front launch ramp at WestRock is CLOSED. The back launch ramp has a drop-off with 6 inches to a foot of water remaining. Small boats, aluminum boats and four-wheel drive for putting the boats in the water are heavily RECOMMENDED, they report. “Please use caution on the ramp and"
+      "summary": "(updated 9-18-2026) WestRock Landing in Roland (501-658-5598) said the lake level remains more than 10 feet below normal pool (10.6 feet low), and with that level, the front launch ramp at WestRock is closed until further notice. The back launch ramp has a drop-off with 6 inches to a foot of water to get your boat in. Small boats, aluminum boats and four-wheel drive are recommended to launch your "
     },
     {
       "region": "Central Arkansas",
@@ -90,7 +92,7 @@
       "region": "Central Arkansas",
       "water": "Little Maumelle River",
       "updated": "2026-09-10",
-      "daysOld": 8,
+      "daysOld": 9,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -125,7 +127,7 @@
       "region": "Central Arkansas",
       "water": "Peckerwood Lake",
       "updated": "2026-09-10",
-      "daysOld": 8,
+      "daysOld": 9,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -151,7 +153,7 @@
       "region": "North Arkansas",
       "water": "Cotter Area",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -164,7 +166,7 @@
       "region": "North Arkansas",
       "water": "Calico Rock Area",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -176,7 +178,7 @@
       "region": "North Arkansas",
       "water": "Bull Shoals Lake",
       "updated": "2026-09-10",
-      "daysOld": 8,
+      "daysOld": 9,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -214,7 +216,7 @@
       "region": "Northwest Arkansas",
       "water": "Beaver Lake",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -231,7 +233,7 @@
       "region": "Northwest Arkansas",
       "water": "Beaver Tailwater",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -244,7 +246,7 @@
       "region": "Northeast Arkansas",
       "water": "Lake Charles",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -259,7 +261,7 @@
       "region": "Northeast Arkansas",
       "water": "Lake Poinsett",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -274,7 +276,7 @@
       "region": "Northeast Arkansas",
       "water": "Spring River",
       "updated": "2026-09-03",
-      "daysOld": 15,
+      "daysOld": 16,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -308,7 +310,7 @@
       "region": "Southeast Arkansas",
       "water": "Cane Creek Lake",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -323,7 +325,7 @@
       "region": "Southeast Arkansas",
       "water": "Lake Monticello",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -336,7 +338,7 @@
       "region": "Southeast Arkansas",
       "water": "Lake Chicot",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -352,7 +354,7 @@
       "region": "Southwest Arkansas",
       "water": "Millwood Lake",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -372,7 +374,7 @@
       "region": "Southwest Arkansas",
       "water": "DeGray Lake",
       "updated": "2026-09-10",
-      "daysOld": 8,
+      "daysOld": 9,
       "stale": false,
       "referenceOnly": false,
       "species": [],
@@ -433,7 +435,7 @@
       "region": "West-Central Arkansas",
       "water": "Lake Atkins",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [],
@@ -443,7 +445,7 @@
       "region": "West-Central Arkansas",
       "water": "Lake Catherine Tailwater (Below Carpenter Dam)",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -490,7 +492,7 @@
       "region": "West-Central Arkansas",
       "water": "Lake Ouachita",
       "updated": "2026-09-17",
-      "daysOld": 1,
+      "daysOld": 2,
       "stale": false,
       "referenceOnly": false,
       "species": [
