@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-315/",
-  "fetched": "2026-10-05T12:01:26.155Z",
+  "fetched": "2026-10-05T22:18:43.146Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -543,15 +543,13 @@
     },
     {
       "region": "East Arkansas",
-      "water": "Recent News",
+      "water": "Duck Season Error in Two AGFC Publications",
       "updated": null,
       "daysOld": null,
       "stale": false,
       "referenceOnly": false,
-      "species": [
-        "bass"
-      ],
-      "summary": "Volunteers Clear Paths, Clean Outdoor Spaces to Aid Public Land Access Oct. 2, 2026 Legacy Lunker Awards Banquet to Celebrate Bass Fishing in The Natural State Oct. 29 Sep. 28, 2026"
+      "species": [],
+      "summary": "Oct. 5, 2026 Volunteers Clear Paths, Clean Outdoor Spaces to Aid Public Land Access Oct. 2, 2026"
     }
   ],
   "kind": "fishing"
