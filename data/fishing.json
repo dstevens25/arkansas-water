@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-315/",
-  "fetched": "2026-10-07T11:30:28.037Z",
+  "fetched": "2026-10-07T20:59:08.485Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -540,16 +540,6 @@
       "referenceOnly": true,
       "species": [],
       "summary": "For the Army Corps of Engineers’ real-time gauge level and flow from Clarendon, visit the Corps’ Little Rock office website. Note: msl is mean sea level; cfs is cubic feet per second."
-    },
-    {
-      "region": "East Arkansas",
-      "water": "AGFC Commissioner Meeting Announcement",
-      "updated": null,
-      "daysOld": null,
-      "stale": false,
-      "referenceOnly": false,
-      "species": [],
-      "summary": "Oct. 5, 2026 Volunteers Clear Paths, Clean Outdoor Spaces to Aid Public Land Access Oct. 2, 2026"
     }
   ],
   "kind": "fishing"
