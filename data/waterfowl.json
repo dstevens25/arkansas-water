@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-20T19:49:03.861Z",
+  "fetched": "2026-10-21T09:48:42.784Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -2131,15 +2131,6 @@
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Shirey Bay Rainey Brake WMA"
-    },
-    {
-      "wma": "Dale Bumpers White River Refuge",
-      "wmaKey": "dale bumpers white river refuge",
-      "unit": "Honeylocust GTR",
-      "type": "gtr",
-      "statusText": "",
-      "plannedOperation": "TBD by USFWS staff",
-      "wmaDisplay": "Dale Bumpers White River Refuge"
     }
   ],
   "wmaSummary": [
