@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-  "fetched": "2026-10-22T19:43:45.315Z",
+  "fetched": "2026-10-22T21:14:37.762Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -537,13 +537,13 @@
     },
     {
       "region": "East Arkansas",
-      "water": "Recent News",
+      "water": "Lake Conway Renovation Update Planned for Nov. 2",
       "updated": null,
       "daysOld": null,
       "stale": false,
       "referenceOnly": false,
       "species": [],
-      "summary": "Wetland Habitat, Waterfowl Hunting Opportunities Likely Decreased by Extended Drought Oct. 22, 2026"
+      "summary": "Oct. 22, 2026 Wetland Habitat, Waterfowl Hunting Opportunities Likely Decreased by Extended Drought Oct. 22, 2026"
     }
   ],
   "kind": "fishing"
