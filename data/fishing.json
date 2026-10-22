@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-  "fetched": "2026-10-22T09:49:42.176Z",
+  "fetched": "2026-10-22T19:43:45.315Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -537,13 +537,13 @@
     },
     {
       "region": "East Arkansas",
-      "water": "Hunter Orange Celebrates 50 Years in Arkansas",
+      "water": "Recent News",
       "updated": null,
       "daysOld": null,
       "stale": false,
       "referenceOnly": false,
       "species": [],
-      "summary": "Oct. 16, 2026 Straight Wall or Smokepole? Arkansas’s Alternative Firearms Season Opens Oct. 17 Oct. 14, 2026"
+      "summary": "Wetland Habitat, Waterfowl Hunting Opportunities Likely Decreased by Extended Drought Oct. 22, 2026"
     }
   ],
   "kind": "fishing"
