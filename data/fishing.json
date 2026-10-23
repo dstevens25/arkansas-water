@@ -1,12 +1,12 @@
 {
-  "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-  "fetched": "2026-10-22T21:14:37.762Z",
+  "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-318/",
+  "fetched": "2026-10-23T09:44:04.321Z",
   "waters": [
     {
       "region": "Central Arkansas",
       "water": "Little Red River",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -29,7 +29,7 @@
       "region": "Central Arkansas",
       "water": "Harris Brake Lake",
       "updated": "2026-10-15",
-      "daysOld": 7,
+      "daysOld": 8,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -55,7 +55,7 @@
       "region": "Central Arkansas",
       "water": "Brewer Lake",
       "updated": "2026-10-15",
-      "daysOld": 7,
+      "daysOld": 8,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -67,15 +67,14 @@
     {
       "region": "Central Arkansas",
       "water": "Lake Maumelle",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
-      "species": [
-        "crappie",
-        "bass"
-      ],
-      "summary": "(updated 10-15-2026) WestRock Landing in Roland (501-658-5598) reported earlier this month that the lake level still continued to fall; on Oct. 1, the water level was 11.32 feet below the normal pool level. As far as good drops go, though, the water temperature had worked itself into the high 70s. The front ramp by WestRock remains closed. The back launch ramp has 2 inches of water left. Small cra"
+      "species": [],
+      "feetBelowNormal": 12.17,
+      "waterTempF": 71,
+      "summary": "(updated 10-22-2026) WestRock Landing in Roland (501-658-5598) reports that the front launch ramp and the back launch ramp were both temporarily closed due to the low water levels. Lake Maumelle is down 12.17 feet below normal pool. The surface water temperature is 71 degrees."
     },
     {
       "region": "Central Arkansas",
@@ -91,7 +90,7 @@
       "region": "Central Arkansas",
       "water": "Little Maumelle River",
       "updated": "2026-10-15",
-      "daysOld": 7,
+      "daysOld": 8,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -125,7 +124,7 @@
       "region": "Central Arkansas",
       "water": "Peckerwood Lake",
       "updated": "2026-10-15",
-      "daysOld": 7,
+      "daysOld": 8,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -149,41 +148,42 @@
     {
       "region": "North Arkansas",
       "water": "Cotter Area",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [
         "trout"
       ],
       "flowCfs": 12000,
-      "summary": "(updated 10-15-2026) Cotter Trout Dock (870-435-6525) said, “Trout fishing continues to be the primary draw to the White River in the Arkansas Ozarks, though hunting season has lots of our folks (including guides) in the woods instead of on the river. Leaves more for those of us catching trout — and catching is the name of the game this week. The Bull Shoals Lake tailwater continues to offer all-d"
+      "summary": "(updated 10-22-2026) Cotter Trout Dock (870-435-6525) said, “We have been treated to some mercurial weather this October, and with those changes in temperature come changes in water releases from Bull Shoals Dam: minimum flow during the morning hours, rising to three to four units (9,000 to 12,000 cfs) late in the day, due mostly to power demands with the colder weather. Bull Shoals Lake is 6 feet"
     },
     {
       "region": "North Arkansas",
       "water": "Calico Rock Area",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [
+        "largemouth bass",
         "trout"
       ],
-      "summary": "(updated 10-15-2026) Dave McCulley, owner of Jenkins Fishing Service in Calico Rock, said, “We continue to see rising water levels in the morning then cresting late morning and dropping throughout the afternoon. Most mornings the water levels are under 3 feet and rising to between 5 and 6 feet. The exception was Sunday and Monday when we saw morning waters levels around 2.5 feet and dropping to ju"
+      "summary": "(updated 10-22-2026) Dave McCulley, owner of Jenkins Fishing Service in Calico Rock, said, “With cooler weather, we are seeing lower water conditions. The mornings have been chilly with afternoon temperatures in the mid- to upper 70s. Sunday through Tuesday the water levels were between 2-3 feet. Wednesday morning, we saw lower water in the morning with water rising midday and cresting around 4 fe"
     },
     {
       "region": "North Arkansas",
       "water": "Bull Shoals Lake",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [
         "crappie",
-        "walleye"
+        "walleye",
+        "bass"
       ],
-      "waterTempF": 76,
-      "summary": "For the Army Corps of Engineers’ real-time outflow report from Bull Shoals Dam, visit the Corps’ Little Rock office website. (updated 10-15-2026) Fishing guide Del Colvin at Bull Shoals Lake (815-592-4302), delcolvinfishing.com, said Wednesday that water temperature as 76 degrees, give or take, and the lake level was 653 feet, or 5 feet below pool level. “The bite hasn’t changed much. It’s still j"
+      "summary": "For the Army Corps of Engineers’ real-time outflow report from Bull Shoals Dam, visit the Corps’ Little Rock office website. (updated 10-22-2026) Fishing guide Del Colvin at Bull Shoals Lake (815-592-4302), delcolvinfishing.com, said Bull Shoals has been a little stingy with the fall transition. Tournament weights have been a little low lately. The water temperature is definitely dropping, with th"
     },
     {
       "region": "North Arkansas",
@@ -211,52 +211,55 @@
     {
       "region": "Northwest Arkansas",
       "water": "Beaver Lake",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [
+        "spotted bass",
         "white bass",
-        "black bass",
         "crappie",
+        "catfish",
+        "walleye",
         "stripers"
       ],
-      "levelMsl": 1112,
-      "summary": "For the Army Corps of Engineers’ real-time outflow report from Beaver Lake Dam, visit the Corps’ Little Rock office website. (updated 10-15-2026) Jon Conklin with FishOn Guide Service (479-233-3474) said Beaver Lake remains in the 1,112 feet msl range. “We are expecting some good rains and we need it. A fresh flush of water will do wonders and it will also speed up turnover. “Turnover is a tough t"
+      "levelMsl": 1112.27,
+      "summary": "For the Army Corps of Engineers’ real-time outflow report from Beaver Lake Dam, visit the Corps’ Little Rock office website. (updated 10-22-2026) Jon Conklin with FishOn Guide Service (479-233-3474) said Beaver Lake level is at 1,112.27 feet msl and is dropping around a half-foot per week. Water temperature is ranging in the upper 60s to low 70s. depending on where you are on the lake. “This coole"
     },
     {
       "region": "Northwest Arkansas",
       "water": "Beaver Tailwater",
-      "updated": "2026-10-08",
-      "daysOld": 14,
-      "stale": true,
+      "updated": "2026-10-22",
+      "daysOld": 1,
+      "stale": false,
       "referenceOnly": false,
       "species": [
         "walleye",
         "trout"
       ],
-      "summary": "NOTE: The Arkansas Game and Fish Commission changed trout limits for the White River below Bull Shoals Dam, effective Feb. 1, 2026, due to significant loss of stocking population at two Arkansas hatcheries in 2025. Anglers may keep two trout daily; all trout 14 inches or longer must be released immediately. This rule is in effect until further notice. (updated 10-8-2026) Guide Austin Kennedy (479-"
+      "summary": "NOTE: The Arkansas Game and Fish Commission changed trout limits for the White River below Bull Shoals Dam, effective Feb. 1, 2026, due to significant loss of stocking population at two Arkansas hatcheries in 2025. Anglers may keep two trout daily; all trout 14 inches or longer must be released immediately. This rule is in effect until further notice. (updated 10-22-2026) Guide Austin Kennedy (479"
     },
     {
       "region": "Northeast Arkansas",
       "water": "Lake Charles",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [
-        "white bass",
+        "black bass",
         "crappie",
         "bream",
         "catfish"
       ],
-      "summary": "(updated 10-15-2026) Marsha Robinson at Lake Charles State Park (870-878-6595) reports that a 5- to 6-pound largemouth was caught over the weekend here. Bass overall provided a good bait, with Chatterbait and soft-plastic worms working best. Some of the best catches were coming from just off the shoreline. Catfish continue to provide a good bite, also just off the shoreline, with worms working bes"
+      "feetBelowNormal": 8,
+      "summary": "(updated 10-22-2026) Marsha Robinson at Lake Charles State Park (870-878-6595) says that fishing picked up this past week for all species, likely as a result of the falling temperatures. Surface water temperature on Monday morning was a nice 62.7 degrees. The lake is still very low, only about 4.5 feet, or 8 feet below normal pool. Though the lake is annually a source for the water pumped into the"
     },
     {
       "region": "Northeast Arkansas",
       "water": "Lake Poinsett",
       "updated": "2026-10-15",
-      "daysOld": 7,
+      "daysOld": 8,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -271,7 +274,7 @@
       "region": "Northeast Arkansas",
       "water": "Spring River",
       "updated": "2026-10-08",
-      "daysOld": 14,
+      "daysOld": 15,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -302,22 +305,53 @@
     },
     {
       "region": "Southeast Arkansas",
+      "water": "Cane Creek Lake",
+      "updated": "2026-10-22",
+      "daysOld": 1,
+      "stale": false,
+      "referenceOnly": false,
+      "species": [
+        "crappie",
+        "bream",
+        "catfish",
+        "bass"
+      ],
+      "summary": "(updated 10-22-2026) Shelley Burr at Cane Creek State Park, (870-628-4714) reports that the lake is very low and overrun with lily pads. She said they only had two anglers out this week. Cane Creek Lake is a 1,700-acre lake in Lincoln County that was built in 1986 and is owned and managed by the AGFC. It is stocked with bass, crappie, bream and catfish. The visitor center offers a pier. The lake h"
+    },
+    {
+      "region": "Southeast Arkansas",
       "water": "Lake Monticello",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [
         "crappie",
         "bass"
       ],
-      "summary": "(updated 10-15-2026) This one-time great trophy bass destination when it first opened in the 1990s appears headed back to that designation again, based on what anglers have been catching in the past few months since regulations were eased on bass and crappie. Two bass over 10 pounds were pulled out during the spring, one qualifying for the AGFC’s Legacy Lunker program before the March 31 cutoff. A"
+      "summary": "(updated 10-22-2026) This one-time great trophy bass destination when it first opened in the 1990s appears headed back to that designation again, based on what anglers have been catching in the past few months since regulations were eased on bass and crappie. Two bass over 10 pounds were pulled out during the spring, one qualifying for the AGFC’s Legacy Lunker program before the March 31 cutoff. A"
     },
     {
       "region": "Southeast Arkansas",
       "water": "Lake Chicot",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
+      "stale": false,
+      "referenceOnly": false,
+      "species": [
+        "crappie",
+        "bream",
+        "catfish",
+        "bass"
+      ],
+      "waterTempF": 70,
+      "summary": "(updated 10-22-2026) Shaun Mercer at Lake Chicot State Park said the water temperature has cooled to 68-72 degrees and the crappie are starting to turn on. The key has been 8 feet of water. Anglers are catching them on Bobby Garland Baby Shad on a white jighead, and Mercer said he's only seen people using jigs — no shiners. One angler came in with about 32 slab crappie after fishing all day throug"
+    },
+    {
+      "region": "Southeast Arkansas",
+      "water": "White River/Arkansas River (Pool 2)/Trusten Holder WMA",
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -325,68 +359,42 @@
         "catfish",
         "bass"
       ],
-      "waterTempF": 77.5,
-      "summary": "(updated 10-15-2026) Shaun Mercer at Lake Chicot State Park said the water temperature was last checked at 77-78 degrees, with daytime highs running around 92 degrees most of the week. Bass have been hitting well in the mornings on watermelon seed and purple plastic worms. Shad-colored topwater baits are also drawing strikes. \"The morning bite has been the one to get out for,\" Mercer said. Crappie"
-    },
-    {
-      "region": "Southeast Arkansas",
-      "water": "White River/Arkansas River (Pool 2)",
-      "updated": "2026-10-15",
-      "daysOld": 7,
-      "stale": false,
-      "referenceOnly": false,
-      "species": [
-        "catfish"
-      ],
-      "summary": "(updated 10-15-2026) Webb’s Sporting Goods (870-946-0347) in DeWitt (1970 S. Whitehead Drive) said catfish are biting. Anglers are reporting good catches in the deeper oxbows throughout the Dale Bumpers White River Refuge. Best baits are cut bait and worms. For the best locations, look in deeper oxbows and holes holding water. “Remember that alternate firearms deer season opens this weekend, and h"
-    },
-    {
-      "region": "Southeast Arkansas",
-      "water": "Trusten Holder WMA",
-      "updated": "2026-10-15",
-      "daysOld": 7,
-      "stale": false,
-      "referenceOnly": false,
-      "species": [
-        "crappie",
-        "bass"
-      ],
-      "summary": "(updated 10-15-2026) Webb’s Sporting Goods (870-946-0347) in DeWitt (1970 S. Whitehead Drive) said bass and crappie fishing continues to be productive in fishable backwaters and along channel edges. Crappie anglers are finding success with blue-and-black or red-and-black Texas-rigged worms. Shad-colored crankbaits are producing good results with the bass, especially along channel edges and in acce"
+      "summary": "(updated 10-22-2026) Webb’s Sporting Goods (870-946-0347) in DeWitt (1970 S. Whitehead Drive) said the White River, the waters in Trusten Holder WMA and surrounding backwaters offer fall fishing opportunities. For crappie, try jigs and minnows around brush and deeper structure. For bass, shad-colored crankbaits and soft plastics around channel edges will work best. Catfish will take to cut bait an"
     },
     {
       "region": "Southeast Arkansas",
       "water": "Wilson Lake",
-      "updated": "2026-10-01",
-      "daysOld": 21,
-      "stale": true,
+      "updated": "2026-10-22",
+      "daysOld": 1,
+      "stale": false,
       "referenceOnly": false,
       "species": [],
-      "summary": "(updated 10-1-2026) Angler Shaun Mercer reported that Wilson Lake, between Portland and Montrose, is extremely low. \"There's not enough boat ramp to launch your boat,\" he said. Anglers should not plan on launching until water levels come back up."
+      "summary": "(updated 10-22-2026) Angler Shaun Mercer reported that Wilson Lake, between Portland and Montrose, is extremely low. \"There's not enough boat ramp to launch your boat,\" he said. Anglers should not plan on launching until water levels come back up."
     },
     {
       "region": "Southwest Arkansas",
       "water": "Millwood Lake",
-      "updated": "2026-10-08",
-      "daysOld": 14,
-      "stale": true,
+      "updated": "2026-10-22",
+      "daysOld": 1,
+      "stale": false,
       "referenceOnly": false,
       "species": [
         "largemouth bass",
         "white bass",
-        "black bass",
         "crappie",
         "bream",
         "catfish"
       ],
-      "levelMsl": 259.1,
-      "flowCfs": 416,
-      "summary": "For the Army Corps of Engineers’ real-time lake level and outflow report from Millwood Lake Dam, visit the Corps Little Rock office website. (updated 10-8-2026) Mike Siefert at Millwood Lake Guide Service said Millwood Lake elevation Wednesday was slightly below normal pool and stable, about 259.1 feet msl. Millwood Lake Dam is releasing about 416 cfs and the tailwater is near 224 feet and stable."
+      "levelMsl": 259.3,
+      "waterTempF": 71,
+      "flowCfs": 700,
+      "summary": "For the Army Corps of Engineers’ real-time lake level and outflow report from Millwood Lake Dam, visit the Corps Little Rock office website. (updated 10-22-2026) Mike Siefert at Millwood Lake Guide Service said Millwood Lake elevation as of Wednesday was nearly at normal pool and stable, 259.3 feet msl. Millwood Lake Dam was releasing about 700 cfs, and tailwater is near 225 feet and stable. Surfa"
     },
     {
       "region": "Southwest Arkansas",
       "water": "DeGray Lake",
       "updated": "2026-10-08",
-      "daysOld": 14,
+      "daysOld": 15,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -423,7 +431,17 @@
       "stale": false,
       "referenceOnly": true,
       "species": [],
-      "summary": "For the most updated Narrows Dam generation schedule from SWEPCO, click here. Lake GreesonFor the most updated lake level at Lake Greeson, click here."
+      "summary": "For the most updated Narrows Dam generation schedule from SWEPCO, click here."
+    },
+    {
+      "region": "Southwest Arkansas",
+      "water": "Lake Greeson",
+      "updated": null,
+      "daysOld": null,
+      "stale": false,
+      "referenceOnly": true,
+      "species": [],
+      "summary": "For the most updated lake level at Lake Greeson, click here."
     },
     {
       "region": "South-Central Arkansas",
@@ -439,26 +457,26 @@
     {
       "region": "West-Central Arkansas",
       "water": "Lake Atkins",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [],
-      "summary": "(updated 10-15-2026) Lucky Landing as a bait shop and restaurant is not open, but the AGFC’s access to Lake Atkins and fishing pier remain open to all anglers, according to the AGFC’s Frank Leone, supervisor of the Russellville district."
+      "summary": "(updated 10-22-2026) Lucky Landing as a bait shop and restaurant is not open, but the AGFC’s access to Lake Atkins and fishing pier remain open to all anglers, according to the AGFC’s Frank Leone, supervisor of the Russellville district."
     },
     {
       "region": "West-Central Arkansas",
       "water": "Lake Catherine Tailwater (Below Carpenter Dam)",
-      "updated": "2026-10-15",
-      "daysOld": 7,
+      "updated": "2026-10-22",
+      "daysOld": 1,
       "stale": false,
       "referenceOnly": false,
       "species": [
         "white bass",
         "trout"
       ],
-      "waterTempF": 65,
-      "summary": "For weekly flow releases from Carpenter Dam, visit www.entergy.com/hydro (updated 10-15-2026) Shane Goodner, owner of Catch’em All Guide Service, reports that water temperature below the dam is 65 degrees with clear conditions in the tailrace. Entergy is running 10-hour generation periods starting in the late afternoon. However, with the fall season underway, this schedule will change soon. As Ark"
+      "waterTempF": 64,
+      "summary": "For weekly flow releases from Carpenter Dam, visit www.entergy.com/hydro (updated 10-22-2026) Shane Goodner, owner of Catch’em All Guide Service, reports that water temperature below the dam is 64 degrees with clear conditions in the tailrace. Entergy is currently running 10-hour generation periods starting in the late afternoon. However, with the fall season underway, this schedule will change so"
     },
     {
       "region": "West-Central Arkansas",
@@ -475,7 +493,7 @@
       "region": "West-Central Arkansas",
       "water": "Lake Hamilton",
       "updated": "2026-10-08",
-      "daysOld": 14,
+      "daysOld": 15,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -498,9 +516,9 @@
     {
       "region": "West-Central Arkansas",
       "water": "Lake Ouachita",
-      "updated": "2025-10-15",
-      "daysOld": 372,
-      "stale": true,
+      "updated": "2026-10-22",
+      "daysOld": 1,
+      "stale": false,
       "referenceOnly": false,
       "species": [
         "spotted bass",
@@ -511,9 +529,8 @@
         "walleye",
         "stripers"
       ],
-      "levelMsl": 569.39,
-      "waterTempF": 76,
-      "summary": "For the current lake level at Blakely Dam, click here. (updated 10-15-2025) Capt. Darryl Morris of Family Fishing Trips (501-844-5418) said crappie and bass are doing great on jigs and live bait. Target brushpiles in 20-30 feet of water. We are catching fish as shallow as 8 feet deep early and as deep as 18-24 feet deep as the sun gets higher.” (updated 10-15-2026) Mountain Harbor Resort and Spa ("
+      "levelMsl": 568.99,
+      "summary": "For the current lake level at Blakely Dam, click here. (updated 10-22-2026) Mountain Harbor Resort and Spa (870-867-2191/800-832-2276 out-of-state) reports that black bass are fair. Try a riser bait or Plopper-style lure for a fun topwater bite. Or drop-shot a finesse worm for spotted bass in the 15- to 30-foot range on points or brush. Walleye are still slow. For best results in the 20-foot range"
     },
     {
       "region": "West-Central Arkansas",
