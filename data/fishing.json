@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-318/",
-  "fetched": "2026-10-23T09:44:04.321Z",
+  "fetched": "2026-10-23T19:45:41.611Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -551,16 +551,6 @@
       "referenceOnly": true,
       "species": [],
       "summary": "For the Army Corps of Engineers’ real-time gauge level and flow from Clarendon, visit the Corps’ Little Rock office website. Note: msl is mean sea level; cfs is cubic feet per second."
-    },
-    {
-      "region": "East Arkansas",
-      "water": "Lake Conway Renovation Update Planned for Nov. 2",
-      "updated": null,
-      "daysOld": null,
-      "stale": false,
-      "referenceOnly": false,
-      "species": [],
-      "summary": "Oct. 22, 2026 Wetland Habitat, Waterfowl Hunting Opportunities Likely Decreased by Extended Drought Oct. 22, 2026"
     }
   ],
   "kind": "fishing"
