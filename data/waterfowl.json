@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-27T20:24:36.640Z",
+  "fetched": "2026-10-28T10:57:07.629Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -166,7 +166,8 @@
       "unit": "McKennon Bottoms",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding initiated 10/13/26",
+      "statusText": "Fully flooded on 10/27/26",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dardanelle WMA"
@@ -177,7 +178,8 @@
       "unit": "Potter's Pothole",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding initiated 10/13/26",
+      "statusText": "Fully flooded on 10/20/26",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dardanelle WMA"
@@ -984,7 +986,8 @@
       "unit": "Conway George Unit A",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Once unit C is complete this unit will be flooded",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/9/26",
@@ -1007,7 +1010,8 @@
       "unit": "Conway George Unit C",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Pumping initiated 10/13/26",
+      "statusText": "60% flooded and actively pumping",
+      "percent": 60,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/16/26",
@@ -1019,8 +1023,8 @@
       "unit": "Dark Corner 1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "80% flooded and actively pumping on 10/13/26",
-      "percent": 80,
+      "statusText": "95% flooded  on 10/27/26",
+      "percent": 95,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/9/26",
@@ -1032,7 +1036,8 @@
       "unit": "Dark Corner 2",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Once unit 1 is flooded this one will be flooded",
+      "statusText": "30% flooded and actively pumping",
+      "percent": 30,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/30/26",
@@ -1100,8 +1105,8 @@
       "unit": "D",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "70% flooded and actively pumping",
-      "percent": 70,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/12/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -1156,7 +1161,7 @@
       "unit": "Mobility-Impaired Unit",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Waiting on repairs to be made to handicap blind then will initiate pumping",
+      "statusText": "Pumping initiated 10/20/26",
       "waterSource": "Groundwater",
       "plannedOperation": "10/26/2026",
       "comments": "Install boards 10/5/26 to attempt to catch rainwater; if none available pump starting 11/09/26",
@@ -1229,7 +1234,8 @@
       "wmaKey": "dardanelle",
       "unit": "Horsehead Middle",
       "type": "moist-soil",
-      "statusText": "Pumping initiated 10/13/26",
+      "statusText": "Fully flooded on 10/23/26",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dardanelle WMA"
@@ -1259,7 +1265,8 @@
       "wmaKey": "dardanelle",
       "unit": "Johnson County 3",
       "type": "moist-soil",
-      "statusText": "Pumping initiated 10/13/26",
+      "statusText": "Fully flooded on 10/19/26",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dardanelle WMA"
@@ -1269,7 +1276,8 @@
       "wmaKey": "dardanelle",
       "unit": "Johnson County 4",
       "type": "moist-soil",
-      "statusText": "Pumping initiated 10/13/26",
+      "statusText": "Fully flooded 10/22/26",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dardanelle WMA"
@@ -1390,7 +1398,8 @@
       "wmaKey": "bayou meto",
       "unit": "Halowell 1",
       "type": "moist-soil",
-      "statusText": "Small well is running; the main relift ran out of water on 10/12/26",
+      "statusText": "60% flooded (bayou is out of water and wells are currently inoperable)",
+      "percent": 60,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "comments": "Millet was flown on twice during the summer months but had limited success due to severe drought conditions",
@@ -1441,7 +1450,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 1",
       "type": "moist-soil",
-      "statusText": "Pumping initiated 10/12/26",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1451,7 +1461,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 2a",
       "type": "moist-soil",
-      "statusText": "Once unit 3 is full water will fill this unit",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1461,7 +1472,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 2b",
       "type": "moist-soil",
-      "statusText": "Once unit 1 is full water will fill this unit",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1471,7 +1483,7 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 3",
       "type": "moist-soil",
-      "statusText": "90% flooded and pumping initiated 10/12/26",
+      "statusText": "90% flooded",
       "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -1482,7 +1494,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 4",
       "type": "moist-soil",
-      "statusText": "Once unit 1 and 2B are complete this unit will be flooded",
+      "statusText": "40% flooded and actively pumping",
+      "percent": 40,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1492,7 +1505,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 5",
       "type": "moist-soil",
-      "statusText": "Once unit 4 is complete this unit will be flooded",
+      "statusText": "40% flooded and actively pumping",
+      "percent": 40,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1502,7 +1516,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 6",
       "type": "moist-soil",
-      "statusText": "Pumping initiated 10/12/26",
+      "statusText": "90% flooded and actively pumping",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1512,7 +1527,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 7",
       "type": "moist-soil",
-      "statusText": "Once unit 6 is flooded water will fill this unit",
+      "statusText": "90% flooded and actively pumping",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1522,7 +1538,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 8",
       "type": "moist-soil",
-      "statusText": "Once unit 9 is complete this unit will be flooded",
+      "statusText": "60% flooded and actively pumping",
+      "percent": 60,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1532,7 +1549,7 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 9",
       "type": "moist-soil",
-      "statusText": "Once unit 12 is complete this unit will be flooded",
+      "statusText": "Once unit 8 is complete this unit will be flooded",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1542,7 +1559,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 10",
       "type": "moist-soil",
-      "statusText": "Pumping initiated on 10/13/26 in order to flood unit 16",
+      "statusText": "60% flooded and actively pumping",
+      "percent": 60,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1552,8 +1570,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 11",
       "type": "moist-soil",
-      "statusText": "85% flooded and pumping initiated on 10/12/26",
-      "percent": 85,
+      "statusText": "90% flooded and actively pumping",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1563,7 +1581,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 12",
       "type": "moist-soil",
-      "statusText": "This unit will be flooded after unit 2A and 3 are complete",
+      "statusText": "90% flooded and actively pumping",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1573,7 +1592,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 13",
       "type": "moist-soil",
-      "statusText": "This unit will be flooded in December due to half the unit acting as a GTR",
+      "statusText": "60% flooded but This unit will be flooded in December due to half the unit acting as a GTR",
+      "percent": 60,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1583,7 +1603,8 @@
       "wmaKey": "bayou meto",
       "unit": "Wrape 16",
       "type": "moist-soil",
-      "statusText": "Boards are in place but water must fill exterior ditch in unit 10 first",
+      "statusText": "Boards are in place but water must fill exterior ditch in unit 10 first currently 70% flooded",
+      "percent": 70,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -2135,6 +2156,13 @@
   ],
   "wmaSummary": [
     {
+      "wma": "Dardanelle WMA",
+      "wmaKey": "dardanelle",
+      "units": 5,
+      "avgPercent": 100,
+      "maxPercent": 100
+    },
+    {
       "wma": "Prairie Bayou WMA",
       "wmaKey": "prairie bayou",
       "units": 1,
@@ -2142,25 +2170,25 @@
       "maxPercent": 100
     },
     {
+      "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
+      "wmaKey": "raft creek",
+      "units": 1,
+      "avgPercent": 90,
+      "maxPercent": 90
+    },
+    {
       "wma": "George H. Dunklin Jr. Bayou Meto WMA",
       "wmaKey": "bayou meto",
-      "units": 2,
-      "avgPercent": 88,
+      "units": 15,
+      "avgPercent": 74,
       "maxPercent": 90
     },
     {
       "wma": "Sheffield Nelson Dagmar WMA",
       "wmaKey": "dagmar",
-      "units": 1,
-      "avgPercent": 80,
-      "maxPercent": 80
-    },
-    {
-      "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
-      "wmaKey": "raft creek",
-      "units": 1,
-      "avgPercent": 70,
-      "maxPercent": 70
+      "units": 4,
+      "avgPercent": 69,
+      "maxPercent": 95
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
