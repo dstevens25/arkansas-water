@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-28T10:57:07.629Z",
+  "fetched": "2026-10-28T20:45:28.632Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -65,7 +65,7 @@
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No surface water available as of 10/12/26",
+      "statusText": "Actively pumping on 10/28/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -896,7 +896,8 @@
       "unit": "Blacklands West",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "pumping initiated 10/12/26",
+      "statusText": "40% flooded",
+      "percent": 40,
       "waterSource": "Surface Water",
       "plannedOperation": "10/12/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -918,7 +919,8 @@
       "unit": "Slaty",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Contractor contacted to check gearhead",
+      "statusText": "10% flooded",
+      "percent": 10,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -952,9 +954,10 @@
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "Actively pumping with small well",
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
+      "comments": "Attempting to pump this unit",
       "wmaDisplay": "Prairie Bayou WMA"
     },
     {
@@ -1287,7 +1290,8 @@
       "wmaKey": "black river",
       "unit": "Brookings 1",
       "type": "moist-soil",
-      "statusText": "Pumping initiated 10/13/26",
+      "statusText": "Fully flooded",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -1297,7 +1301,8 @@
       "wmaKey": "black river",
       "unit": "Brookings 2",
       "type": "moist-soil",
-      "statusText": "Pumping initiated 10/13/26",
+      "statusText": "Fully flooded",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -1307,7 +1312,7 @@
       "wmaKey": "black river",
       "unit": "Brookings 3",
       "type": "moist-soil",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "Actively pumping",
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -1317,7 +1322,7 @@
       "wmaKey": "black river",
       "unit": "Brookings 4",
       "type": "moist-soil",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "Actively pumping",
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -1327,7 +1332,8 @@
       "wmaKey": "black river",
       "unit": "Brookings 5",
       "type": "moist-soil",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "Fully flooded",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -1337,7 +1343,8 @@
       "wmaKey": "black river",
       "unit": "Brookings 6",
       "type": "moist-soil",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "Fully flooded",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -1762,7 +1769,8 @@
       "wmaKey": "shirey bay",
       "unit": "River Field",
       "type": "moist-soil",
-      "statusText": "Pumping initiated 10/13/26",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/16/2026",
       "wmaDisplay": "Shirey Bay Rainey Brake WMA"
@@ -1772,7 +1780,8 @@
       "wmaKey": "shirey bay",
       "unit": "Ward Field",
       "type": "moist-soil",
-      "statusText": "Lake Charles water levels too low to allow releases",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Shirey Bay Rainey Brake WMA"
@@ -2170,9 +2179,23 @@
       "maxPercent": 100
     },
     {
+      "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
+      "units": 4,
+      "avgPercent": 100,
+      "maxPercent": 100
+    },
+    {
       "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
       "wmaKey": "raft creek",
       "units": 1,
+      "avgPercent": 90,
+      "maxPercent": 90
+    },
+    {
+      "wma": "Shirey Bay Rainey Brake WMA",
+      "wmaKey": "shirey bay",
+      "units": 2,
       "avgPercent": 90,
       "maxPercent": 90
     },
@@ -2203,6 +2226,13 @@
       "units": 5,
       "avgPercent": 36,
       "maxPercent": 100
+    },
+    {
+      "wma": "Petit Jean River WMA",
+      "wmaKey": "petit jean",
+      "units": 2,
+      "avgPercent": 25,
+      "maxPercent": 40
     }
   ]
 }
