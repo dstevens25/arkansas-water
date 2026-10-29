@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-28T20:45:28.632Z",
+  "fetched": "2026-10-29T00:42:31.958Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -269,7 +269,7 @@
       "section": "Moist-soil Units (Open to Hunting)",
       "statusText": "No rainfall",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/14/2026",
+      "plannedOperation": "10/05/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
@@ -311,7 +311,7 @@
       "unit": "9",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "Flooding began on 28 October 2026",
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -388,7 +388,8 @@
       "unit": "LIL Hole",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will begin pumping 10/19/26",
+      "statusText": "80% flooded as of 28 October 2026.",
+      "percent": 80,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -421,7 +422,8 @@
       "unit": "Race Track",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will begin pumping 10/19/26",
+      "statusText": "100% flooded as of 25 October 2026.",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -560,7 +562,7 @@
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "10% flooded",
+      "statusText": "10% flooded and actively pumping",
       "percent": 10,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -584,8 +586,8 @@
       "unit": "3",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "10% flooded and actively flooding",
-      "percent": 10,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -596,8 +598,8 @@
       "unit": "4",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "50% flooded and actively flooding",
-      "percent": 50,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -608,7 +610,8 @@
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "10% and actively pumping",
+      "percent": 10,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -685,8 +688,8 @@
       "unit": "13",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "10% flooded and actively flooding",
-      "percent": 10,
+      "statusText": "30% flooded",
+      "percent": 30,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -697,7 +700,8 @@
       "unit": "14",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "20% and actively pumping",
+      "percent": 20,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -830,7 +834,8 @@
       "unit": "Dyer Main",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "pumping initiated 10/14/26",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ozark Lake WMA"
@@ -841,7 +846,8 @@
       "unit": "Dyer North",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "pumping initiated 10/14/26",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ozark Lake WMA"
@@ -852,7 +858,8 @@
       "unit": "Dyer South",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "pumping initiated 10/14/26",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ozark Lake WMA"
@@ -1356,7 +1363,7 @@
       "type": "moist-soil",
       "statusText": "No rainfall",
       "waterSource": "Rainfall",
-      "plannedOperation": "10/14/2026",
+      "plannedOperation": "10/07/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
     },
     {
@@ -2186,6 +2193,20 @@
       "maxPercent": 100
     },
     {
+      "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
+      "units": 2,
+      "avgPercent": 90,
+      "maxPercent": 100
+    },
+    {
+      "wma": "Ozark Lake WMA",
+      "wmaKey": "ozark lake",
+      "units": 3,
+      "avgPercent": 90,
+      "maxPercent": 90
+    },
+    {
       "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
       "wmaKey": "raft creek",
       "units": 1,
@@ -2214,18 +2235,18 @@
       "maxPercent": 95
     },
     {
+      "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
+      "units": 7,
+      "avgPercent": 50,
+      "maxPercent": 100
+    },
+    {
       "wma": "Freddie Black Choctaw Island WMA",
       "wmaKey": "choctaw island",
       "units": 7,
       "avgPercent": 41,
       "maxPercent": 80
-    },
-    {
-      "wma": "Frog Bayou WMA",
-      "wmaKey": "frog bayou",
-      "units": 5,
-      "avgPercent": 36,
-      "maxPercent": 100
     },
     {
       "wma": "Petit Jean River WMA",
