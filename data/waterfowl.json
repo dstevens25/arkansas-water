@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-30T11:10:06.545Z",
+  "fetched": "2026-10-30T20:23:04.361Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -1371,7 +1371,8 @@
       "wmaKey": "frog bayou",
       "unit": "8 (WRA)",
       "type": "moist-soil",
-      "statusText": "Due to the larger size of this unit it will be stagger flooded throughout the season",
+      "statusText": "Due to the larger size of this unit it will be stagger flooded throughout the season  Currently 25% flooded",
+      "percent": 25,
       "waterSource": "Surface Water",
       "plannedOperation": "09/07/2026",
       "comments": "Stagger flood throughout the season while providing teal hunting opportunities",
@@ -2237,8 +2238,8 @@
     {
       "wma": "Frog Bayou WMA",
       "wmaKey": "frog bayou",
-      "units": 7,
-      "avgPercent": 50,
+      "units": 8,
+      "avgPercent": 47,
       "maxPercent": 100
     },
     {
