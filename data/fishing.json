@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-319/",
-  "fetched": "2026-11-02T13:04:17.006Z",
+  "fetched": "2026-11-02T23:18:13.288Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -547,6 +547,16 @@
       "referenceOnly": true,
       "species": [],
       "summary": "For the Army Corps of Engineers’ real-time gauge level and flow from Clarendon, visit the Corps’ Little Rock office website. Note: msl is mean sea level; cfs is cubic feet per second."
+    },
+    {
+      "region": "East Arkansas",
+      "water": "Recent News",
+      "updated": null,
+      "daysOld": null,
+      "stale": false,
+      "referenceOnly": false,
+      "species": [],
+      "summary": "Arkansas Hunters and Arkansas State University Aid Deer Management and Fight Food Insecurity Nov. 2, 2026"
     }
   ],
   "kind": "fishing"

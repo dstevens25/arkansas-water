@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-02T13:04:17.320Z",
+  "fetched": "2026-11-02T23:18:13.673Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -65,7 +65,7 @@
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Actively pumping on 10/28/26",
+      "statusText": "Little to no surface water",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -984,7 +984,8 @@
       "unit": "Wiville West",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Pumping initiated 10/13/26",
+      "statusText": "Pumping initiated 10/13/26; 60% flooded",
+      "percent": 60,
       "waterSource": "Groundwater",
       "plannedOperation": "10/13/26",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/9/26",
@@ -1020,8 +1021,8 @@
       "unit": "Conway George Unit C",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "60% flooded and actively pumping",
-      "percent": 60,
+      "statusText": "90% flooded and actively pumping",
+      "percent": 90,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/16/26",
@@ -1265,7 +1266,8 @@
       "wmaKey": "dardanelle",
       "unit": "Johnson County 1",
       "type": "moist-soil",
-      "statusText": "No rainfall",
+      "statusText": "Fully flooded",
+      "percent": 100,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Dardanelle WMA"
@@ -1319,7 +1321,8 @@
       "wmaKey": "black river",
       "unit": "Brookings 3",
       "type": "moist-soil",
-      "statusText": "Actively pumping",
+      "statusText": "Fully flooded",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -1329,7 +1332,8 @@
       "wmaKey": "black river",
       "unit": "Brookings 4",
       "type": "moist-soil",
-      "statusText": "Actively pumping",
+      "statusText": "Fully flooded",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -1917,7 +1921,7 @@
       "unit": "Cut‐Off Creek GTR",
       "type": "gtr",
       "statusText": "",
-      "plannedOperation": "Dec. 1 (established date since 2017 on 3 southernmost WMAs due to later dormancy)",
+      "plannedOperation": "Dec. 1 (established date since 2017 on three southernmost WMAs due to later dormancy)",
       "wmaDisplay": "Cut‐Off Creek WMA"
     },
     {
@@ -1995,7 +1999,7 @@
       "unit": "Bois d'Arc Lower GTR",
       "type": "gtr",
       "statusText": "",
-      "plannedOperation": "Dec. 1 (established date since 2017 on 3 southernmost WMAs due to later dormancy)",
+      "plannedOperation": "Dec. 1 (established date since 2017 on three southernmost WMAs due to later dormancy)",
       "wmaDisplay": "Dr. Lester Sitzes, III Bois D' Arc WMA"
     },
     {
@@ -2004,7 +2008,7 @@
       "unit": "Bois d'Arc Upper GTR",
       "type": "gtr",
       "statusText": "",
-      "plannedOperation": "Dec. 1 (established date since 2017 on 3 southernmost WMAs due to later dormancy)",
+      "plannedOperation": "Dec. 1 (established date since 2017 on three southernmost WMAs due to later dormancy)",
       "wmaDisplay": "Dr. Lester Sitzes, III Bois D' Arc WMA"
     },
     {
@@ -2032,7 +2036,7 @@
       "wmaKey": "harris brake",
       "unit": "Harris Brake Lower GTR",
       "type": "gtr",
-      "statusText": "Water supply for these GTRs comes from Harris Brake Lake. Currently, lake levels are 2 ft. below normal. It is unlikely that water will be available for release without significant recovery in lake levels.",
+      "statusText": "Water supply for these GTRs comes from Harris Brake Lake. Currently, lake levels are 2 ft. below normal. No water will be released without significant recovery in lake levels.",
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Harris Brake WMA"
     },
@@ -2145,7 +2149,7 @@
       "wmaKey": "shirey bay",
       "unit": "Adams Brake GTR",
       "type": "gtr",
-      "statusText": "Water from Lake Charles provides water supply for all 3 of these GTRs. Currently Lake Charles water level is 7.5 ft below normal. It is unlikely that any water will be available for release for the 2026-2027 season.",
+      "statusText": "Water from Lake Charles provides water supply for all three of these GTRs. Currently Lake Charles water level is 7.5 ft below normal. It is unlikely that any water will be available for release for the 2026-2027 season.",
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Shirey Bay Rainey Brake WMA"
@@ -2175,7 +2179,7 @@
     {
       "wma": "Dardanelle WMA",
       "wmaKey": "dardanelle",
-      "units": 5,
+      "units": 6,
       "avgPercent": 100,
       "maxPercent": 100
     },
@@ -2189,7 +2193,7 @@
     {
       "wma": "Dave Donaldson Black River WMA",
       "wmaKey": "black river",
-      "units": 4,
+      "units": 6,
       "avgPercent": 100,
       "maxPercent": 100
     },
@@ -2222,6 +2226,13 @@
       "maxPercent": 90
     },
     {
+      "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
+      "units": 4,
+      "avgPercent": 76,
+      "maxPercent": 95
+    },
+    {
       "wma": "George H. Dunklin Jr. Bayou Meto WMA",
       "wmaKey": "bayou meto",
       "units": 15,
@@ -2229,11 +2240,11 @@
       "maxPercent": 90
     },
     {
-      "wma": "Sheffield Nelson Dagmar WMA",
-      "wmaKey": "dagmar",
-      "units": 4,
-      "avgPercent": 69,
-      "maxPercent": 95
+      "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
+      "units": 1,
+      "avgPercent": 60,
+      "maxPercent": 60
     },
     {
       "wma": "Frog Bayou WMA",
