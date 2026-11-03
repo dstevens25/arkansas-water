@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-319/",
-  "fetched": "2026-11-03T12:36:09.196Z",
+  "fetched": "2026-11-03T21:28:40.661Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -550,13 +550,13 @@
     },
     {
       "region": "East Arkansas",
-      "water": "Recent News",
+      "water": "AGFC Commissioner Meeting Announcement",
       "updated": null,
       "daysOld": null,
       "stale": false,
       "referenceOnly": false,
       "species": [],
-      "summary": "Arkansas Hunters and Arkansas State University Aid Deer Management and Fight Food Insecurity Nov. 2, 2026"
+      "summary": "Nov. 3, 2026 Arkansas Hunters and Arkansas State University Aid Deer Management and Fight Food Insecurity Nov. 2, 2026"
     }
   ],
   "kind": "fishing"
