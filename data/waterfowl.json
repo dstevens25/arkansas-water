@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-03T21:28:40.875Z",
+  "fetched": "2026-11-04T12:45:46.150Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -54,7 +54,7 @@
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No surface water available as of 10/12/26",
+      "statusText": "No surface water available as of 11/3/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -65,7 +65,7 @@
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Little to no surface water",
+      "statusText": "Slowly pumping as water becomes available",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -76,7 +76,7 @@
       "unit": "3",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No surface water available as of 10/12/26",
+      "statusText": "No surface water available as of 11/3/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -87,7 +87,7 @@
       "unit": "4",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No surface water available as of 10/12/26",
+      "statusText": "Slowly pumping as water becomes available",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -98,7 +98,7 @@
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No surface water available as of 10/12/26",
+      "statusText": "No surface water available as of 11/3/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -154,7 +154,7 @@
       "unit": "10",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "GTR flooding to begin 11/12/26",
+      "statusText": "GTR flooding to begin 11/9/26",
       "waterSource": "Rainfall",
       "plannedOperation": "TBD",
       "comments": "Floods with GTR",
@@ -1034,7 +1034,7 @@
       "unit": "Dark Corner 1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "95% flooded  on 10/27/26",
+      "statusText": "95% flooded",
       "percent": 95,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
@@ -1599,7 +1599,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "90% flooded and actively pumping",
+      "statusText": "90% flooded",
       "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -1612,7 +1612,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "90% flooded and actively pumping",
+      "statusText": "90% flooded",
       "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -1625,8 +1625,8 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "60% flooded and actively pumping",
-      "percent": 60,
+      "statusText": "90% flooded and actively pumping",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1676,7 +1676,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "90% flooded and actively pumping",
+      "statusText": "90% flooded",
       "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -1689,8 +1689,8 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "60% flooded but This unit will be flooded in December due to half the unit acting as a GTR",
-      "percent": 60,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1702,8 +1702,8 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "Boards are in place but water must fill exterior ditch in unit 10 first currently 70% flooded",
-      "percent": 70,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -1741,7 +1741,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "River level too low to pump as of 10/12/26",
+      "statusText": "River level too low to pump as of 11/3/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "comments": "Relift can only be operated when Cache River at Cotton Plant is above 7.5'",
@@ -1754,7 +1754,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "River level too low to pump as of 10/12/26",
+      "statusText": "River level too low to pump as of 11/3/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "comments": "Relift can only be operated when Cache River at Cotton Plant is above 7.5'",
@@ -1767,7 +1767,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "River level too low to pump as of 10/12/26",
+      "statusText": "River level too low to pump as of 11/3/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "comments": "Relift can only be operated when Cache River at Cotton Plant is above 7.5'",
@@ -1780,7 +1780,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "River level too low to pump as of 10/12/26",
+      "statusText": "River level too low to pump as of 11/3/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "comments": "Relift can only be operated when Cache River at Cotton Plant is above 7.5'",
@@ -2340,18 +2340,18 @@
       "maxPercent": 90
     },
     {
+      "wma": "George H. Dunklin Jr. Bayou Meto WMA",
+      "wmaKey": "bayou meto",
+      "units": 15,
+      "avgPercent": 79,
+      "maxPercent": 90
+    },
+    {
       "wma": "Sheffield Nelson Dagmar WMA",
       "wmaKey": "dagmar",
       "units": 4,
       "avgPercent": 76,
       "maxPercent": 95
-    },
-    {
-      "wma": "George H. Dunklin Jr. Bayou Meto WMA",
-      "wmaKey": "bayou meto",
-      "units": 15,
-      "avgPercent": 74,
-      "maxPercent": 90
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
