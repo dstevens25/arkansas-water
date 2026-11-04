@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-04T12:45:46.150Z",
+  "fetched": "2026-11-04T21:42:16.128Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -478,7 +478,7 @@
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "40% flooded",
+      "statusText": "40% flooded and actively pumping",
       "percent": 40,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
@@ -490,8 +490,8 @@
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "80% flooded",
-      "percent": 80,
+      "statusText": "40% flooded",
+      "percent": 40,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Freddie Black Choctaw Island WMA"
@@ -502,8 +502,8 @@
       "unit": "3",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "30% flooded and actively pumping",
-      "percent": 30,
+      "statusText": "60% flooded",
+      "percent": 60,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Freddie Black Choctaw Island WMA"
@@ -514,8 +514,8 @@
       "unit": "4",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "50% flooded",
-      "percent": 50,
+      "statusText": "85% flooded",
+      "percent": 85,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Freddie Black Choctaw Island WMA"
@@ -526,8 +526,8 @@
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "40% flooded and actively pumping",
-      "percent": 40,
+      "statusText": "75% flooded and actively pumping",
+      "percent": 75,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Freddie Black Choctaw Island WMA"
@@ -538,8 +538,8 @@
       "unit": "6",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "10% flooded",
-      "percent": 10,
+      "statusText": "15% flooded and actively pumping",
+      "percent": 15,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Freddie Black Choctaw Island WMA"
@@ -550,8 +550,8 @@
       "unit": "7",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "35% flooded",
-      "percent": 35,
+      "statusText": "25% flooded",
+      "percent": 25,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Freddie Black Choctaw Island WMA"
@@ -903,8 +903,8 @@
       "unit": "Blacklands West",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "30% flooded",
-      "percent": 30,
+      "statusText": "80% flooded",
+      "percent": 80,
       "waterSource": "Surface Water",
       "plannedOperation": "10/12/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -926,8 +926,8 @@
       "unit": "Slaty",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "10% flooded",
-      "percent": 10,
+      "statusText": "80% flooded",
+      "percent": 80,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -1083,7 +1083,8 @@
       "unit": "A",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Pumping initiated 10/12/26 and will take until Christmas to get full",
+      "statusText": "Actively pumping with the unit 20% flooded (holes A6 and A7 are ready)",
+      "percent": 20,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -1105,7 +1106,8 @@
       "unit": "C",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Pumping initiated 10/12/26 but water flows through this unit to unit B",
+      "statusText": "Actively pumping with the unit 60% flooded (holes C31, C32, C33 and C34 ready)",
+      "percent": 60,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -1116,7 +1118,7 @@
       "unit": "D",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "90% flooded",
+      "statusText": "90% flooded and both hunt holes are ready (D35 and D36)",
       "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/12/2026",
@@ -1172,7 +1174,8 @@
       "unit": "Mobility-Impaired Unit",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Pumping initiated 10/20/26",
+      "statusText": "Actively pumping and 40% flooded",
+      "percent": 40,
       "waterSource": "Groundwater",
       "plannedOperation": "10/26/2026",
       "comments": "Install boards 10/5/26 to attempt to catch rainwater; if none available pump starting 11/09/26",
@@ -2326,18 +2329,18 @@
       "maxPercent": 90
     },
     {
-      "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
-      "wmaKey": "raft creek",
-      "units": 1,
-      "avgPercent": 90,
-      "maxPercent": 90
-    },
-    {
       "wma": "Shirey Bay Rainey Brake WMA",
       "wmaKey": "shirey bay",
       "units": 2,
       "avgPercent": 90,
       "maxPercent": 90
+    },
+    {
+      "wma": "Petit Jean River WMA",
+      "wmaKey": "petit jean",
+      "units": 2,
+      "avgPercent": 80,
+      "maxPercent": 80
     },
     {
       "wma": "George H. Dunklin Jr. Bayou Meto WMA",
@@ -2361,25 +2364,25 @@
       "maxPercent": 60
     },
     {
-      "wma": "Frog Bayou WMA",
-      "wmaKey": "frog bayou",
-      "units": 8,
-      "avgPercent": 47,
-      "maxPercent": 100
+      "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
+      "wmaKey": "raft creek",
+      "units": 4,
+      "avgPercent": 53,
+      "maxPercent": 90
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
       "wmaKey": "choctaw island",
       "units": 7,
-      "avgPercent": 41,
-      "maxPercent": 80
+      "avgPercent": 49,
+      "maxPercent": 85
     },
     {
-      "wma": "Petit Jean River WMA",
-      "wmaKey": "petit jean",
-      "units": 2,
-      "avgPercent": 20,
-      "maxPercent": 30
+      "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
+      "units": 8,
+      "avgPercent": 47,
+      "maxPercent": 100
     }
   ]
 }
