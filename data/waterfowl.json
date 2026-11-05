@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-05T01:24:17.733Z",
+  "fetched": "2026-11-05T12:55:06.687Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -998,7 +998,7 @@
       "unit": "Conway George Unit A",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "90% flooded",
+      "statusText": "90% flooded and actively pumping",
       "percent": 90,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
