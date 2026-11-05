@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-04T21:42:16.128Z",
+  "fetched": "2026-11-05T01:24:17.733Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -756,7 +756,8 @@
       "unit": "Galla Creek WMA",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "70% flooded",
+      "percent": 70,
       "waterSource": "Rainfall",
       "plannedOperation": "11/09/2026",
       "comments": "Flooded in 3 stages also acts as a GTR (second stage will be December 7 and third stage will be December 28)",
@@ -2355,6 +2356,13 @@
       "units": 4,
       "avgPercent": 76,
       "maxPercent": 95
+    },
+    {
+      "wma": "Galla Creek WMA",
+      "wmaKey": "galla creek",
+      "units": 1,
+      "avgPercent": 70,
+      "maxPercent": 70
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
