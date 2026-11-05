@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-05T12:55:06.687Z",
+  "fetched": "2026-11-05T21:45:40.581Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -223,7 +223,7 @@
       "unit": "Little Grassy",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Not flooding this unit to preserve water to flood the GTR",
+      "statusText": "Will be flooded as water levels in Bois D'Arc lake recover",
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Dr. Lester Sitzes III Bois D'Arc WMA"
@@ -234,7 +234,7 @@
       "unit": "1 (Willow Hole)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "Flooding began on 4 November 2026",
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -245,7 +245,8 @@
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -256,7 +257,8 @@
       "unit": "7A",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -267,7 +269,8 @@
       "unit": "7B",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -278,7 +281,8 @@
       "unit": "8A (Duck Trap)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -289,7 +293,8 @@
       "unit": "8B (Duck Trap)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -300,7 +305,8 @@
       "unit": "8C (Duck Trap)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -311,7 +317,8 @@
       "unit": "9",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding began on 28 October 2026",
+      "statusText": "Unit 80% flooded",
+      "percent": 80,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -322,7 +329,7 @@
       "unit": "13A (Turkey Pond)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "Flooding began on 5 November 2026",
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -333,7 +340,8 @@
       "unit": "13B (Turkey Pond)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to large size and being mostly planted trees",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -344,7 +352,8 @@
       "unit": "13C (Turkey Pond)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -355,7 +364,8 @@
       "unit": "Bobby's Pond",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "5% flooded",
+      "percent": 5,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -366,7 +376,8 @@
       "unit": "Cedar Ridge",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "Flooding began on 4 November 2026, unit 25%",
+      "percent": 25,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -377,7 +388,8 @@
       "unit": "Controversy Corner",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -400,7 +412,8 @@
       "unit": "Mud pond",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -411,7 +424,8 @@
       "unit": "Pig Trough",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -434,7 +448,8 @@
       "unit": "Red gate",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -445,7 +460,8 @@
       "unit": "Remmel Marsh",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "Flooding Began on 2 November 2026, unit 40% flooded",
+      "percent": 40,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -456,7 +472,8 @@
       "unit": "Salt Lick",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be evaluated by area staff as water becomes more available",
+      "statusText": "Flooding began on 4 November 2026, Unit 20% flooded.",
+      "percent": 20,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -467,7 +484,8 @@
       "unit": "Teeny Pond",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -562,8 +580,8 @@
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "10% flooded and actively pumping",
-      "percent": 10,
+      "statusText": "70% flooded and actively pumping",
+      "percent": 70,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -574,8 +592,8 @@
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "100% flooded",
-      "percent": 100,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -610,8 +628,8 @@
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "10% and actively pumping",
-      "percent": 10,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -622,7 +640,7 @@
       "unit": "6",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "Began pumping 11/5/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -630,10 +648,11 @@
     {
       "wma": "Frog Bayou WMA",
       "wmaKey": "frog bayou",
-      "unit": "7",
+      "unit": "7 (Draw)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "0%",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -641,10 +660,11 @@
     {
       "wma": "Frog Bayou WMA",
       "wmaKey": "frog bayou",
-      "unit": "9",
+      "unit": "9 (Draw)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "0%",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -655,7 +675,8 @@
       "unit": "10",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "0%",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -666,7 +687,8 @@
       "unit": "11",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "0%",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -677,7 +699,8 @@
       "unit": "12",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "0%",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -700,8 +723,8 @@
       "unit": "14",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "20% and actively pumping",
-      "percent": 20,
+      "statusText": "80% and actively pumping",
+      "percent": 80,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -709,11 +732,24 @@
     {
       "wma": "Frog Bayou WMA",
       "wmaKey": "frog bayou",
-      "unit": "18",
+      "unit": "Mobility Impaired Unit (Draw)   17",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
-      "waterSource": "Rainfall",
+      "statusText": "0%",
+      "percent": 0,
+      "waterSource": "Surface Water",
+      "plannedOperation": "10/05/2026",
+      "wmaDisplay": "Frog Bayou WMA"
+    },
+    {
+      "wma": "Frog Bayou WMA",
+      "wmaKey": "frog bayou",
+      "unit": "Youth Unit (Draw) 18",
+      "type": "moist-soil",
+      "section": "Moist-soil Units (Open to Hunting)",
+      "statusText": "0% and actively pumping",
+      "percent": 0,
+      "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
     },
@@ -723,19 +759,9 @@
       "unit": "19",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
-      "waterSource": "Rainfall",
-      "plannedOperation": "10/05/2026",
-      "wmaDisplay": "Frog Bayou WMA"
-    },
-    {
-      "wma": "Frog Bayou WMA",
-      "wmaKey": "frog bayou",
-      "unit": "Blackland Slough",
-      "type": "moist-soil",
-      "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
-      "waterSource": "Rainfall",
+      "statusText": "0%",
+      "percent": 0,
+      "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
     },
@@ -745,7 +771,8 @@
       "unit": "Bullington's Bog",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will stagger flood due to limited capacity",
+      "statusText": "0%",
+      "percent": 0,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -756,11 +783,11 @@
       "unit": "Galla Creek WMA",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "70% flooded",
-      "percent": 70,
+      "statusText": "60% flooded",
+      "percent": 60,
       "waterSource": "Rainfall",
       "plannedOperation": "11/09/2026",
-      "comments": "Flooded in 3 stages also acts as a GTR (second stage will be December 7 and third stage will be December 28)",
+      "comments": "Flooded in 3 stages also acts as a GTR",
       "wmaDisplay": "Galla Creek WMA"
     },
     {
@@ -893,7 +920,8 @@
       "unit": "Blacklands East",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Once the west unit is completed this unit will be flooded",
+      "statusText": "5% flooded",
+      "percent": 5,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -904,8 +932,8 @@
       "unit": "Blacklands West",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "80% flooded",
-      "percent": 80,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/12/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -916,7 +944,8 @@
       "unit": "Pullen Pond",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -927,8 +956,8 @@
       "unit": "Slaty",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "80% flooded",
-      "percent": 80,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -939,7 +968,8 @@
       "unit": "Sorehead",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Currently not enough water",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -1401,7 +1431,8 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "No rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/07/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -1417,7 +1448,7 @@
       "percent": 25,
       "waterSource": "Surface Water",
       "plannedOperation": "09/07/2026",
-      "comments": "Stagger flood throughout the season while providing teal hunting opportunities",
+      "comments": "Stagger flood throughout the season",
       "wmaDisplay": "Frog Bayou WMA"
     },
     {
@@ -1427,8 +1458,9 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "No rainfall",
-      "waterSource": "Rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
+      "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
     },
@@ -1439,8 +1471,9 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "No rainfall",
-      "waterSource": "Rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
+      "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
     },
@@ -1451,8 +1484,9 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "No rainfall",
-      "waterSource": "Rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
+      "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
     },
@@ -1921,7 +1955,8 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "Once underground line is in place unit will begin to be flooded",
+      "statusText": "10%",
+      "percent": 10,
       "waterSource": "Surface Water",
       "plannedOperation": "TBD",
       "wmaDisplay": "Sulphur River WMA"
@@ -2182,7 +2217,8 @@
       "wmaKey": "nimrod lloyd millwood",
       "unit": "Nimrod GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "Although recent rains have started to fill some of the ditches the water control structures are currently open and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Nimrod Lloyd Millwood WMA"
     },
@@ -2191,7 +2227,8 @@
       "wmaKey": "petit jean",
       "unit": "Pond Creek GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "Although recent rains have started to fill some of the ditches the water control structures are currently open and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Petit Jean River WMA"
     },
@@ -2200,7 +2237,8 @@
       "wmaKey": "petit jean",
       "unit": "Santa Fe GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "Although recent rains have started to fill some of the ditches the water control structures are currently open and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Petit Jean River WMA"
     },
@@ -2209,7 +2247,8 @@
       "wmaKey": "petit jean",
       "unit": "Slaty GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "Although recent rains have started to fill some of the ditches the water control structures are currently open and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Petit Jean River WMA"
     },
@@ -2316,13 +2355,6 @@
       "maxPercent": 100
     },
     {
-      "wma": "Ed Gordon Point Remove WMA",
-      "wmaKey": "point remove",
-      "units": 2,
-      "avgPercent": 90,
-      "maxPercent": 100
-    },
-    {
       "wma": "Ozark Lake WMA",
       "wmaKey": "ozark lake",
       "units": 3,
@@ -2335,13 +2367,6 @@
       "units": 2,
       "avgPercent": 90,
       "maxPercent": 90
-    },
-    {
-      "wma": "Petit Jean River WMA",
-      "wmaKey": "petit jean",
-      "units": 2,
-      "avgPercent": 80,
-      "maxPercent": 80
     },
     {
       "wma": "George H. Dunklin Jr. Bayou Meto WMA",
@@ -2361,8 +2386,8 @@
       "wma": "Galla Creek WMA",
       "wmaKey": "galla creek",
       "units": 1,
-      "avgPercent": 70,
-      "maxPercent": 70
+      "avgPercent": 60,
+      "maxPercent": 60
     },
     {
       "wma": "Rex Hancock Black Swamp WMA",
@@ -2388,9 +2413,37 @@
     {
       "wma": "Frog Bayou WMA",
       "wmaKey": "frog bayou",
+      "units": 20,
+      "avgPercent": 28,
+      "maxPercent": 90
+    },
+    {
+      "wma": "Petit Jean River WMA",
+      "wmaKey": "petit jean",
       "units": 8,
-      "avgPercent": 47,
+      "avgPercent": 23,
+      "maxPercent": 90
+    },
+    {
+      "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
+      "units": 21,
+      "avgPercent": 17,
       "maxPercent": 100
+    },
+    {
+      "wma": "Sulphur River WMA",
+      "wmaKey": "sulphur river",
+      "units": 1,
+      "avgPercent": 10,
+      "maxPercent": 10
+    },
+    {
+      "wma": "Nimrod Lloyd Millwood WMA",
+      "wmaKey": "nimrod lloyd millwood",
+      "units": 1,
+      "avgPercent": 0,
+      "maxPercent": 0
     }
   ]
 }
