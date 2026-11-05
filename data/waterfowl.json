@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-05T21:45:40.581Z",
+  "fetched": "2026-11-05T23:18:56.091Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -1676,7 +1676,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "Once unit 8 is complete this unit will be flooded",
+      "statusText": "Actively pumping",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
