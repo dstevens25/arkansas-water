@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-06T12:42:38.203Z",
+  "fetched": "2026-11-06T21:15:11.709Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -1041,7 +1041,8 @@
       "unit": "Conway George Unit B",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Once unit A is flooded we can slowly add water to this unit by continuing to overtop the structures in unit A and unit C",
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Sheffield Nelson Dagmar WMA"
@@ -1241,7 +1242,8 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "Palarm Creek level too low to pump as of 10/12/26",
+      "statusText": "0% Palarm Creek level too low to pump as of 11/6/26",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Bell Slough WMA"
@@ -1253,7 +1255,8 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "Palarm Creek level too low to pump as of 10/12/26",
+      "statusText": "10% Palarm Creek level too low to pump as of 11/6/26",
+      "percent": 10,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Bell Slough WMA"
@@ -2369,18 +2372,18 @@
       "maxPercent": 90
     },
     {
+      "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
+      "units": 5,
+      "avgPercent": 79,
+      "maxPercent": 95
+    },
+    {
       "wma": "George H. Dunklin Jr. Bayou Meto WMA",
       "wmaKey": "bayou meto",
       "units": 15,
       "avgPercent": 79,
       "maxPercent": 90
-    },
-    {
-      "wma": "Sheffield Nelson Dagmar WMA",
-      "wmaKey": "dagmar",
-      "units": 4,
-      "avgPercent": 76,
-      "maxPercent": 95
     },
     {
       "wma": "Galla Creek WMA",
@@ -2436,6 +2439,13 @@
       "wmaKey": "sulphur river",
       "units": 1,
       "avgPercent": 10,
+      "maxPercent": 10
+    },
+    {
+      "wma": "Bell Slough WMA",
+      "wmaKey": "bell slough",
+      "units": 2,
+      "avgPercent": 5,
       "maxPercent": 10
     },
     {
