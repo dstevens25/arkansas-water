@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-05T23:18:56.091Z",
+  "fetched": "2026-11-06T12:42:38.203Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -1229,7 +1229,7 @@
       "unit": "Youth",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Once unit D is full this unit will be flooded",
+      "statusText": "Pumping initiated on 11/5/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
