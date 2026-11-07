@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-06T21:15:11.709Z",
+  "fetched": "2026-11-07T11:29:32.846Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -109,7 +109,8 @@
       "unit": "6",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "50% flooded",
+      "percent": 50,
       "waterSource": "Rainfall",
       "plannedOperation": "NA",
       "comments": "Structure is always closed",
@@ -2405,6 +2406,13 @@
       "units": 4,
       "avgPercent": 53,
       "maxPercent": 90
+    },
+    {
+      "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
+      "units": 1,
+      "avgPercent": 50,
+      "maxPercent": 50
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
