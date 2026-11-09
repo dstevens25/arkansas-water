@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-08T20:10:06.344Z",
+  "fetched": "2026-11-09T13:35:58.445Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -258,8 +258,8 @@
       "unit": "7A",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "0% flooded",
-      "percent": 0,
+      "statusText": "95% flooded",
+      "percent": 95,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -2439,7 +2439,7 @@
       "wma": "Ed Gordon Point Remove WMA",
       "wmaKey": "point remove",
       "units": 21,
-      "avgPercent": 17,
+      "avgPercent": 21,
       "maxPercent": 100
     },
     {
