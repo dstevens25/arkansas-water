@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-09T13:35:58.445Z",
+  "fetched": "2026-11-09T23:57:11.015Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -54,7 +54,7 @@
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No surface water available as of 11/3/26",
+      "statusText": "No surface water available as of 11/9/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -76,7 +76,7 @@
       "unit": "3",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No surface water available as of 11/3/26",
+      "statusText": "No surface water available as of 11/9/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -98,7 +98,7 @@
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No surface water available as of 11/3/26",
+      "statusText": "No surface water available as of 11/9/26",
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Cypress Bayou WMA"
@@ -1128,7 +1128,8 @@
       "unit": "B",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Pumping initiated 10/12/26 but will not be close to full until January 1 with 24/7 pumping",
+      "statusText": "Actively pumping with the unit 10% flooded. Pumping initiated 10/12/26",
+      "percent": 10,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -1207,8 +1208,8 @@
       "unit": "Mobility-Impaired Unit",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Actively pumping and 40% flooded",
-      "percent": 40,
+      "statusText": "Actively pumping and 50% flooded",
+      "percent": 50,
       "waterSource": "Groundwater",
       "plannedOperation": "10/26/2026",
       "comments": "Install boards 10/5/26 to attempt to catch rainwater; if none available pump starting 11/09/26",
@@ -1988,7 +1989,7 @@
       "wmaKey": "bayou meto",
       "unit": "Buckingham Flats GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "Actively pumping",
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -2057,7 +2058,8 @@
       "wmaKey": "big lake",
       "unit": "Above Highline GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "The gates are in the Simmons Structure, the Watson structure is closed, and the inlet pipes are open. The GTR is 0% flooded",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Big Lake WMA"
@@ -2067,7 +2069,8 @@
       "wmaKey": "big lake",
       "unit": "Below Highline GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "The gates are in the Simmons Structure, the Watson structure is closed, and the inlet pipes are open. The GTR is 0% flooded",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Big Lake WMA"
@@ -2290,7 +2293,7 @@
       "wmaKey": "dagmar",
       "unit": "Kyles GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "Structures will remain open",
       "plannedOperation": "No action",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Sheffield Nelson Dagmar WMA"
@@ -2401,13 +2404,6 @@
       "maxPercent": 60
     },
     {
-      "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
-      "wmaKey": "raft creek",
-      "units": 4,
-      "avgPercent": 53,
-      "maxPercent": 90
-    },
-    {
       "wma": "Cypress Bayou WMA",
       "wmaKey": "cypress bayou",
       "units": 1,
@@ -2420,6 +2416,13 @@
       "units": 7,
       "avgPercent": 49,
       "maxPercent": 85
+    },
+    {
+      "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
+      "wmaKey": "raft creek",
+      "units": 5,
+      "avgPercent": 46,
+      "maxPercent": 90
     },
     {
       "wma": "Frog Bayou WMA",
@@ -2455,6 +2458,13 @@
       "units": 2,
       "avgPercent": 5,
       "maxPercent": 10
+    },
+    {
+      "wma": "Big Lake WMA",
+      "wmaKey": "big lake",
+      "units": 2,
+      "avgPercent": 0,
+      "maxPercent": 0
     },
     {
       "wma": "Nimrod Lloyd Millwood WMA",
