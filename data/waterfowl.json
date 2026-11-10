@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-10T13:13:49.720Z",
+  "fetched": "2026-11-10T21:38:32.959Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -581,8 +581,8 @@
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "70% flooded and actively pumping",
-      "percent": 70,
+      "statusText": "90% flooded and actively pumping",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -641,7 +641,8 @@
       "unit": "6",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Began pumping 11/5/26",
+      "statusText": "25% flooded and actively pumping",
+      "percent": 25,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -652,8 +653,8 @@
       "unit": "7 (Draw)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "0%",
-      "percent": 0,
+      "statusText": "75% flooded and actively pumping",
+      "percent": 75,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -724,7 +725,7 @@
       "unit": "14",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "80% and actively pumping",
+      "statusText": "80%",
       "percent": 80,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -748,7 +749,7 @@
       "unit": "Youth Unit (Draw) 18",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "0% and actively pumping",
+      "statusText": "0% and actively pumping when water is available",
       "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -921,8 +922,8 @@
       "unit": "Blacklands East",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "5% flooded",
-      "percent": 5,
+      "statusText": "10% flooded",
+      "percent": 10,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -933,8 +934,8 @@
       "unit": "Blacklands West",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "90% flooded",
-      "percent": 90,
+      "statusText": "100% flooded",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/12/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -2234,7 +2235,7 @@
       "wmaKey": "petit jean",
       "unit": "Pond Creek GTR",
       "type": "gtr",
-      "statusText": "Although recent rains have started to fill some of the ditches the water control structures are currently open and the unit is 0% flooded.",
+      "statusText": "The water control structures are closed and the unit is 0% flooded.",
       "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Petit Jean River WMA"
@@ -2244,7 +2245,7 @@
       "wmaKey": "petit jean",
       "unit": "Santa Fe GTR",
       "type": "gtr",
-      "statusText": "Although recent rains have started to fill some of the ditches the water control structures are currently open and the unit is 0% flooded.",
+      "statusText": "The water control structures are  closed and the unit is 0% flooded.",
       "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Petit Jean River WMA"
@@ -2254,7 +2255,7 @@
       "wmaKey": "petit jean",
       "unit": "Slaty GTR",
       "type": "gtr",
-      "statusText": "Although recent rains have started to fill some of the ditches the water control structures are currently open and the unit is 0% flooded.",
+      "statusText": "The water control structures are closed and the unit is 0% flooded.",
       "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Petit Jean River WMA"
@@ -2427,16 +2428,16 @@
     {
       "wma": "Frog Bayou WMA",
       "wmaKey": "frog bayou",
-      "units": 20,
-      "avgPercent": 28,
+      "units": 21,
+      "avgPercent": 33,
       "maxPercent": 90
     },
     {
       "wma": "Petit Jean River WMA",
       "wmaKey": "petit jean",
       "units": 8,
-      "avgPercent": 23,
-      "maxPercent": 90
+      "avgPercent": 25,
+      "maxPercent": 100
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
