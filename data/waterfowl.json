@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-11T12:25:02.460Z",
+  "fetched": "2026-11-11T22:27:42.844Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -1017,8 +1017,8 @@
       "unit": "Wiville West",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Pumping initiated 10/13/26; 60% flooded",
-      "percent": 60,
+      "statusText": "Pumping initiated 10/13/26; 90% flooded",
+      "percent": 90,
       "waterSource": "Groundwater",
       "plannedOperation": "10/13/26",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/9/26",
@@ -1030,8 +1030,8 @@
       "unit": "Conway George Unit A",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "90% flooded and actively pumping",
-      "percent": 90,
+      "statusText": "95% flooded",
+      "percent": 95,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/9/26",
@@ -1055,8 +1055,8 @@
       "unit": "Conway George Unit C",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "90% flooded and actively pumping",
-      "percent": 90,
+      "statusText": "95% flooded",
+      "percent": 95,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/16/26",
@@ -1081,8 +1081,8 @@
       "unit": "Dark Corner 2",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "30% flooded and actively pumping",
-      "percent": 30,
+      "statusText": "80% flooded and actively pumping",
+      "percent": 80,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/30/26",
@@ -1258,8 +1258,8 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "10% Palarm Creek level too low to pump as of 11/6/26",
-      "percent": 10,
+      "statusText": ">5% Palarm Creek level too low to pump as of 11/6/26",
+      "percent": 5,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Bell Slough WMA"
@@ -2051,7 +2051,8 @@
       "wmaKey": "bell slough",
       "unit": "Palarm Creek GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "The water control structures are closed and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Bell Slough WMA"
     },
@@ -2364,9 +2365,23 @@
       "maxPercent": 100
     },
     {
+      "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
+      "units": 5,
+      "avgPercent": 91,
+      "maxPercent": 95
+    },
+    {
       "wma": "Ozark Lake WMA",
       "wmaKey": "ozark lake",
       "units": 3,
+      "avgPercent": 90,
+      "maxPercent": 90
+    },
+    {
+      "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
+      "units": 1,
       "avgPercent": 90,
       "maxPercent": 90
     },
@@ -2385,22 +2400,8 @@
       "maxPercent": 90
     },
     {
-      "wma": "Sheffield Nelson Dagmar WMA",
-      "wmaKey": "dagmar",
-      "units": 5,
-      "avgPercent": 79,
-      "maxPercent": 95
-    },
-    {
       "wma": "Galla Creek WMA",
       "wmaKey": "galla creek",
-      "units": 1,
-      "avgPercent": 60,
-      "maxPercent": 60
-    },
-    {
-      "wma": "Rex Hancock Black Swamp WMA",
-      "wmaKey": "black swamp",
       "units": 1,
       "avgPercent": 60,
       "maxPercent": 60
@@ -2457,9 +2458,9 @@
     {
       "wma": "Bell Slough WMA",
       "wmaKey": "bell slough",
-      "units": 2,
-      "avgPercent": 5,
-      "maxPercent": 10
+      "units": 3,
+      "avgPercent": 2,
+      "maxPercent": 5
     },
     {
       "wma": "Big Lake WMA",
