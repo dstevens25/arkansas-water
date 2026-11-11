@@ -1,12 +1,12 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-320/",
-  "fetched": "2026-11-10T21:38:32.767Z",
+  "fetched": "2026-11-11T12:25:02.186Z",
   "waters": [
     {
       "region": "Central Arkansas",
       "water": "Little Red River",
       "updated": "2026-10-22",
-      "daysOld": 19,
+      "daysOld": 20,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -29,7 +29,7 @@
       "region": "Central Arkansas",
       "water": "Harris Brake Lake",
       "updated": "2026-10-29",
-      "daysOld": 12,
+      "daysOld": 13,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -44,7 +44,7 @@
       "region": "Central Arkansas",
       "water": "Lake Overcup",
       "updated": "2026-10-29",
-      "daysOld": 12,
+      "daysOld": 13,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -56,7 +56,7 @@
       "region": "Central Arkansas",
       "water": "Brewer Lake",
       "updated": "2026-10-29",
-      "daysOld": 12,
+      "daysOld": 13,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -69,7 +69,7 @@
       "region": "Central Arkansas",
       "water": "Lake Maumelle",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [],
@@ -91,7 +91,7 @@
       "region": "Central Arkansas",
       "water": "Little Maumelle River",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -125,7 +125,7 @@
       "region": "Central Arkansas",
       "water": "Peckerwood Lake",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [],
@@ -147,7 +147,7 @@
       "region": "North Arkansas",
       "water": "Cotter Area",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -161,7 +161,7 @@
       "region": "North Arkansas",
       "water": "Calico Rock Area",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -173,7 +173,7 @@
       "region": "North Arkansas",
       "water": "Bull Shoals Lake",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -212,7 +212,7 @@
       "region": "Northwest Arkansas",
       "water": "Beaver Lake",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -229,7 +229,7 @@
       "region": "Northwest Arkansas",
       "water": "Beaver Tailwater",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -241,7 +241,7 @@
       "region": "Northeast Arkansas",
       "water": "Lake Charles",
       "updated": "2026-10-22",
-      "daysOld": 19,
+      "daysOld": 20,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -257,7 +257,7 @@
       "region": "Northeast Arkansas",
       "water": "Lake Poinsett",
       "updated": "2026-10-29",
-      "daysOld": 12,
+      "daysOld": 13,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -270,7 +270,7 @@
       "region": "Northeast Arkansas",
       "water": "Spring River",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -303,7 +303,7 @@
       "region": "Southeast Arkansas",
       "water": "Cane Creek Lake",
       "updated": "2026-10-22",
-      "daysOld": 19,
+      "daysOld": 20,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -318,7 +318,7 @@
       "region": "Southeast Arkansas",
       "water": "Lake Monticello",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -331,7 +331,7 @@
       "region": "Southeast Arkansas",
       "water": "Lake Chicot",
       "updated": "2026-10-22",
-      "daysOld": 19,
+      "daysOld": 20,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -347,7 +347,7 @@
       "region": "Southeast Arkansas",
       "water": "White River/Arkansas River (Pool 2)/Trusten Holder WMA",
       "updated": "2026-10-22",
-      "daysOld": 19,
+      "daysOld": 20,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -361,7 +361,7 @@
       "region": "Southeast Arkansas",
       "water": "Wilson Lake",
       "updated": "2026-10-22",
-      "daysOld": 19,
+      "daysOld": 20,
       "stale": true,
       "referenceOnly": false,
       "species": [],
@@ -371,7 +371,7 @@
       "region": "Southwest Arkansas",
       "water": "Millwood Lake",
       "updated": "2026-10-29",
-      "daysOld": 12,
+      "daysOld": 13,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -391,7 +391,7 @@
       "region": "Southwest Arkansas",
       "water": "DeGray Lake",
       "updated": "2026-10-29",
-      "daysOld": 12,
+      "daysOld": 13,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -455,7 +455,7 @@
       "region": "West-Central Arkansas",
       "water": "Lake Atkins",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [],
@@ -465,7 +465,7 @@
       "region": "West-Central Arkansas",
       "water": "Lake Catherine Tailwater (Below Carpenter Dam)",
       "updated": "2026-11-05",
-      "daysOld": 5,
+      "daysOld": 6,
       "stale": false,
       "referenceOnly": false,
       "species": [
@@ -490,7 +490,7 @@
       "region": "West-Central Arkansas",
       "water": "Lake Hamilton",
       "updated": "2026-10-29",
-      "daysOld": 12,
+      "daysOld": 13,
       "stale": true,
       "referenceOnly": false,
       "species": [],
@@ -511,7 +511,7 @@
       "region": "West-Central Arkansas",
       "water": "Lake Ouachita",
       "updated": "2025-10-29",
-      "daysOld": 377,
+      "daysOld": 378,
       "stale": true,
       "referenceOnly": false,
       "species": [
