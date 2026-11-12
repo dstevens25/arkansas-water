@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-12T02:10:14.848Z",
+  "fetched": "2026-11-12T13:30:44.079Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -235,7 +235,8 @@
       "unit": "1 (Willow Hole)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding began on 4 November 2026",
+      "statusText": "Flooding began in unit 4 November 2026, unit 50% flooded",
+      "percent": 50,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -282,8 +283,8 @@
       "unit": "8A (Duck Trap)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "0% flooded",
-      "percent": 0,
+      "statusText": "Flooding began in unit 10 November 2026, 10% flooded",
+      "percent": 10,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -318,7 +319,7 @@
       "unit": "9",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Unit 80% flooded",
+      "statusText": "80% flooded",
       "percent": 80,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
@@ -330,7 +331,8 @@
       "unit": "13A (Turkey Pond)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding began on 5 November 2026",
+      "statusText": "Flooding began in unit 5 november 2026, unit 60% flooded",
+      "percent": 60,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -365,8 +367,8 @@
       "unit": "Bobby's Pond",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "5% flooded",
-      "percent": 5,
+      "statusText": "Flooding began 10 November 2026, unit 20% flooded",
+      "percent": 20,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -377,8 +379,8 @@
       "unit": "Cedar Ridge",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding began on 4 November 2026, unit 25%",
-      "percent": 25,
+      "statusText": "80% flooded",
+      "percent": 80,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -461,8 +463,8 @@
       "unit": "Remmel Marsh",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding Began on 2 November 2026, unit 40% flooded",
-      "percent": 40,
+      "statusText": "Flooding Began on 2 November 2026, unit 70% flooded",
+      "percent": 70,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -473,8 +475,8 @@
       "unit": "Salt Lick",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding began on 4 November 2026, Unit 20% flooded.",
-      "percent": 20,
+      "statusText": "85% flooded",
+      "percent": 85,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -2435,17 +2437,17 @@
       "maxPercent": 90
     },
     {
+      "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
+      "units": 23,
+      "avgPercent": 32,
+      "maxPercent": 100
+    },
+    {
       "wma": "Petit Jean River WMA",
       "wmaKey": "petit jean",
       "units": 8,
       "avgPercent": 25,
-      "maxPercent": 100
-    },
-    {
-      "wma": "Ed Gordon Point Remove WMA",
-      "wmaKey": "point remove",
-      "units": 21,
-      "avgPercent": 21,
       "maxPercent": 100
     },
     {
