@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-12T13:30:44.079Z",
+  "fetched": "2026-11-12T22:01:48.385Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -235,8 +235,8 @@
       "unit": "1 (Willow Hole)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding began in unit 4 November 2026, unit 50% flooded",
-      "percent": 50,
+      "statusText": "Flooding began in unit 4 November 2026, unit 70% flooded",
+      "percent": 70,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -283,8 +283,8 @@
       "unit": "8A (Duck Trap)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Flooding began in unit 10 November 2026, 10% flooded",
-      "percent": 10,
+      "statusText": "Flooding began in unit 10 November 2026, 20% flooded",
+      "percent": 20,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -295,8 +295,8 @@
       "unit": "8B (Duck Trap)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "0% flooded",
-      "percent": 0,
+      "statusText": "85% flooded",
+      "percent": 85,
       "waterSource": "Surface Water",
       "plannedOperation": "10/14/2026",
       "wmaDisplay": "Ed Gordon Point Remove WMA"
@@ -499,8 +499,8 @@
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "40% flooded and actively pumping",
-      "percent": 40,
+      "statusText": "50% flooded and actively pumping",
+      "percent": 50,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Freddie Black Choctaw Island WMA"
@@ -547,8 +547,8 @@
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "75% flooded and actively pumping",
-      "percent": 75,
+      "statusText": "85% flooded No surface water to pump as of 11/12/26",
+      "percent": 85,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Freddie Black Choctaw Island WMA"
@@ -559,7 +559,7 @@
       "unit": "6",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "15% flooded and actively pumping",
+      "statusText": "15% flooded No surface water to pump as of 11/12/26",
       "percent": 15,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
@@ -571,7 +571,7 @@
       "unit": "7",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "25% flooded",
+      "statusText": "25% flooded No surface water to pump as of 11/12/26",
       "percent": 25,
       "waterSource": "Surface water",
       "plannedOperation": "10/05/2026",
@@ -2013,7 +2013,7 @@
       "wmaKey": "bayou meto",
       "unit": "Harold Ives ‐ Temple Island GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "No Surface Water to Pump",
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -2023,7 +2023,8 @@
       "wmaKey": "bayou meto",
       "unit": "Lower Vallier GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "The water control structures are closed and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -2043,7 +2044,8 @@
       "wmaKey": "bayou meto",
       "unit": "Walter Will Bryant ‐ Cannon Brake GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "The water control structures are closed and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th, variable based on flowage easements",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "George H. Dunklin Jr. Bayou Meto WMA"
@@ -2103,7 +2105,8 @@
       "wmaKey": "black river",
       "unit": "Lower Island GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "5% Flooded. Water control structures closed.",
+      "percent": 5,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -2113,7 +2116,8 @@
       "wmaKey": "black river",
       "unit": "Lower Reyno GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "0% Flooded. Water control structures closed.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -2123,7 +2127,8 @@
       "wmaKey": "black river",
       "unit": "Section 24 GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "0% Flooded. Water control structures closed.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -2133,7 +2138,8 @@
       "wmaKey": "black river",
       "unit": "Upper Island GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "90% Flooded. Water control structures closed.",
+      "percent": 90,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -2143,7 +2149,8 @@
       "wmaKey": "black river",
       "unit": "Upper Reyno GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "0% Flooded. Water control structures closed.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -2153,7 +2160,8 @@
       "wmaKey": "black river",
       "unit": "Winchester GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "0% Flooded. Water control structures closed.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Dave Donaldson Black River WMA"
@@ -2181,7 +2189,8 @@
       "wmaKey": "bayou deview",
       "unit": "South Oliver GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "Boards will be added Dec. 1. The WMA is rainfall dependent and 0% flooded",
+      "percent": 0,
       "plannedOperation": "Dec. 1",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Earl Buss Bayou DeView WMA"
@@ -2191,7 +2200,8 @@
       "wmaKey": "bayou deview",
       "unit": "Thompson Tract GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "Boards will be added Dec. 1. The WMA is rainfall dependent and 0% flooded",
+      "percent": 0,
       "plannedOperation": "Dec. 1",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Earl Buss Bayou DeView WMA"
@@ -2201,7 +2211,8 @@
       "wmaKey": "harris brake",
       "unit": "Harris Brake Lower GTR",
       "type": "gtr",
-      "statusText": "Water supply for these GTRs comes from Harris Brake Lake. Currently, lake levels are 2 ft. below normal. No water will be released without significant recovery in lake levels.",
+      "statusText": "Water supply for these GTRs comes from Harris Brake Lake. Currently, lake levels are 2 ft. below normal. No water will be released without significant recovery in lake levels. The water control structures are closed and both units are 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Harris Brake WMA"
     },
@@ -2229,7 +2240,7 @@
       "wmaKey": "nimrod lloyd millwood",
       "unit": "Nimrod GTR",
       "type": "gtr",
-      "statusText": "Although recent rains have started to fill some of the ditches the water control structures are currently open and the unit is 0% flooded.",
+      "statusText": "The water control structures are closed and the unit is 0% flooded.",
       "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "wmaDisplay": "Nimrod Lloyd Millwood WMA"
@@ -2360,13 +2371,6 @@
       "maxPercent": 100
     },
     {
-      "wma": "Dave Donaldson Black River WMA",
-      "wmaKey": "black river",
-      "units": 6,
-      "avgPercent": 100,
-      "maxPercent": 100
-    },
-    {
       "wma": "Sheffield Nelson Dagmar WMA",
       "wmaKey": "dagmar",
       "units": 5,
@@ -2397,8 +2401,8 @@
     {
       "wma": "George H. Dunklin Jr. Bayou Meto WMA",
       "wmaKey": "bayou meto",
-      "units": 16,
-      "avgPercent": 85,
+      "units": 18,
+      "avgPercent": 76,
       "maxPercent": 90
     },
     {
@@ -2409,18 +2413,25 @@
       "maxPercent": 60
     },
     {
-      "wma": "Cypress Bayou WMA",
-      "wmaKey": "cypress bayou",
-      "units": 1,
-      "avgPercent": 50,
-      "maxPercent": 50
+      "wma": "Dave Donaldson Black River WMA",
+      "wmaKey": "black river",
+      "units": 12,
+      "avgPercent": 58,
+      "maxPercent": 100
     },
     {
       "wma": "Freddie Black Choctaw Island WMA",
       "wmaKey": "choctaw island",
       "units": 7,
-      "avgPercent": 49,
+      "avgPercent": 51,
       "maxPercent": 85
+    },
+    {
+      "wma": "Cypress Bayou WMA",
+      "wmaKey": "cypress bayou",
+      "units": 1,
+      "avgPercent": 50,
+      "maxPercent": 50
     },
     {
       "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
@@ -2430,18 +2441,18 @@
       "maxPercent": 90
     },
     {
+      "wma": "Ed Gordon Point Remove WMA",
+      "wmaKey": "point remove",
+      "units": 23,
+      "avgPercent": 37,
+      "maxPercent": 100
+    },
+    {
       "wma": "Frog Bayou WMA",
       "wmaKey": "frog bayou",
       "units": 21,
       "avgPercent": 33,
       "maxPercent": 90
-    },
-    {
-      "wma": "Ed Gordon Point Remove WMA",
-      "wmaKey": "point remove",
-      "units": 23,
-      "avgPercent": 32,
-      "maxPercent": 100
     },
     {
       "wma": "Petit Jean River WMA",
@@ -2468,6 +2479,20 @@
       "wma": "Big Lake WMA",
       "wmaKey": "big lake",
       "units": 2,
+      "avgPercent": 0,
+      "maxPercent": 0
+    },
+    {
+      "wma": "Earl Buss Bayou DeView WMA",
+      "wmaKey": "bayou deview",
+      "units": 2,
+      "avgPercent": 0,
+      "maxPercent": 0
+    },
+    {
+      "wma": "Harris Brake WMA",
+      "wmaKey": "harris brake",
+      "units": 1,
       "avgPercent": 0,
       "maxPercent": 0
     },
