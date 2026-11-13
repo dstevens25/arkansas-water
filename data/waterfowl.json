@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-13T12:51:16.479Z",
+  "fetched": "2026-11-13T21:47:40.671Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -583,7 +583,7 @@
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "90% flooded and actively pumping",
+      "statusText": "90% flooded",
       "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -655,8 +655,8 @@
       "unit": "7 (Draw)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "75% flooded and actively pumping",
-      "percent": 75,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -667,7 +667,7 @@
       "unit": "9 (Draw)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "0%",
+      "statusText": "0% and actively pumping",
       "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -1119,8 +1119,8 @@
       "unit": "A",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Actively pumping with the unit 20% flooded (holes A6 and A7 are ready)",
-      "percent": 20,
+      "statusText": "Actively pumping with the unit 30% flooded (holes A6 and A7 are ready)",
+      "percent": 30,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -1131,8 +1131,8 @@
       "unit": "B",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Actively pumping with the unit 10% flooded. Pumping initiated 10/12/26",
-      "percent": 10,
+      "statusText": "Actively pumping with the unit 20% flooded. Pumping initiated 10/12/26 (holes B9, B12, B16, B18, B22, B24, B26 are ready to hunt)",
+      "percent": 20,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -1143,8 +1143,8 @@
       "unit": "C",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Actively pumping with the unit 60% flooded (holes C31, C32, C33 and C34 ready)",
-      "percent": 60,
+      "statusText": "Actively pumping with the unit 70% flooded (holes C31, C32, C33 and C34 ready)",
+      "percent": 70,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -1211,8 +1211,8 @@
       "unit": "Mobility-Impaired Unit",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Actively pumping and 50% flooded",
-      "percent": 50,
+      "statusText": "Actively pumping and 70% flooded",
+      "percent": 70,
       "waterSource": "Groundwater",
       "plannedOperation": "10/26/2026",
       "comments": "Install boards 10/5/26 to attempt to catch rainwater; if none available pump starting 11/09/26",
@@ -1224,7 +1224,7 @@
       "unit": "Magellan",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No surface water available, once the tail water ditch pumping into unit A is exhausted we will move a powerunit to this site to pump groundwater but limitations and a shortage of powerunits means this unit will take longer to flood",
+      "statusText": "Pumping initiated on 11/12/26. Power Unit boken down as of 11/13. Working on repair.",
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -1235,7 +1235,8 @@
       "unit": "Youth",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Pumping initiated on 11/5/26",
+      "statusText": "Actively pumping with the unit 40% flooded. Pumping initiated on 11/5/26",
+      "percent": 40,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -2420,6 +2421,13 @@
       "maxPercent": 100
     },
     {
+      "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
+      "wmaKey": "raft creek",
+      "units": 6,
+      "avgPercent": 53,
+      "maxPercent": 90
+    },
+    {
       "wma": "Freddie Black Choctaw Island WMA",
       "wmaKey": "choctaw island",
       "units": 7,
@@ -2432,13 +2440,6 @@
       "units": 1,
       "avgPercent": 50,
       "maxPercent": 50
-    },
-    {
-      "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
-      "wmaKey": "raft creek",
-      "units": 5,
-      "avgPercent": 46,
-      "maxPercent": 90
     },
     {
       "wma": "Ed Gordon Point Remove WMA",

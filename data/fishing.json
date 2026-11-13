@@ -1,6 +1,6 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-321/",
-  "fetched": "2026-11-13T12:51:16.179Z",
+  "fetched": "2026-11-13T21:47:40.344Z",
   "waters": [
     {
       "region": "Central Arkansas",
@@ -523,16 +523,6 @@
       "referenceOnly": true,
       "species": [],
       "summary": "For the Army Corps of Engineers’ real-time gauge level and flow from Clarendon, visit the Corps’ Little Rock office website. Note: msl is mean sea level; cfs is cubic feet per second."
-    },
-    {
-      "region": "East Arkansas",
-      "water": "GenCon Summit Sees Significant Growth in Year Two",
-      "updated": null,
-      "daysOld": null,
-      "stale": false,
-      "referenceOnly": false,
-      "species": [],
-      "summary": "Nov. 12, 2026 Permit-based Waterfowl Hunting Opportunities Expanded, Applications Begin Nov. 12 Nov. 10, 2026"
     }
   ],
   "kind": "fishing"
