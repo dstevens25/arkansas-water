@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-13T21:47:40.671Z",
+  "fetched": "2026-11-14T11:55:24.209Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -1286,7 +1286,8 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "Pumping initiated 10/13/26",
+      "statusText": "Fully flooded on 11/4/26",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dardanelle WMA"
@@ -1311,9 +1312,10 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "No rainfall",
-      "waterSource": "Rainfall",
-      "plannedOperation": "10/05/2026",
+      "statusText": "Fully flooded on 11/4/26",
+      "percent": 100,
+      "waterSource": "Surface Water",
+      "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dardanelle WMA"
     },
     {
@@ -1323,10 +1325,10 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "Fully flooded",
+      "statusText": "Fully flooded on 11/2/26",
       "percent": 100,
-      "waterSource": "Rainfall",
-      "plannedOperation": "10/05/2026",
+      "waterSource": "Surface Water",
+      "plannedOperation": "10/13/2026",
       "wmaDisplay": "Dardanelle WMA"
     },
     {
@@ -2360,7 +2362,7 @@
     {
       "wma": "Dardanelle WMA",
       "wmaKey": "dardanelle",
-      "units": 6,
+      "units": 8,
       "avgPercent": 100,
       "maxPercent": 100
     },
