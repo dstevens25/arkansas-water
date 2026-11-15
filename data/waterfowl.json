@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-14T20:24:01.844Z",
+  "fetched": "2026-11-15T12:28:51.714Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -1609,7 +1609,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "90% flooded and actively pumping",
+      "statusText": "90% flooded",
       "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
@@ -1635,7 +1635,7 @@
       "type": "moist-soil",
       "section": "Moist-soil Units / Waterfowl Rest Areas (Closed to Hunting)",
       "huntingOpen": false,
-      "statusText": "90% flooded and actively pumping",
+      "statusText": "90% flooded",
       "percent": 90,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
