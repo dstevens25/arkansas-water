@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-16T13:20:22.766Z",
+  "fetched": "2026-11-16T23:57:49.791Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -224,9 +224,11 @@
       "unit": "Little Grassy",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Will be flooded as water levels in Bois D'Arc lake recover",
+      "statusText": "0%, Will be flooded as water levels in Bois D'Arc lake recover",
+      "percent": 0,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
+      "comments": "flooded with water from Bois D' Arc Lake and rainfall",
       "wmaDisplay": "Dr. Lester Sitzes III Bois D'Arc WMA"
     },
     {
@@ -667,8 +669,8 @@
       "unit": "9 (Draw)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "0% and actively pumping",
-      "percent": 0,
+      "statusText": "25% and actively pumping",
+      "percent": 25,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -924,8 +926,8 @@
       "unit": "Blacklands East",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "10% flooded",
-      "percent": 10,
+      "statusText": "50% flooded",
+      "percent": 50,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -960,8 +962,8 @@
       "unit": "Slaty",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "90% flooded",
-      "percent": 90,
+      "statusText": "100% flooded",
+      "percent": 100,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -1119,7 +1121,7 @@
       "unit": "A",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Actively pumping with the unit 30% flooded (holes A6 and A7 are ready)",
+      "statusText": "Actively pumping with the unit 30% flooded (holes A6 and A7 are ready to hunt)",
       "percent": 30,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
@@ -1211,7 +1213,7 @@
       "unit": "Mobility-Impaired Unit",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Actively pumping and 70% flooded",
+      "statusText": "Actively pumping and 70% flooded (Ready to hunt)",
       "percent": 70,
       "waterSource": "Groundwater",
       "plannedOperation": "10/26/2026",
@@ -1224,7 +1226,7 @@
       "unit": "Magellan",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Pumping initiated on 11/12/26. Power Unit boken down as of 11/13. Working on repair.",
+      "statusText": "Gearhead is currently inoperable, service tech called on 11/16 diagnosed a bent shaft and will get this repaired",
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -1235,8 +1237,8 @@
       "unit": "Youth",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "Actively pumping with the unit 40% flooded. Pumping initiated on 11/5/26",
-      "percent": 40,
+      "statusText": "Actively pumping with the unit 60% flooded (Ready to hunt). Pumping initiated on 11/5/26",
+      "percent": 60,
       "waterSource": "Surface Water",
       "plannedOperation": "10/26/2026",
       "wmaDisplay": "Steve N. Wilson Raft Creek Bottoms WMA"
@@ -2426,7 +2428,7 @@
       "wma": "Steve N. Wilson Raft Creek Bottoms WMA",
       "wmaKey": "raft creek",
       "units": 6,
-      "avgPercent": 53,
+      "avgPercent": 57,
       "maxPercent": 90
     },
     {
@@ -2454,14 +2456,14 @@
       "wma": "Frog Bayou WMA",
       "wmaKey": "frog bayou",
       "units": 21,
-      "avgPercent": 33,
+      "avgPercent": 35,
       "maxPercent": 90
     },
     {
       "wma": "Petit Jean River WMA",
       "wmaKey": "petit jean",
       "units": 8,
-      "avgPercent": 25,
+      "avgPercent": 31,
       "maxPercent": 100
     },
     {
@@ -2477,6 +2479,13 @@
       "units": 3,
       "avgPercent": 2,
       "maxPercent": 5
+    },
+    {
+      "wma": "Dr. Lester Sitzes III Bois D'Arc WMA",
+      "wmaKey": "dr. lester sitzes iii bois d'arc",
+      "units": 1,
+      "avgPercent": 0,
+      "maxPercent": 0
     },
     {
       "wma": "Big Lake WMA",
