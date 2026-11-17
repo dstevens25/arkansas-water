@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-16T23:57:49.791Z",
+  "fetched": "2026-11-17T14:05:34.576Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -8,7 +8,8 @@
       "unit": "North of Bridge",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "GTR flooding to begin 11/12/26",
+      "statusText": "GTR flooding to begin 11/12/26. 0% flooded",
+      "percent": 0,
       "waterSource": "GTR",
       "plannedOperation": "TBD",
       "comments": "Floods with GTR",
@@ -20,7 +21,8 @@
       "unit": "Simmons Field North",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "No rainfall. 0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "comments": "Boat ramp may be blocked while a pump is in use",
@@ -32,7 +34,8 @@
       "unit": "Simmons",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "No rainfall. 0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Big Lake WMA"
@@ -43,7 +46,8 @@
       "unit": "Simmons Field South",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "No rainfall. 0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Big Lake WMA"
@@ -2070,7 +2074,7 @@
       "wmaKey": "big lake",
       "unit": "Above Highline GTR",
       "type": "gtr",
-      "statusText": "The gates are in the Simmons Structure, the Watson structure is closed, and the inlet pipes are open. The GTR is 0% flooded",
+      "statusText": "0% flooded. The gates are in place and the inlet pipes are open",
       "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
@@ -2081,8 +2085,8 @@
       "wmaKey": "big lake",
       "unit": "Below Highline GTR",
       "type": "gtr",
-      "statusText": "The gates are in the Simmons Structure, the Watson structure is closed, and the inlet pipes are open. The GTR is 0% flooded",
-      "percent": 0,
+      "statusText": "10% flooded. The gates are in place and the inlet pipes are open",
+      "percent": 10,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Big Lake WMA"
@@ -2474,6 +2478,13 @@
       "maxPercent": 10
     },
     {
+      "wma": "Big Lake WMA",
+      "wmaKey": "big lake",
+      "units": 6,
+      "avgPercent": 2,
+      "maxPercent": 10
+    },
+    {
       "wma": "Bell Slough WMA",
       "wmaKey": "bell slough",
       "units": 3,
@@ -2484,13 +2495,6 @@
       "wma": "Dr. Lester Sitzes III Bois D'Arc WMA",
       "wmaKey": "dr. lester sitzes iii bois d'arc",
       "units": 1,
-      "avgPercent": 0,
-      "maxPercent": 0
-    },
-    {
-      "wma": "Big Lake WMA",
-      "wmaKey": "big lake",
-      "units": 2,
       "avgPercent": 0,
       "maxPercent": 0
     },
