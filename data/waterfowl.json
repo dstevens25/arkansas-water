@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-17T14:05:34.576Z",
+  "fetched": "2026-11-17T23:19:09.879Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -2289,7 +2289,8 @@
       "wmaKey": "black swamp",
       "unit": "Gregory GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "The water control structures are closed and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Rex Hancock Black Swamp WMA"
@@ -2308,7 +2309,8 @@
       "wmaKey": "dagmar",
       "unit": "Hickson GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "The water control structures are closed and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Sheffield Nelson Dagmar WMA"
@@ -2328,7 +2330,8 @@
       "wmaKey": "dagmar",
       "unit": "Mud Slough GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "The water control structures are closed and the unit is 0% flooded.",
+      "percent": 0,
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Sheffield Nelson Dagmar WMA"
@@ -2338,7 +2341,7 @@
       "wmaKey": "shirey bay",
       "unit": "Adams Brake GTR",
       "type": "gtr",
-      "statusText": "Water from Lake Charles provides water supply for all three of these GTRs. Currently Lake Charles water level is 7.5 ft below normal. It is unlikely that any water will be available for release for the 2026-2027 season.",
+      "statusText": "Water from Lake Charles provides water supply for all three of these GTRs. Currently Lake Charles water level is 4 ft below normal. It is unlikely that any water will be available for release for the 2026-2027 season. Structures are closed to catch rainfall/runoff.",
       "plannedOperation": "Week of Nov. 9th",
       "gaugeLink": "Gauge Link",
       "wmaDisplay": "Shirey Bay Rainey Brake WMA"
@@ -2380,23 +2383,9 @@
       "maxPercent": 100
     },
     {
-      "wma": "Sheffield Nelson Dagmar WMA",
-      "wmaKey": "dagmar",
-      "units": 5,
-      "avgPercent": 91,
-      "maxPercent": 95
-    },
-    {
       "wma": "Ozark Lake WMA",
       "wmaKey": "ozark lake",
       "units": 3,
-      "avgPercent": 90,
-      "maxPercent": 90
-    },
-    {
-      "wma": "Rex Hancock Black Swamp WMA",
-      "wmaKey": "black swamp",
-      "units": 1,
       "avgPercent": 90,
       "maxPercent": 90
     },
@@ -2413,6 +2402,13 @@
       "units": 18,
       "avgPercent": 76,
       "maxPercent": 90
+    },
+    {
+      "wma": "Sheffield Nelson Dagmar WMA",
+      "wmaKey": "dagmar",
+      "units": 7,
+      "avgPercent": 65,
+      "maxPercent": 95
     },
     {
       "wma": "Galla Creek WMA",
@@ -2448,6 +2444,13 @@
       "units": 1,
       "avgPercent": 50,
       "maxPercent": 50
+    },
+    {
+      "wma": "Rex Hancock Black Swamp WMA",
+      "wmaKey": "black swamp",
+      "units": 2,
+      "avgPercent": 45,
+      "maxPercent": 90
     },
     {
       "wma": "Ed Gordon Point Remove WMA",
