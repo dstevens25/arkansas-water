@@ -1,13 +1,13 @@
 {
   "source": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-321/",
-  "fetched": "2026-11-22T21:30:58.275Z",
+  "fetched": "2026-11-23T15:39:56.473Z",
   "waters": [
     {
       "region": "Central Arkansas",
       "water": "Little Red River",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "trout"
@@ -29,8 +29,8 @@
       "region": "Central Arkansas",
       "water": "Harris Brake Lake",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "largemouth bass",
@@ -44,7 +44,7 @@
       "region": "Central Arkansas",
       "water": "Lake Overcup",
       "updated": "2026-10-29",
-      "daysOld": 24,
+      "daysOld": 25,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -56,8 +56,8 @@
       "region": "Central Arkansas",
       "water": "Brewer Lake",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "largemouth bass",
@@ -69,8 +69,8 @@
       "region": "Central Arkansas",
       "water": "Lake Maumelle",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [],
       "summary": "(updated 11-12-2026) WestRock Landing in Roland (501-658-5598) said in its most recent report that the front launch ramp and the back launch ramp were both temporarily closed due to the low water levels."
@@ -89,8 +89,8 @@
       "region": "Central Arkansas",
       "water": "Little Maumelle River",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "black bass",
@@ -135,8 +135,8 @@
       "region": "North Arkansas",
       "water": "Cotter Area",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "trout"
@@ -149,8 +149,8 @@
       "region": "North Arkansas",
       "water": "Calico Rock Area",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "largemouth bass",
@@ -162,8 +162,8 @@
       "region": "North Arkansas",
       "water": "Bull Shoals Lake",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "crappie",
@@ -201,8 +201,8 @@
       "region": "Northwest Arkansas",
       "water": "Beaver Lake",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "crappie",
@@ -217,8 +217,8 @@
       "region": "Northwest Arkansas",
       "water": "Beaver Tailwater",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "spotted bass",
@@ -231,8 +231,8 @@
       "region": "Northeast Arkansas",
       "water": "Lake Charles",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "crappie",
@@ -246,7 +246,7 @@
       "region": "Northeast Arkansas",
       "water": "Lake Poinsett",
       "updated": "2026-10-29",
-      "daysOld": 24,
+      "daysOld": 25,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -258,7 +258,7 @@
       "region": "Northeast Arkansas",
       "water": "Spring River",
       "updated": "2026-11-05",
-      "daysOld": 17,
+      "daysOld": 18,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -291,8 +291,8 @@
       "region": "Southeast Arkansas",
       "water": "Cane Creek Lake",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "crappie",
@@ -306,8 +306,8 @@
       "region": "Southeast Arkansas",
       "water": "Lake Monticello",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "crappie",
@@ -319,8 +319,8 @@
       "region": "Southeast Arkansas",
       "water": "Lake Chicot",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "crappie",
@@ -334,8 +334,8 @@
       "region": "Southeast Arkansas",
       "water": "White River/Arkansas River (Pool 2)/Trusten Holder WMA",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "crappie",
@@ -348,8 +348,8 @@
       "region": "Southwest Arkansas",
       "water": "Millwood Lake",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "white bass",
@@ -367,7 +367,7 @@
       "region": "Southwest Arkansas",
       "water": "DeGray Lake",
       "updated": "2026-10-29",
-      "daysOld": 24,
+      "daysOld": 25,
       "stale": true,
       "referenceOnly": false,
       "species": [
@@ -431,8 +431,8 @@
       "region": "West-Central Arkansas",
       "water": "Lake Atkins",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [],
       "summary": "(updated 11-12-2026) Lucky Landing as a bait shop and restaurant is not open, but the AGFC’s access to Lake Atkins and fishing pier remain open to all anglers, according to the AGFC’s Frank Leone, supervisor of the Russellville district."
@@ -441,8 +441,8 @@
       "region": "West-Central Arkansas",
       "water": "Lake Catherine Tailwater (Below Carpenter Dam)",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "white bass",
@@ -466,7 +466,7 @@
       "region": "West-Central Arkansas",
       "water": "Lake Hamilton",
       "updated": "2026-10-29",
-      "daysOld": 24,
+      "daysOld": 25,
       "stale": true,
       "referenceOnly": false,
       "species": [],
@@ -487,8 +487,8 @@
       "region": "West-Central Arkansas",
       "water": "Lake Ouachita",
       "updated": "2026-11-12",
-      "daysOld": 10,
-      "stale": false,
+      "daysOld": 11,
+      "stale": true,
       "referenceOnly": false,
       "species": [
         "spotted bass",
