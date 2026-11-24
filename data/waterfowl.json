@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-23T15:39:56.780Z",
+  "fetched": "2026-11-24T02:44:35.189Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -658,8 +658,8 @@
       "unit": "6",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "50% flooded and actively pumping",
-      "percent": 50,
+      "statusText": "70% flooded and actively pumping",
+      "percent": 70,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -682,8 +682,8 @@
       "unit": "9 (Draw)",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "50% and actively pumping",
-      "percent": 50,
+      "statusText": "75% and actively pumping",
+      "percent": 75,
       "waterSource": "Surface Water",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Frog Bayou WMA"
@@ -2107,7 +2107,8 @@
       "wmaKey": "cut‐off creek",
       "unit": "Cut‐Off Creek GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "0% flooded. Water Control Structure Open",
+      "percent": 0,
       "plannedOperation": "Dec. 1 (established date since 2017 on three southernmost WMAs due to later dormancy)",
       "wmaDisplay": "Cut‐Off Creek WMA"
     },
@@ -2312,7 +2313,8 @@
       "wmaKey": "seven devils",
       "unit": "Seven Devils GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "0% flooded. Water Control Structure Open",
+      "percent": 0,
       "plannedOperation": "> Dec. 1, variable water‐management plan (one of 3 later WMAs in south AR)",
       "wmaDisplay": "Seven Devils WMA"
     },
@@ -2468,7 +2470,7 @@
       "wma": "Frog Bayou WMA",
       "wmaKey": "frog bayou",
       "units": 21,
-      "avgPercent": 42,
+      "avgPercent": 44,
       "maxPercent": 100
     },
     {
@@ -2514,6 +2516,13 @@
       "maxPercent": 0
     },
     {
+      "wma": "Cut‐Off Creek WMA",
+      "wmaKey": "cut‐off creek",
+      "units": 1,
+      "avgPercent": 0,
+      "maxPercent": 0
+    },
+    {
       "wma": "Earl Buss Bayou DeView WMA",
       "wmaKey": "bayou deview",
       "units": 2,
@@ -2530,6 +2539,13 @@
     {
       "wma": "Nimrod Lloyd Millwood WMA",
       "wmaKey": "nimrod lloyd millwood",
+      "units": 1,
+      "avgPercent": 0,
+      "maxPercent": 0
+    },
+    {
+      "wma": "Seven Devils WMA",
+      "wmaKey": "seven devils",
       "units": 1,
       "avgPercent": 0,
       "maxPercent": 0
