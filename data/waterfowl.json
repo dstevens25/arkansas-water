@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-24T02:44:35.189Z",
+  "fetched": "2026-11-24T15:29:47.374Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -826,7 +826,8 @@
       "unit": "1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Ozan WMA"
@@ -837,7 +838,8 @@
       "unit": "2",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Ozan WMA"
@@ -848,7 +850,8 @@
       "unit": "3",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Ozan WMA"
@@ -859,7 +862,8 @@
       "unit": "4",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Ozan WMA"
@@ -870,7 +874,8 @@
       "unit": "5",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall",
+      "statusText": "0% flooded",
+      "percent": 0,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "wmaDisplay": "Ozan WMA"
@@ -2193,7 +2198,8 @@
       "wmaKey": "dr. lester sitzes, iii bois d' arc",
       "unit": "Bois d'Arc Lower GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "0% flooded",
+      "percent": 0,
       "plannedOperation": "Dec. 1 (established date since 2017 on three southernmost WMAs due to later dormancy)",
       "wmaDisplay": "Dr. Lester Sitzes, III Bois D' Arc WMA"
     },
@@ -2202,7 +2208,8 @@
       "wmaKey": "dr. lester sitzes, iii bois d' arc",
       "unit": "Bois d'Arc Upper GTR",
       "type": "gtr",
-      "statusText": "",
+      "statusText": "0% flooded",
+      "percent": 0,
       "plannedOperation": "Dec. 1 (established date since 2017 on three southernmost WMAs due to later dormancy)",
       "wmaDisplay": "Dr. Lester Sitzes, III Bois D' Arc WMA"
     },
@@ -2516,9 +2523,23 @@
       "maxPercent": 0
     },
     {
+      "wma": "Ozan WMA",
+      "wmaKey": "ozan",
+      "units": 5,
+      "avgPercent": 0,
+      "maxPercent": 0
+    },
+    {
       "wma": "Cut‐Off Creek WMA",
       "wmaKey": "cut‐off creek",
       "units": 1,
+      "avgPercent": 0,
+      "maxPercent": 0
+    },
+    {
+      "wma": "Dr. Lester Sitzes, III Bois D' Arc WMA",
+      "wmaKey": "dr. lester sitzes, iii bois d' arc",
+      "units": 2,
       "avgPercent": 0,
       "maxPercent": 0
     },
