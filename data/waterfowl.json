@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T15:16:39.904Z",
+  "fetched": "2026-11-25T23:58:28.975Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -21,8 +21,8 @@
       "unit": "Simmons Field North",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "No rainfall. 0% flooded",
-      "percent": 0,
+      "statusText": "No rainfall. 10% flooded",
+      "percent": 10,
       "waterSource": "Rainfall",
       "plannedOperation": "10/05/2026",
       "comments": "Boat ramp may be blocked while a pump is in use",
@@ -1090,8 +1090,8 @@
       "unit": "Dark Corner 1",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "95% flooded",
-      "percent": 95,
+      "statusText": "90% flooded",
+      "percent": 90,
       "waterSource": "Groundwater",
       "plannedOperation": "10/05/2026",
       "comments": "Install Boards 10/5/26 to attempt to catch rainwater if none available pump starting 11/9/26",
@@ -2456,7 +2456,7 @@
       "wma": "Sheffield Nelson Dagmar WMA",
       "wmaKey": "dagmar",
       "units": 9,
-      "avgPercent": 52,
+      "avgPercent": 51,
       "maxPercent": 95
     },
     {
@@ -2505,7 +2505,7 @@
       "wma": "Big Lake WMA",
       "wmaKey": "big lake",
       "units": 6,
-      "avgPercent": 2,
+      "avgPercent": 3,
       "maxPercent": 10
     },
     {
