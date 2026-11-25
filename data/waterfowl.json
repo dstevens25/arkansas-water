@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T00:19:07.658Z",
+  "fetched": "2026-11-25T15:16:39.904Z",
   "source": "https://www.agfc.com/hunting/waterfowl/",
   "units": [
     {
@@ -944,8 +944,8 @@
       "unit": "Blacklands East",
       "type": "moist-soil",
       "section": "Moist-soil Units (Open to Hunting)",
-      "statusText": "50% flooded",
-      "percent": 50,
+      "statusText": "60% flooded",
+      "percent": 60,
       "waterSource": "Surface Water",
       "plannedOperation": "10/19/2026",
       "wmaDisplay": "Petit Jean River WMA"
@@ -2484,7 +2484,7 @@
       "wma": "Petit Jean River WMA",
       "wmaKey": "petit jean",
       "units": 8,
-      "avgPercent": 33,
+      "avgPercent": 34,
       "maxPercent": 100
     },
     {
